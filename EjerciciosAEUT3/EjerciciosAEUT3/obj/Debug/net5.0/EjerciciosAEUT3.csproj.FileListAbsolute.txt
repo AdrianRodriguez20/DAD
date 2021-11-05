@@ -14,3 +14,19 @@ C:\Users\Maria luisa\RiderProjects\EjerciciosAEUT3\EjerciciosAEUT3\obj\Debug\net
 C:\Users\Maria luisa\RiderProjects\EjerciciosAEUT3\EjerciciosAEUT3\obj\Debug\net5.0\ref\EjerciciosAEUT3.dll
 C:\Users\Maria luisa\RiderProjects\EjerciciosAEUT3\EjerciciosAEUT3\obj\Debug\net5.0\EjerciciosAEUT3.pdb
 C:\Users\Maria luisa\RiderProjects\EjerciciosAEUT3\EjerciciosAEUT3\obj\Debug\net5.0\EjerciciosAEUT3.genruntimeconfig.cache
+C:\Users\Admin\Desktop\DAD_Adrian\EjerciciosAEUT3\EjerciciosAEUT3\bin\Debug\net5.0\EjerciciosAEUT3.exe
+C:\Users\Admin\Desktop\DAD_Adrian\EjerciciosAEUT3\EjerciciosAEUT3\bin\Debug\net5.0\EjerciciosAEUT3.deps.json
+C:\Users\Admin\Desktop\DAD_Adrian\EjerciciosAEUT3\EjerciciosAEUT3\bin\Debug\net5.0\EjerciciosAEUT3.runtimeconfig.json
+C:\Users\Admin\Desktop\DAD_Adrian\EjerciciosAEUT3\EjerciciosAEUT3\bin\Debug\net5.0\EjerciciosAEUT3.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\DAD_Adrian\EjerciciosAEUT3\EjerciciosAEUT3\bin\Debug\net5.0\EjerciciosAEUT3.dll
+C:\Users\Admin\Desktop\DAD_Adrian\EjerciciosAEUT3\EjerciciosAEUT3\bin\Debug\net5.0\ref\EjerciciosAEUT3.dll
+C:\Users\Admin\Desktop\DAD_Adrian\EjerciciosAEUT3\EjerciciosAEUT3\bin\Debug\net5.0\EjerciciosAEUT3.pdb
+C:\Users\Admin\Desktop\DAD_Adrian\EjerciciosAEUT3\EjerciciosAEUT3\obj\Debug\net5.0\EjerciciosAEUT3.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\DAD_Adrian\EjerciciosAEUT3\EjerciciosAEUT3\obj\Debug\net5.0\EjerciciosAEUT3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\DAD_Adrian\EjerciciosAEUT3\EjerciciosAEUT3\obj\Debug\net5.0\EjerciciosAEUT3.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\DAD_Adrian\EjerciciosAEUT3\EjerciciosAEUT3\obj\Debug\net5.0\EjerciciosAEUT3.AssemblyInfo.cs
+C:\Users\Admin\Desktop\DAD_Adrian\EjerciciosAEUT3\EjerciciosAEUT3\obj\Debug\net5.0\EjerciciosAEUT3.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\DAD_Adrian\EjerciciosAEUT3\EjerciciosAEUT3\obj\Debug\net5.0\EjerciciosAEUT3.dll
+C:\Users\Admin\Desktop\DAD_Adrian\EjerciciosAEUT3\EjerciciosAEUT3\obj\Debug\net5.0\ref\EjerciciosAEUT3.dll
+C:\Users\Admin\Desktop\DAD_Adrian\EjerciciosAEUT3\EjerciciosAEUT3\obj\Debug\net5.0\EjerciciosAEUT3.pdb
+C:\Users\Admin\Desktop\DAD_Adrian\EjerciciosAEUT3\EjerciciosAEUT3\obj\Debug\net5.0\EjerciciosAEUT3.genruntimeconfig.cache

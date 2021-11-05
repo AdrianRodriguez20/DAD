@@ -55,15 +55,20 @@ namespace EjerciciosIniciales
                         string ruta = Console.ReadLine();
                         Console.WriteLine("Introduce el texto : ");
                         string texto = Console.ReadLine();
+                        StreamWriter sw=null;
                         try
                         {
-                            StreamWriter sw = File.AppendText(ruta);
+                            sw = File.AppendText(ruta);
                             sw.WriteLine(texto);
-                            sw.Close();
+                       
                         }
                         catch (Exception e)
                         {
                             Console.WriteLine("Exception: " + e.Message);
+                        }
+                        finally
+                        {
+                            sw.Close();
                         }
 
                         break;

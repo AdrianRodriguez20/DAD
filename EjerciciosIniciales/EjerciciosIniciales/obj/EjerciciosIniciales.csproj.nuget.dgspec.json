@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maria luisa\\source\\repos\\EjerciciosIniciales\\EjerciciosIniciales\\EjerciciosIniciales.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\DAD_Adrian\\EjerciciosIniciales\\EjerciciosIniciales\\EjerciciosIniciales.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maria luisa\\source\\repos\\EjerciciosIniciales\\EjerciciosIniciales\\EjerciciosIniciales.csproj": {
+    "C:\\Users\\Admin\\Desktop\\DAD_Adrian\\EjerciciosIniciales\\EjerciciosIniciales\\EjerciciosIniciales.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maria luisa\\source\\repos\\EjerciciosIniciales\\EjerciciosIniciales\\EjerciciosIniciales.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\DAD_Adrian\\EjerciciosIniciales\\EjerciciosIniciales\\EjerciciosIniciales.csproj",
         "projectName": "EjerciciosIniciales",
-        "projectPath": "C:\\Users\\Maria luisa\\source\\repos\\EjerciciosIniciales\\EjerciciosIniciales\\EjerciciosIniciales.csproj",
-        "packagesPath": "C:\\Users\\Maria luisa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maria luisa\\source\\repos\\EjerciciosIniciales\\EjerciciosIniciales\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\DAD_Adrian\\EjerciciosIniciales\\EjerciciosIniciales\\EjerciciosIniciales.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\DAD_Adrian\\EjerciciosIniciales\\EjerciciosIniciales\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Maria luisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

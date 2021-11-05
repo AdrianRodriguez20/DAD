@@ -17,19 +17,23 @@ namespace EjerciciosAEUT3
             String cadena="";
             do
             {
-
+                
                 letra =( Console.ReadKey().KeyChar).ToString().ToUpper()[0];
-                if (!listaLetras.ContainsKey(letra))
+                 if (Regex.IsMatch(letra.ToString().ToUpper(), "[A||C||G||T]"))
                 {
-                    listaLetras.Add(letra, 1);
+                    if (!listaLetras.ContainsKey(letra))
+                    {
+                        listaLetras.Add(letra, 1);
 
-                }
-                else
-                {
-                    listaLetras[letra] += 1;
-                }
+                    }
+                    else
+                    {
+                        listaLetras[letra] += 1;
+                    }
 
-                cadena += letra;
+                    cadena += letra;
+                }
+               
 
             } while (letra != 'F');
             Console.WriteLine("\n");

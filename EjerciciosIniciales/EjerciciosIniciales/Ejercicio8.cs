@@ -49,6 +49,7 @@ namespace EjerciciosIniciales
                         break;
                     case 5:
                         Console.WriteLine("Adios");
+                        Environment.Exit(1);
                         break;
 
                     default:

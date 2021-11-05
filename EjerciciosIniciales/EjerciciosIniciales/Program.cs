@@ -88,22 +88,20 @@ namespace EjerciciosIniciales
                         Ejercicio11 ej11 = new Ejercicio11();
                         ej11.manejoFichero();
                         break;
-
+                    case 12:
+                        Console.WriteLine("Adios");
+                        Environment.Exit(1);
+                        break;
                     default:
-                        if (opcion != -1)
-                        {
+               
                             Console.WriteLine("El ejercicio seleccionado no existe");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Adios");
-                        }
+                  
                         
                         break;
                 }
 
 
-            } while (opcion != -1);
+            } while (opcion != 12);
         }
     }
 }

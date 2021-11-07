@@ -18,14 +18,13 @@ namespace EjerciciosAEUT3
             this.ruta = ruta;
         }
         
-        
+        /**
+         * Método para leer fichero
+         */
         public List<Prediccion> leerFichero()
         {
             List< List<String> > lista = new List<List<String>>();
-   
-
-
-    List<Prediccion> listaPredicciones = new List<Prediccion>();
+            List<Prediccion> listaPredicciones = new List<Prediccion>();
                 
             try
             {
@@ -54,7 +53,7 @@ namespace EjerciciosAEUT3
                     List<Double> temperaturas = new List<double>();
                         for (int j = 10; j <= lista.Count-1; j++)
                         {
-                         //   Console.WriteLine("("+(j+1)+")"+ lista[j][i]);
+          
                          temperaturas.Add(Convert.ToDouble(lista[j][i],CultureInfo.InvariantCulture));  
                            
                         }

@@ -108,7 +108,46 @@ namespace EjerciciosAEUT3
         {
             return $"{_location} {_lat} {_lon} {_asl} {_variable} {_unit} {_level} {_resolution} {_aggregation} {_timestamp} {_temperature}";
         }
-        
+        /**
+         * Funcion que devuelve la temperatura media de la prediccion
+         */
+        public double tempertaturaMedia()
+        {
+            double media = 0.0;
+            for (int i = 0; i < Temperature.Count; i++)
+            {
+                media = media + Temperature[i];
+            }
+            media = media / Temperature.Count;
+            return media;
+        }
+
+        /**
+         * Funcion para calcular la temperatura más frecuente.
+         */
+        public double temperaturaMasFrecuente()
+        {
+      
+            int[] frecuencia = new int[Temperature.Count];
+            int max = 0;
+            int pos = 0;
+            for (int i = 0; i < Temperature.Count; i++)
+            {
+                for (int j = 0; j < Temperature.Count; j++)
+                {
+                    if (Temperature[i] == Temperature[j])
+                    {
+                        frecuencia[i]++;
+                    }
+                }
+                if (frecuencia[i] > max)
+                {
+                    max = frecuencia[i];
+                    pos = i;
+                }
+            }
+            return Temperature[pos];
+        }
     }
     
 }

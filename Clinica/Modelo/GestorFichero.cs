@@ -8,5 +8,19 @@ namespace Modelo
 {
     class GestorFichero
     {
+        private String ruta = "";
+
+        public GestorFichero()
+        {
+
+        }
+
+        public GestorFichero(String ruta)
+        {
+            this.ruta = ruta;
+        }
+
+    
+
     }
 }

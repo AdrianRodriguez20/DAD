@@ -23,5 +23,6 @@ namespace Modelo
             this.user = user;
             this.password = password;
         }
+        
     }
 }

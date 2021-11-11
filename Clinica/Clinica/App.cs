@@ -16,5 +16,15 @@ namespace Clinica
         {
             InitializeComponent();
         }
+
+        private void App_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void actasClínicosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

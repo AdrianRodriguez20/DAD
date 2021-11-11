@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Clinica
 {
-    public partial class Form1 : Form
+    public partial class ViewLogin : Form
     {
-        public Form1()
+        public ViewLogin()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

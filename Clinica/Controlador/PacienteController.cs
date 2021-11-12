@@ -15,13 +15,12 @@ namespace Controlador
                direccion!=null && !direccion.Trim().Equals("") && 
                poblacion!=null && !poblacion.Trim().Equals(""))
             {
-                if (validarDni(dni) && validarNhc(nhc))
+                if (validarDni(dni) && validarNhc(nhc) && pacienteDAO.findById(dni)!=null  && pacienteDAO.findByNhc(Convert.ToInt32(nhc))!=null  )
                 {
                     Paciente paciente = new Paciente( nombre,  apellidos, direccion, Convert.ToInt32(codigoPostal), 
                         poblacion,  dni, Convert.ToInt32( nhc));
                     pacienteDAO.save(paciente);
                 }
-
             }
        
         }

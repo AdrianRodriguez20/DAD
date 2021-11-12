@@ -27,5 +27,28 @@ namespace Clinica
             viewPaciente.ShowDialog();
 
         }
+
+        private void centroDeDíaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("En construccion", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void citaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("En construccion", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void guardarActividadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("En construccion", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿ Seguro que desea salir ?","Salir",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

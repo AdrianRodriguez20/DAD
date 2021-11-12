@@ -32,21 +32,21 @@ namespace Clinica
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewAdministrativo));
             this.menuAdministrativo = new System.Windows.Forms.MenuStrip();
             this.pacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crearPacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fichaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sacarEtiquetasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.centroDeDíaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.citaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarActividadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.aToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.aToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.aToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.aToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.crearPacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fichaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sacarEtiquetasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuAdministrativo.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -60,7 +60,7 @@ namespace Clinica
             this.centroDeDíaToolStripMenuItem,
             this.citaToolStripMenuItem,
             this.guardarActividadToolStripMenuItem,
-            this.sToolStripMenuItem});
+            this.salirToolStripMenuItem});
             this.menuAdministrativo.Location = new System.Drawing.Point(0, 0);
             this.menuAdministrativo.Name = "menuAdministrativo";
             this.menuAdministrativo.Size = new System.Drawing.Size(800, 38);
@@ -79,29 +79,64 @@ namespace Clinica
             this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(78, 34);
             this.pacientesToolStripMenuItem.Text = "Pacientes";
             // 
+            // buscarToolStripMenuItem
+            // 
+            this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
+            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.buscarToolStripMenuItem.Text = "Buscar";
+            // 
+            // crearPacienteToolStripMenuItem
+            // 
+            this.crearPacienteToolStripMenuItem.Name = "crearPacienteToolStripMenuItem";
+            this.crearPacienteToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.crearPacienteToolStripMenuItem.Text = "Crear";
+            this.crearPacienteToolStripMenuItem.Click += new System.EventHandler(this.crearPacienteToolStripMenuItem_Click);
+            // 
+            // eliminarToolStripMenuItem
+            // 
+            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.eliminarToolStripMenuItem.Text = "Eliminar";
+            // 
+            // fichaToolStripMenuItem
+            // 
+            this.fichaToolStripMenuItem.Name = "fichaToolStripMenuItem";
+            this.fichaToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.fichaToolStripMenuItem.Text = "Ficha";
+            // 
+            // sacarEtiquetasToolStripMenuItem
+            // 
+            this.sacarEtiquetasToolStripMenuItem.Name = "sacarEtiquetasToolStripMenuItem";
+            this.sacarEtiquetasToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.sacarEtiquetasToolStripMenuItem.Text = "Sacar Etiquetas";
+            // 
             // centroDeDíaToolStripMenuItem
             // 
             this.centroDeDíaToolStripMenuItem.Name = "centroDeDíaToolStripMenuItem";
             this.centroDeDíaToolStripMenuItem.Size = new System.Drawing.Size(104, 34);
             this.centroDeDíaToolStripMenuItem.Text = "Centro de día";
+            this.centroDeDíaToolStripMenuItem.Click += new System.EventHandler(this.centroDeDíaToolStripMenuItem_Click);
             // 
             // citaToolStripMenuItem
             // 
             this.citaToolStripMenuItem.Name = "citaToolStripMenuItem";
             this.citaToolStripMenuItem.Size = new System.Drawing.Size(45, 34);
             this.citaToolStripMenuItem.Text = "Cita";
+            this.citaToolStripMenuItem.Click += new System.EventHandler(this.citaToolStripMenuItem_Click);
             // 
             // guardarActividadToolStripMenuItem
             // 
             this.guardarActividadToolStripMenuItem.Name = "guardarActividadToolStripMenuItem";
             this.guardarActividadToolStripMenuItem.Size = new System.Drawing.Size(129, 34);
             this.guardarActividadToolStripMenuItem.Text = "Guardar actividad";
+            this.guardarActividadToolStripMenuItem.Click += new System.EventHandler(this.guardarActividadToolStripMenuItem_Click);
             // 
-            // sToolStripMenuItem
+            // salirToolStripMenuItem
             // 
-            this.sToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sToolStripMenuItem.Image")));
-            this.sToolStripMenuItem.Name = "sToolStripMenuItem";
-            this.sToolStripMenuItem.Size = new System.Drawing.Size(42, 34);
+            this.salirToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("salirToolStripMenuItem.Image")));
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(42, 34);
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // menuStrip2
             // 
@@ -148,37 +183,6 @@ namespace Clinica
             this.aToolStripMenuItem4.Name = "aToolStripMenuItem4";
             this.aToolStripMenuItem4.Size = new System.Drawing.Size(42, 34);
             // 
-            // buscarToolStripMenuItem
-            // 
-            this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
-            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.buscarToolStripMenuItem.Text = "Buscar";
-            // 
-            // crearPacienteToolStripMenuItem
-            // 
-            this.crearPacienteToolStripMenuItem.Name = "crearPacienteToolStripMenuItem";
-            this.crearPacienteToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.crearPacienteToolStripMenuItem.Text = "Crear";
-            this.crearPacienteToolStripMenuItem.Click += new System.EventHandler(this.crearPacienteToolStripMenuItem_Click);
-            // 
-            // eliminarToolStripMenuItem
-            // 
-            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.eliminarToolStripMenuItem.Text = "Eliminar";
-            // 
-            // fichaToolStripMenuItem
-            // 
-            this.fichaToolStripMenuItem.Name = "fichaToolStripMenuItem";
-            this.fichaToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.fichaToolStripMenuItem.Text = "Ficha";
-            // 
-            // sacarEtiquetasToolStripMenuItem
-            // 
-            this.sacarEtiquetasToolStripMenuItem.Name = "sacarEtiquetasToolStripMenuItem";
-            this.sacarEtiquetasToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.sacarEtiquetasToolStripMenuItem.Text = "Sacar Etiquetas";
-            // 
             // ViewAdministrativo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -188,7 +192,6 @@ namespace Clinica
             this.Controls.Add(this.menuAdministrativo);
             this.Name = "ViewAdministrativo";
             this.Text = "Administrativo";
-    
             this.menuAdministrativo.ResumeLayout(false);
             this.menuAdministrativo.PerformLayout();
             this.menuStrip2.ResumeLayout(false);
@@ -205,7 +208,7 @@ namespace Clinica
         private System.Windows.Forms.ToolStripMenuItem centroDeDíaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem citaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem guardarActividadToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem aToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aToolStripMenuItem1;

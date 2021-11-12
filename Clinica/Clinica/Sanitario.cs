@@ -19,7 +19,7 @@ namespace Clinica
 
         private void App_Load(object sender, EventArgs e)
         {
-
+            FormBorderStyle =FormBorderStyle.None;
         }
 
         private void actasClínicosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -64,7 +64,11 @@ namespace Clinica
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show("¿ Seguro que desea salir ?","Salir",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        
         }
     }
 }

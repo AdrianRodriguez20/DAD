@@ -124,6 +124,19 @@ namespace Modelo
             return null;
         }
         
+        public Paciente findByNhc(int nhc)
+        {
+            List<Paciente> pacientes = readAll();
+            foreach (Paciente p in pacientes)
+            {
+                if (p.Nhc.Equals(nhc))
+                {
+                    return p;
+                }
+            }
+            return null;
+        }
         
+       
     }
 }

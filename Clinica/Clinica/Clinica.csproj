@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App.cs">
+    <Compile Include="Administrativo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="App.Designer.cs">
-      <DependentUpon>App.cs</DependentUpon>
+    <Compile Include="Administrativo.Designer.cs">
+      <DependentUpon>Administrativo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sanitario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sanitario.Designer.cs">
+      <DependentUpon>Sanitario.cs</DependentUpon>
     </Compile>
     <Compile Include="Crear.cs">
       <SubType>Form</SubType>
@@ -66,8 +72,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="App.resx">
-      <DependentUpon>App.cs</DependentUpon>
+    <EmbeddedResource Include="Administrativo.resx">
+      <DependentUpon>Administrativo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sanitario.resx">
+      <DependentUpon>Sanitario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Crear.resx">
       <DependentUpon>Crear.cs</DependentUpon>

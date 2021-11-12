@@ -7,23 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controlador;
+using Modelo;
 
 namespace Clinica
 {
-    public partial class App : Form
+    public partial class ViewAdministrativo : Form
     {
-        public App()
+        public ViewAdministrativo()
         {
             InitializeComponent();
         }
 
-        private void App_Load(object sender, EventArgs e)
+
+        private void crearPacienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void actasClínicosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+            ViewPaciente viewPaciente = new ViewPaciente();
+            viewPaciente.ShowDialog();
 
         }
     }

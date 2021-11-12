@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Usuario.cs" />
-    <Compile Include="GestorFichero.cs" />
+    <Compile Include="dao\PacienteDAO.cs" />
+    <Compile Include="dao\UsuarioDAO.cs" />
+    <Compile Include="modelo\Paciente.cs" />
+    <Compile Include="modelo\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

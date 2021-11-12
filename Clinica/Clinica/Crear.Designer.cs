@@ -1,7 +1,7 @@
 ﻿
 namespace Clinica
 {
-    partial class Crear
+    partial class ViewPaciente
     {
         /// <summary>
         /// Required designer variable.
@@ -42,6 +42,8 @@ namespace Clinica
             this.lblNhc = new System.Windows.Forms.Label();
             this.lblApellidos = new System.Windows.Forms.Label();
             this.lblPoblacion = new System.Windows.Forms.Label();
+            this.txbCodigoPostal = new System.Windows.Forms.TextBox();
+            this.lblCodigoPostal = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCrear
@@ -52,6 +54,7 @@ namespace Clinica
             this.btnCrear.TabIndex = 0;
             this.btnCrear.Text = "Crear";
             this.btnCrear.UseVisualStyleBackColor = true;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // txbDni
             // 
@@ -69,9 +72,9 @@ namespace Clinica
             // 
             // txbDireccion
             // 
-            this.txbDireccion.Location = new System.Drawing.Point(35, 239);
+            this.txbDireccion.Location = new System.Drawing.Point(35, 310);
             this.txbDireccion.Name = "txbDireccion";
-            this.txbDireccion.Size = new System.Drawing.Size(303, 20);
+            this.txbDireccion.Size = new System.Drawing.Size(496, 20);
             this.txbDireccion.TabIndex = 3;
             // 
             // txbApellidos
@@ -116,7 +119,7 @@ namespace Clinica
             // lblDireccion
             // 
             this.lblDireccion.AutoSize = true;
-            this.lblDireccion.Location = new System.Drawing.Point(35, 208);
+            this.lblDireccion.Location = new System.Drawing.Point(32, 275);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(52, 13);
             this.lblDireccion.TabIndex = 9;
@@ -149,11 +152,29 @@ namespace Clinica
             this.lblPoblacion.TabIndex = 12;
             this.lblPoblacion.Text = "Población";
             // 
-            // Crear
+            // txbCodigoPostal
+            // 
+            this.txbCodigoPostal.Location = new System.Drawing.Point(35, 239);
+            this.txbCodigoPostal.Name = "txbCodigoPostal";
+            this.txbCodigoPostal.Size = new System.Drawing.Size(256, 20);
+            this.txbCodigoPostal.TabIndex = 13;
+            // 
+            // lblCodigoPostal
+            // 
+            this.lblCodigoPostal.AutoSize = true;
+            this.lblCodigoPostal.Location = new System.Drawing.Point(35, 206);
+            this.lblCodigoPostal.Name = "lblCodigoPostal";
+            this.lblCodigoPostal.Size = new System.Drawing.Size(72, 13);
+            this.lblCodigoPostal.TabIndex = 14;
+            this.lblCodigoPostal.Text = "Codigo Postal";
+            // 
+            // ViewPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 306);
+            this.ClientSize = new System.Drawing.Size(578, 381);
+            this.Controls.Add(this.lblCodigoPostal);
+            this.Controls.Add(this.txbCodigoPostal);
             this.Controls.Add(this.lblPoblacion);
             this.Controls.Add(this.lblApellidos);
             this.Controls.Add(this.lblNhc);
@@ -167,7 +188,7 @@ namespace Clinica
             this.Controls.Add(this.txbNombre);
             this.Controls.Add(this.txbDni);
             this.Controls.Add(this.btnCrear);
-            this.Name = "Crear";
+            this.Name = "ViewPaciente";
             this.Text = "Crear";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -188,5 +209,7 @@ namespace Clinica
         public System.Windows.Forms.TextBox txbApellidos;
         public System.Windows.Forms.TextBox txbNhc;
         public System.Windows.Forms.TextBox txbPoblacion;
+        public System.Windows.Forms.TextBox txbCodigoPostal;
+        public System.Windows.Forms.Label lblCodigoPostal;
     }
 }

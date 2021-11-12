@@ -65,6 +65,7 @@ namespace Clinica
             this.btnEntrar.TabIndex = 2;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // txbUsuario
             // 
@@ -77,6 +78,7 @@ namespace Clinica
             // 
             this.txbPassword.Location = new System.Drawing.Point(176, 128);
             this.txbPassword.Name = "txbPassword";
+            this.txbPassword.PasswordChar = '*';
             this.txbPassword.Size = new System.Drawing.Size(170, 20);
             this.txbPassword.TabIndex = 4;
             // 

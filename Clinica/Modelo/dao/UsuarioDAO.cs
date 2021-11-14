@@ -6,32 +6,36 @@ using System.IO;
 namespace Modelo
 {
     
-    public class UsuarioDAO
+    public class UsuarioDAO : Crud<Usuario, String>
     {
-        private String ruta;
+        private GestorFichero gf;
 
-        public UsuarioDAO()
+        public UsuarioDAO(GestorFichero gf)
         {
-
-        }
-
-        public UsuarioDAO(String ruta)
-        {
-            this.ruta = ruta;
-        }
-
-        public void setRuta(String ruta)
-        {
-            this.ruta = ruta;
+            this.gf = gf;
         }
         
         
-        public List<Usuario> readAll()
+        public void save(Usuario usuario)
+        {
+            try
+            {
+                StreamWriter sw = new StreamWriter(gf.Ruta, true);
+                sw.WriteLine(usuario.ToString());
+                sw.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: " + e.Message);
+            }
+        }
+        
+        public List<Usuario> findAll()
         {
             List<Usuario> usuarios = new List<Usuario>();
             try
             {
-                StreamReader sr = new StreamReader(ruta);
+                StreamReader sr = new StreamReader(gf.Ruta);
                 string linea;
                 while ((linea = sr.ReadLine()) != null)
                 {
@@ -51,17 +55,19 @@ namespace Modelo
             return usuarios;
         }
         
-        public void update(Usuario usuario)
+        public bool update(Usuario usuario)
         {
-            List<Usuario> usuarios = readAll();
+            List<Usuario> usuarios = findAll();
+            bool exito = false;
             try
             {
-                StreamWriter sw = new StreamWriter(ruta);
+                StreamWriter sw = new StreamWriter(gf.Ruta);
                 foreach (Usuario u in usuarios)
                 {
                     if (u.User.Equals(usuario.User))
                     {
                         sw.WriteLine(usuario.ToString());
+                        exito = true;
                     }
                     else
                     {
@@ -73,20 +79,24 @@ namespace Modelo
             catch (Exception e)
             {
                 Console.WriteLine("Error: " + e.Message);
-            } 
+            }
+
+            return exito;
         }
         
-        public void delete(Usuario usuario)
+        public bool delete(String user)
         {
-            List<Usuario> usuarios = readAll();
+            List<Usuario> usuarios = findAll();
+            bool exito = false;
             try
             {
-                StreamWriter sw = new StreamWriter(ruta);
+                StreamWriter sw = new StreamWriter(gf.Ruta);
                 foreach (Usuario u in usuarios)
                 {
-                    if (!u.User.Equals(usuario.User))
+                    if (!u.User.Equals(user))
                     {
                         sw.WriteLine(u.ToString());
+                        exito=true;
                     }
                 }
                 sw.Close();
@@ -94,12 +104,14 @@ namespace Modelo
             catch (Exception e)
             {
                 Console.WriteLine("Error: " + e.Message);
-            } 
+            }
+
+            return exito;
         }
         
         public Usuario findById(String user)
         {
-            List<Usuario> usuarios = readAll();
+            List<Usuario> usuarios = findAll();
             foreach (Usuario u in usuarios)
             {
                 if (u.User.Equals(user))

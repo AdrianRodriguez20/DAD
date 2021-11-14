@@ -5,31 +5,21 @@ using System.IO;
 
 namespace Modelo
 {
-    public class PacienteDAO
+    public class PacienteDAO : Crud<Paciente, String>
     {
-        private String ruta;
+        private GestorFichero gf;
 
-        public PacienteDAO()
+        public PacienteDAO(GestorFichero gf)
         {
+            this.gf = gf;
         }
-
-        public PacienteDAO(String ruta)
-        {
-            this.ruta = ruta;
-        }
-
-        public void setRuta(String ruta)
-        {
-            this.ruta = ruta;
-        }
-
-       
-        public List<Paciente> readAll()
+        
+        public List<Paciente> findAll()
         {
             List<Paciente> pacientes = new List<Paciente>();
             try
             {
-                StreamReader sr = new StreamReader(ruta);
+                StreamReader sr = new StreamReader(gf.Ruta);
                 string linea;
                 while ((linea = sr.ReadLine()) != null)
                 {
@@ -53,9 +43,10 @@ namespace Modelo
 
         public void save(Paciente paciente)
         {
+
             try
             {
-                StreamWriter sw = new StreamWriter(ruta, true);
+                StreamWriter sw = new StreamWriter(gf.Ruta, true);
                 sw.WriteLine(paciente.ToString());
                 sw.Close();
             }
@@ -63,19 +54,22 @@ namespace Modelo
             {
                 Console.WriteLine("Error: " + e.Message);
             }
+
         }
         
-        public void update(Paciente paciente)
+        public bool update(Paciente paciente)
         {
-            List<Paciente> pacientes = readAll();
+            List<Paciente> pacientes = findAll();
+            bool exito=false;
             try
             {
-                StreamWriter sw = new StreamWriter(ruta);
+                StreamWriter sw = new StreamWriter(gf.Ruta);
                 foreach (Paciente p in pacientes)
                 {
                     if (p.Dni.Equals(paciente.Dni))
                     {
                         sw.WriteLine(paciente.ToString());
+                        exito = true;
                     }
                     else
                     {
@@ -88,19 +82,22 @@ namespace Modelo
             {
                 Console.WriteLine("Error: " + e.Message);
             }
+            return exito;
         }
         
-        public void delete(Paciente paciente)
+        public bool delete(String id)
         {
-            List<Paciente> pacientes = readAll();
+            List<Paciente> pacientes = findAll();
+            bool exito=false;
             try
             {
-                StreamWriter sw = new StreamWriter(ruta);
+                StreamWriter sw = new StreamWriter(gf.Ruta);
                 foreach (Paciente p in pacientes)
                 {
-                    if (!p.Dni.Equals(paciente.Dni))
+                    if (!p.Dni.Equals(id))
                     {
                         sw.WriteLine(p.ToString());
+                        exito=true;
                     }
                 }
                 sw.Close();
@@ -109,24 +106,26 @@ namespace Modelo
             {
                 Console.WriteLine("Error: " + e.Message);
             }
+            return exito;
         }
         
         public Paciente findById(String dni)
         {
-            List<Paciente> pacientes = readAll();
+            List<Paciente> pacientes = findAll();
+            Paciente paciente = null;
             foreach (Paciente p in pacientes)
             {
                 if (p.Dni.Equals(dni))
                 {
-                    return p;
+                    paciente =p;
                 }
             }
-            return null;
+            return paciente;
         }
         
         public Paciente findByNhc(int nhc)
         {
-            List<Paciente> pacientes = readAll();
+            List<Paciente> pacientes = findAll();
             foreach (Paciente p in pacientes)
             {
                 if (p.Nhc.Equals(nhc))

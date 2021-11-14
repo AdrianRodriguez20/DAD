@@ -1,0 +1,17 @@
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\bin\Debug\Clinica.exe.config
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\bin\Debug\Clinica.exe
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\bin\Debug\Clinica.pdb
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\bin\Debug\Controlador.dll
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\bin\Debug\Modelo.dll
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\bin\Debug\Controlador.pdb
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\bin\Debug\Modelo.pdb
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.csproj.AssemblyReference.cache
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.ViewAdministrativo.resources
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.ViewSanitario.resources
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.ViewPaciente.resources
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.ViewLogin.resources
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.Properties.Resources.resources
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.csproj.GenerateResource.cache
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.csproj.CoreCompileInputs.cache
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.exe
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.pdb

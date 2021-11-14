@@ -6,13 +6,12 @@ namespace Controlador
 {
     public class LoginController
     {
-        UsuarioDAO usuarioDAO = new UsuarioDAO("users.txt");
+        UsuarioDAO usuarioDAO = new UsuarioDAO(new GestorFichero("users.txt"));
         
         
         public Usuario Login(string user, string password)
         {
             Usuario usuario = null;
-            Usuario usuarioLogin = new Usuario(user,password);
 
             if (usuarioDAO.findById(user)!=null )
             {

@@ -23,7 +23,7 @@ namespace Clinica
         private void crearPacienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            ViewPaciente viewPaciente = new ViewPaciente();
+            ViewCrear viewPaciente = new ViewCrear();
             viewPaciente.ShowDialog();
 
         }
@@ -49,6 +49,12 @@ namespace Clinica
             {
                 Application.Exit();
             }
+        }
+
+        private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViewBuscar viewBuscar = new ViewBuscar();
+            viewBuscar.ShowDialog();
         }
     }
 }

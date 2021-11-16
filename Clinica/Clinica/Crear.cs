@@ -12,9 +12,9 @@ using Controlador;
 
 namespace Clinica
 {
-    public partial class ViewPaciente : Form
+    public partial class ViewCrear : Form
     {
-        public ViewPaciente()
+        public ViewCrear()
         {
             InitializeComponent();
         }

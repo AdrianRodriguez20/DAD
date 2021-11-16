@@ -1,5 +1,6 @@
 ﻿using Modelo;
 using System;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
 namespace Controlador
@@ -27,7 +28,10 @@ namespace Controlador
             }
        
         }
-
+        public List<Paciente> listarPacientes()
+        {
+            return pacienteDAO.findAll();
+        }
         private bool validarDni(String dni)
         {
  

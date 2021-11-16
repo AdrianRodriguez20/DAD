@@ -6,3 +6,12 @@ C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Controlador\obj\Debug\Controlado
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Controlador\obj\Debug\Controlador.csproj.CoreCompileInputs.cache
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Controlador\obj\Debug\Controlador.dll
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Controlador\obj\Debug\Controlador.pdb
+C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Controlador\bin\Debug\Controlador.dll
+C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Controlador\bin\Debug\Controlador.pdb
+C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Controlador\bin\Debug\Modelo.dll
+C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Controlador\bin\Debug\Modelo.pdb
+C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Controlador\obj\Debug\Controlador.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Controlador\obj\Debug\Controlador.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Controlador\obj\Debug\Controlador.csproj.CopyComplete
+C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Controlador\obj\Debug\Controlador.dll
+C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Controlador\obj\Debug\Controlador.pdb

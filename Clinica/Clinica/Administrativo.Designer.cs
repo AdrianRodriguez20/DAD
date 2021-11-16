@@ -82,32 +82,33 @@ namespace Clinica
             // buscarToolStripMenuItem
             // 
             this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
-            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.buscarToolStripMenuItem.Text = "Buscar";
+            this.buscarToolStripMenuItem.Click += new System.EventHandler(this.buscarToolStripMenuItem_Click);
             // 
             // crearPacienteToolStripMenuItem
             // 
             this.crearPacienteToolStripMenuItem.Name = "crearPacienteToolStripMenuItem";
-            this.crearPacienteToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.crearPacienteToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.crearPacienteToolStripMenuItem.Text = "Crear";
             this.crearPacienteToolStripMenuItem.Click += new System.EventHandler(this.crearPacienteToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             // 
             // fichaToolStripMenuItem
             // 
             this.fichaToolStripMenuItem.Name = "fichaToolStripMenuItem";
-            this.fichaToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.fichaToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.fichaToolStripMenuItem.Text = "Ficha";
             // 
             // sacarEtiquetasToolStripMenuItem
             // 
             this.sacarEtiquetasToolStripMenuItem.Name = "sacarEtiquetasToolStripMenuItem";
-            this.sacarEtiquetasToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.sacarEtiquetasToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.sacarEtiquetasToolStripMenuItem.Text = "Sacar Etiquetas";
             // 
             // centroDeDíaToolStripMenuItem

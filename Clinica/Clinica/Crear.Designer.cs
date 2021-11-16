@@ -1,7 +1,7 @@
 ﻿
 namespace Clinica
 {
-    partial class ViewPaciente
+    partial class ViewCrear
     {
         /// <summary>
         /// Required designer variable.
@@ -168,7 +168,7 @@ namespace Clinica
             this.lblCodigoPostal.TabIndex = 14;
             this.lblCodigoPostal.Text = "Codigo Postal";
             // 
-            // ViewPaciente
+            // ViewCrear
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -188,7 +188,7 @@ namespace Clinica
             this.Controls.Add(this.txbNombre);
             this.Controls.Add(this.txbDni);
             this.Controls.Add(this.btnCrear);
-            this.Name = "ViewPaciente";
+            this.Name = "ViewCrear";
             this.Text = "Crear";
             this.ResumeLayout(false);
             this.PerformLayout();

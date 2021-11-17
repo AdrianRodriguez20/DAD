@@ -9,7 +9,7 @@ namespace Controlador
         UsuarioDAO usuarioDAO = new UsuarioDAO(new GestorFichero("users.txt"));
         
         
-        public Usuario Login(string user, string password)
+        public string Login(string user, string password)
         {
             Usuario usuario = null;
 
@@ -21,7 +21,7 @@ namespace Controlador
                 }
             }
             
-            return usuario;
+            return usuario!=null?usuario.Rol:null;
 
         }
 

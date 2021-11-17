@@ -120,10 +120,6 @@
       <Project>{cbc06ef6-7206-4ab5-86ac-c23bc924ba3c}</Project>
       <Name>Controlador</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Modelo\Modelo.csproj">
-      <Project>{82fdcb1b-c0a8-48db-a20c-ce4a71c67915}</Project>
-      <Name>Modelo</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

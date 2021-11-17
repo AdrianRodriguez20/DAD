@@ -4,3 +4,9 @@ C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Modelo\obj\Debug\Modelo.csproj.A
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Modelo\obj\Debug\Modelo.dll
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Modelo\obj\Debug\Modelo.pdb
+C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Modelo\bin\Debug\Modelo.dll
+C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Modelo\bin\Debug\Modelo.pdb
+C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Modelo\obj\Debug\Modelo.dll
+C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Modelo\obj\Debug\Modelo.pdb

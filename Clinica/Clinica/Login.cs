@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
 using Controlador;
-using Modelo;
 
 namespace Clinica
 {
@@ -16,10 +15,10 @@ namespace Clinica
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             LoginController loginController = new LoginController();
-            Usuario usuario = loginController.Login(txbUsuario.Text, txbPassword.Text);
-            if (usuario!=null)
+            String usuarioRol = loginController.Login(txbUsuario.Text, txbPassword.Text);
+            if (usuarioRol != null && !usuarioRol.Trim().Equals(""))
             {
-                switch (usuario.Rol)
+                switch (usuarioRol)
                 {
                     case "direccion":
                         MessageBox.Show(
@@ -56,5 +55,7 @@ namespace Clinica
                 MessageBox.Show("Error");
             }
         }
+
+
     }
 }

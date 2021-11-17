@@ -190,6 +190,7 @@ namespace Clinica
             this.Controls.Add(this.btnCrear);
             this.Name = "ViewCrear";
             this.Text = "Crear";
+            this.Load += new System.EventHandler(this.ViewCrear_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

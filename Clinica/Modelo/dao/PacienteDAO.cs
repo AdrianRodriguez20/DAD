@@ -137,5 +137,34 @@ namespace Modelo
         }
         
        
+        public List<Paciente> findBydIdParcial(String dni)
+        {
+            List<Paciente> pacientes = findAll();
+            List<Paciente> concidencia = new List<Paciente>();
+            
+            foreach (Paciente p in pacientes)
+            {
+                if (p.Dni.Substring(0,dni.Length).Equals(dni.Substring(0, dni.Length)))
+                {
+                    concidencia.Add(p);
+                }
+            }
+            return concidencia;
+        }
+
+        public List<Paciente> findByNhcParcial(String nhc)
+        {
+            List<Paciente> pacientes = findAll();
+            List<Paciente> concidencia = new List<Paciente>();
+
+            foreach (Paciente p in pacientes)
+            {
+                if (p.Nhc.ToString().Substring(0, nhc.Length).Equals(nhc.Substring(0, nhc.Length)))
+                {
+                    concidencia.Add(p);
+                }
+            }
+            return concidencia;
+        }
     }
 }

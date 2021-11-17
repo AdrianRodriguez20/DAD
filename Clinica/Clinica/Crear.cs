@@ -1,5 +1,4 @@
 ﻿using System;
-using Modelo;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,6 +30,11 @@ namespace Clinica
                 txbPoblacion.Text,
                 txbDni.Text, 
                 txbNhc.Text );
+        }
+
+        private void ViewCrear_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

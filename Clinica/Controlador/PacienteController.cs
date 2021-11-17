@@ -28,9 +28,61 @@ namespace Controlador
             }
        
         }
-        public List<Paciente> listarPacientes()
+        public List<string[]> listarPacientes()
         {
-            return pacienteDAO.findAll();
+            List<Paciente> pacientes = pacienteDAO.findAll();
+            List<string[]> pacientesStr = new List<string[]>(); ;
+            if (pacienteDAO != null)
+            {
+                foreach (Paciente paciente in pacientes)
+                {
+
+                   pacientesStr.Add(new string[] {
+                   paciente.Nombre,
+                   paciente.Apellidos,
+                   paciente.Direccion,
+                   paciente.CodigoPostal+"",
+                   paciente.Poblacion,
+                   paciente.Dni,
+                   paciente.Nhc + "" });
+
+                }
+            }
+
+            return pacientesStr;
+        }
+        public List<string[]> listarPacienteConcidencia(String dni , String nhc)
+        {
+            List<Paciente> pacientes=null;
+            if (dni!=null && !dni.Trim().Equals(""))
+            {
+                pacientes= pacienteDAO.findBydIdParcial(dni);
+            }
+            else if(nhc != null && !nhc.Trim().Equals(""))
+            {
+                pacientes = pacienteDAO.findByNhcParcial(nhc);
+            }
+            else
+            {
+                pacientes = pacienteDAO.findAll();
+            }
+            List<string[]> pacientesStr = new List<string[]>(); ;
+            if (pacientes != null)
+            {
+                foreach (Paciente paciente in pacientes)
+                {
+                    pacientesStr.Add(new string[] { paciente.Nombre,
+                   paciente.Apellidos,
+                   paciente.Direccion,
+                   paciente.CodigoPostal+"",
+                   paciente.Poblacion,
+                   paciente.Dni,
+                   paciente.Nhc + "" });
+
+                }
+            }
+
+            return pacientesStr;
         }
         private bool validarDni(String dni)
         {

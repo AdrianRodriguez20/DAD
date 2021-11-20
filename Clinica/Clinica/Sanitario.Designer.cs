@@ -42,7 +42,16 @@ namespace Clinica
             this.crearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventanasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.minimizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.maximizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cerrarActivaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cerrarTodasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visualizaciónEnCascadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verEnVerticalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mDIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eXTRAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +65,10 @@ namespace Clinica
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pacientesToolStripMenuItem,
             this.notesToolStripMenuItem,
-            this.salirToolStripMenuItem});
+            this.ventanasToolStripMenuItem,
+            this.eXTRAToolStripMenuItem,
+            this.salirToolStripMenuItem,
+            this.mDIToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -96,7 +108,6 @@ namespace Clinica
             this.sacarEtiquetasToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.T)));
             this.sacarEtiquetasToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.sacarEtiquetasToolStripMenuItem.Text = "Sacar etiquetas";
-            this.sacarEtiquetasToolStripMenuItem.Click += new System.EventHandler(this.sacarEtiquetasToolStripMenuItem_Click);
             // 
             // actasClinicasToolStripMenuItem
             // 
@@ -121,33 +132,84 @@ namespace Clinica
             // 
             this.buscarNotaToolStripMenuItem1.Name = "buscarNotaToolStripMenuItem1";
             this.buscarNotaToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.N)));
-            this.buscarNotaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.buscarNotaToolStripMenuItem1.Size = new System.Drawing.Size(166, 22);
             this.buscarNotaToolStripMenuItem1.Text = "Buscar";
-            this.buscarNotaToolStripMenuItem1.Click += new System.EventHandler(this.buscarNotaToolStripMenuItem1_Click);
             // 
             // crearToolStripMenuItem
             // 
             this.crearToolStripMenuItem.Name = "crearToolStripMenuItem";
             this.crearToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R)));
-            this.crearToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.crearToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.crearToolStripMenuItem.Text = "Crear";
-            this.crearToolStripMenuItem.Click += new System.EventHandler(this.crearToolStripMenuItem_Click);
             // 
             // modificarToolStripMenuItem
             // 
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
             this.modificarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.M)));
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.modificarToolStripMenuItem.Text = "Modificar";
-            this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
             this.eliminarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.E)));
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
-            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
+            // 
+            // ventanasToolStripMenuItem
+            // 
+            this.ventanasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.minimizarToolStripMenuItem,
+            this.maximizarToolStripMenuItem,
+            this.cerrarActivaToolStripMenuItem,
+            this.cerrarTodasToolStripMenuItem,
+            this.visualizaciónEnCascadaToolStripMenuItem,
+            this.verEnVerticalToolStripMenuItem});
+            this.ventanasToolStripMenuItem.Name = "ventanasToolStripMenuItem";
+            this.ventanasToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.ventanasToolStripMenuItem.Text = "Ventanas";
+            // 
+            // minimizarToolStripMenuItem
+            // 
+            this.minimizarToolStripMenuItem.Name = "minimizarToolStripMenuItem";
+            this.minimizarToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.minimizarToolStripMenuItem.Text = "Minimizar Todas";
+            this.minimizarToolStripMenuItem.Click += new System.EventHandler(this.minimizarToolStripMenuItem_Click);
+            // 
+            // maximizarToolStripMenuItem
+            // 
+            this.maximizarToolStripMenuItem.Name = "maximizarToolStripMenuItem";
+            this.maximizarToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.maximizarToolStripMenuItem.Text = "Maximizar Todas";
+            this.maximizarToolStripMenuItem.Click += new System.EventHandler(this.maximizarToolStripMenuItem_Click);
+            // 
+            // cerrarActivaToolStripMenuItem
+            // 
+            this.cerrarActivaToolStripMenuItem.Name = "cerrarActivaToolStripMenuItem";
+            this.cerrarActivaToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.cerrarActivaToolStripMenuItem.Text = "Cerrar Activa";
+            this.cerrarActivaToolStripMenuItem.Click += new System.EventHandler(this.cerrarActivaToolStripMenuItem_Click);
+            // 
+            // cerrarTodasToolStripMenuItem
+            // 
+            this.cerrarTodasToolStripMenuItem.Name = "cerrarTodasToolStripMenuItem";
+            this.cerrarTodasToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.cerrarTodasToolStripMenuItem.Text = "Cerrar Todas";
+            this.cerrarTodasToolStripMenuItem.Click += new System.EventHandler(this.cerrarTodasToolStripMenuItem_Click);
+            // 
+            // visualizaciónEnCascadaToolStripMenuItem
+            // 
+            this.visualizaciónEnCascadaToolStripMenuItem.Name = "visualizaciónEnCascadaToolStripMenuItem";
+            this.visualizaciónEnCascadaToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.visualizaciónEnCascadaToolStripMenuItem.Text = "Ver en Cascada";
+            this.visualizaciónEnCascadaToolStripMenuItem.Click += new System.EventHandler(this.visualizaciónEnCascadaToolStripMenuItem_Click);
+            // 
+            // verEnVerticalToolStripMenuItem
+            // 
+            this.verEnVerticalToolStripMenuItem.Name = "verEnVerticalToolStripMenuItem";
+            this.verEnVerticalToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.verEnVerticalToolStripMenuItem.Text = "Ver en Vertical";
+            this.verEnVerticalToolStripMenuItem.Click += new System.EventHandler(this.verEnVerticalToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -155,6 +217,18 @@ namespace Clinica
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // mDIToolStripMenuItem
+            // 
+            this.mDIToolStripMenuItem.Name = "mDIToolStripMenuItem";
+            this.mDIToolStripMenuItem.Size = new System.Drawing.Size(12, 20);
+            // 
+            // eXTRAToolStripMenuItem
+            // 
+            this.eXTRAToolStripMenuItem.Name = "eXTRAToolStripMenuItem";
+            this.eXTRAToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.eXTRAToolStripMenuItem.Text = "EXTRA";
+            this.eXTRAToolStripMenuItem.Click += new System.EventHandler(this.eXTRAToolStripMenuItem_Click);
             // 
             // ViewSanitario
             // 
@@ -188,5 +262,14 @@ namespace Clinica
         public System.Windows.Forms.ToolStripMenuItem crearToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ventanasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem minimizarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem maximizarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cerrarActivaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cerrarTodasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem visualizaciónEnCascadaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verEnVerticalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mDIToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eXTRAToolStripMenuItem;
     }
 }

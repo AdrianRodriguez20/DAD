@@ -55,5 +55,11 @@ namespace Clinica
             ViewBuscar viewBuscar = new ViewBuscar();
             viewBuscar.ShowDialog();
         }
+
+        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViewEliminar viewEliminar = new ViewEliminar();
+            viewEliminar.ShowDialog();
+        }
     }
 }

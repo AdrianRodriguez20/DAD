@@ -9,8 +9,9 @@ namespace Controlador
     {
         PacienteDAO pacienteDAO = new PacienteDAO(new GestorFichero("pacientes.txt"));
         
-        public void AgregarPaciente(String nombre, String apellidos, String direccion, String codigoPostal, String poblacion, String dni, String nhc )
+        public bool AgregarPaciente(String nombre, String apellidos, String direccion, String codigoPostal, String poblacion, String dni, String nhc )
         {
+            bool exito = false;
             if(dni!=null && !dni.Trim().Equals("") && 
                nhc!=null && !nhc.Trim().Equals("") && 
                nombre!=null && !nombre.Trim().Equals("") && 
@@ -24,9 +25,12 @@ namespace Controlador
                     Paciente paciente = new Paciente( nombre,  apellidos, direccion, Convert.ToInt32(codigoPostal), 
                         poblacion,  dni, Convert.ToInt32( nhc));
                     pacienteDAO.save(paciente);
+                    exito = true;
                 }
             }
-       
+
+            return exito;
+
         }
         public List<string[]> listarPacientes()
         {
@@ -51,21 +55,22 @@ namespace Controlador
 
             return pacientesStr;
         }
-        public List<string[]> listarPacienteConcidencia(String dni , String nhc)
+        public List<string[]> listarPacienteConcidencia(String opcion , String contenido)
         {
             List<Paciente> pacientes=null;
-            if (dni!=null && !dni.Trim().Equals(""))
+            if (opcion.Equals("DNI"))
             {
-                pacientes= pacienteDAO.findBydIdParcial(dni);
+                pacientes= pacienteDAO.findBydIdParcial(contenido);
             }
-            else if(nhc != null && !nhc.Trim().Equals(""))
+            else if(opcion.Equals("NHC"))
             {
-                pacientes = pacienteDAO.findByNhcParcial(nhc);
+                pacientes = pacienteDAO.findByNhcParcial(contenido);
             }
             else
             {
                 pacientes = pacienteDAO.findAll();
             }
+
             List<string[]> pacientesStr = new List<string[]>(); ;
             if (pacientes != null)
             {
@@ -83,6 +88,18 @@ namespace Controlador
             }
 
             return pacientesStr;
+        }
+        
+        public bool eliminarPaciente(String dni)
+        {
+            if (dni != null && !dni.Trim().Equals(""))
+            {
+               if (pacienteDAO.delete(dni))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
         private bool validarDni(String dni)
         {

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.IO;
 
 namespace Modelo
@@ -144,9 +143,12 @@ namespace Modelo
             
             foreach (Paciente p in pacientes)
             {
-                if (p.Dni.Substring(0,dni.Length).Equals(dni.Substring(0, dni.Length)))
+                if (p.Dni.ToString().Length >= dni.Length)
                 {
-                    concidencia.Add(p);
+                    if (p.Dni.Substring(0, dni.Length).Equals(dni.Substring(0, dni.Length)))
+                    {
+                        concidencia.Add(p);
+                    }
                 }
             }
             return concidencia;
@@ -159,10 +161,14 @@ namespace Modelo
 
             foreach (Paciente p in pacientes)
             {
-                if (p.Nhc.ToString().Substring(0, nhc.Length).Equals(nhc.Substring(0, nhc.Length)))
+                if (p.Nhc.ToString().Length >= nhc.Length)
                 {
-                    concidencia.Add(p);
+                    if (p.Nhc.ToString().Substring(0, nhc.Length).Equals(nhc.Substring(0, nhc.Length)))
+                    {
+                        concidencia.Add(p);
+                    }
                 }
+          
             }
             return concidencia;
         }

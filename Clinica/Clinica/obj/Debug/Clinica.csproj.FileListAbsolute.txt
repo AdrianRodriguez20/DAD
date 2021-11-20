@@ -8,7 +8,6 @@ C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\bin\Debug\Modelo.pdb
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.csproj.AssemblyReference.cache
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.ViewAdministrativo.resources
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.ViewSanitario.resources
-C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.ViewPaciente.resources
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.ViewLogin.resources
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.Properties.Resources.resources
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.csproj.GenerateResource.cache
@@ -34,3 +33,9 @@ C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.exe
 C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.pdb
 C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.ViewBuscar.resources
 C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.csproj.CopyComplete
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.ViewBuscar.resources
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.ViewEliminar.resources
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.ViewCrear.resources
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.BuscarPS.resources
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.FichaPS.resources
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.FormMDI.resources

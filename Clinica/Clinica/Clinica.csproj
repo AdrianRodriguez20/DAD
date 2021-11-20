@@ -58,6 +58,30 @@
     <Compile Include="Buscar.Designer.cs">
       <DependentUpon>Buscar.cs</DependentUpon>
     </Compile>
+    <Compile Include="BuscarPS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarPS.Designer.cs">
+      <DependentUpon>BuscarPS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar.Designer.cs">
+      <DependentUpon>Eliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FichaPS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FichaPS.Designer.cs">
+      <DependentUpon>FichaPS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMDI.Designer.cs">
+      <DependentUpon>FormMDI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sanitario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +107,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Buscar.resx">
       <DependentUpon>Buscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarPS.resx">
+      <DependentUpon>BuscarPS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar.resx">
+      <DependentUpon>Eliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FichaPS.resx">
+      <DependentUpon>FichaPS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMDI.resx">
+      <DependentUpon>FormMDI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sanitario.resx">
       <DependentUpon>Sanitario.cs</DependentUpon>

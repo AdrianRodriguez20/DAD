@@ -1,0 +1,4 @@
+1:12/02/2018:Oftalmólego:Ojos cansados:Colirio:
+2:12/01/2019:Medico General:Gripe:Paracetamol y descanso domiciliario:
+1:06/10/2020:Oftalmólego:Ojos infectados:Colirio:
+1:20/10/20221:Médico General:Infección en herida externa brazo derecho:Desinfección con iodo:

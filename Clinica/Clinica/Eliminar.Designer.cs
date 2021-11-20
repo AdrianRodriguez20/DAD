@@ -1,7 +1,7 @@
 ﻿
 namespace Clinica
 {
-    partial class ViewBuscar
+    partial class ViewEliminar
     {
         /// <summary>
         /// Required designer variable.
@@ -37,11 +37,9 @@ namespace Clinica
             this.columnaPoblacion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnaDni = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColumnaNhc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lblDni = new System.Windows.Forms.Label();
-            this.lblNhc = new System.Windows.Forms.Label();
+            this.txbContenido = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.txbDni = new System.Windows.Forms.TextBox();
-            this.txbNhc = new System.Windows.Forms.TextBox();
+            this.cmbBuscarPor = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // listViewPacientes
@@ -55,10 +53,10 @@ namespace Clinica
             this.columnaDni,
             this.ColumnaNhc});
             this.listViewPacientes.HideSelection = false;
-            this.listViewPacientes.Location = new System.Drawing.Point(30, 114);
+            this.listViewPacientes.Location = new System.Drawing.Point(55, 109);
             this.listViewPacientes.Name = "listViewPacientes";
-            this.listViewPacientes.Size = new System.Drawing.Size(723, 302);
-            this.listViewPacientes.TabIndex = 0;
+            this.listViewPacientes.Size = new System.Drawing.Size(683, 302);
+            this.listViewPacientes.TabIndex = 1;
             this.listViewPacientes.UseCompatibleStateImageBehavior = false;
             this.listViewPacientes.View = System.Windows.Forms.View.Details;
             this.listViewPacientes.SelectedIndexChanged += new System.EventHandler(this.listViewPacientes_SelectedIndexChanged);
@@ -96,64 +94,47 @@ namespace Clinica
             // ColumnaNhc
             // 
             this.ColumnaNhc.Text = "NHC";
-            this.ColumnaNhc.Width = 132;
+            this.ColumnaNhc.Width = 75;
             // 
-            // lblDni
+            // txbContenido
             // 
-            this.lblDni.AutoSize = true;
-            this.lblDni.Location = new System.Drawing.Point(78, 31);
-            this.lblDni.Name = "lblDni";
-            this.lblDni.Size = new System.Drawing.Size(26, 13);
-            this.lblDni.TabIndex = 1;
-            this.lblDni.Text = "DNI";
-            // 
-            // lblNhc
-            // 
-            this.lblNhc.AutoSize = true;
-            this.lblNhc.Location = new System.Drawing.Point(320, 31);
-            this.lblNhc.Name = "lblNhc";
-            this.lblNhc.Size = new System.Drawing.Size(30, 13);
-            this.lblNhc.TabIndex = 2;
-            this.lblNhc.Text = "NHC";
+            this.txbContenido.Location = new System.Drawing.Point(374, 54);
+            this.txbContenido.Name = "txbContenido";
+            this.txbContenido.Size = new System.Drawing.Size(100, 20);
+            this.txbContenido.TabIndex = 6;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(601, 62);
+            this.btnBuscar.Location = new System.Drawing.Point(514, 52);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 3;
+            this.btnBuscar.TabIndex = 7;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // txbDni
+            // cmbBuscarPor
             // 
-            this.txbDni.Location = new System.Drawing.Point(81, 64);
-            this.txbDni.Name = "txbDni";
-            this.txbDni.Size = new System.Drawing.Size(100, 20);
-            this.txbDni.TabIndex = 4;
-            this.txbDni.TextChanged += new System.EventHandler(this.txbDni_TextChanged);
+            this.cmbBuscarPor.FormattingEnabled = true;
+            this.cmbBuscarPor.Items.AddRange(new object[] {
+            "DNI",
+            "NHC"});
+            this.cmbBuscarPor.Location = new System.Drawing.Point(192, 53);
+            this.cmbBuscarPor.Name = "cmbBuscarPor";
+            this.cmbBuscarPor.Size = new System.Drawing.Size(121, 21);
+            this.cmbBuscarPor.TabIndex = 8;
             // 
-            // txbNhc
-            // 
-            this.txbNhc.Location = new System.Drawing.Point(323, 64);
-            this.txbNhc.Name = "txbNhc";
-            this.txbNhc.Size = new System.Drawing.Size(100, 20);
-            this.txbNhc.TabIndex = 5;
-            // 
-            // ViewBuscar
+            // ViewEliminar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txbNhc);
-            this.Controls.Add(this.txbDni);
+            this.Controls.Add(this.cmbBuscarPor);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.lblNhc);
-            this.Controls.Add(this.lblDni);
+            this.Controls.Add(this.txbContenido);
             this.Controls.Add(this.listViewPacientes);
-            this.Name = "ViewBuscar";
-            this.Text = "Buscar";
+            this.Name = "ViewEliminar";
+            this.Text = "Eliminar";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,10 +150,8 @@ namespace Clinica
         private System.Windows.Forms.ColumnHeader columnaPoblacion;
         private System.Windows.Forms.ColumnHeader columnaDni;
         private System.Windows.Forms.ColumnHeader ColumnaNhc;
-        private System.Windows.Forms.Label lblDni;
-        private System.Windows.Forms.Label lblNhc;
+        private System.Windows.Forms.TextBox txbContenido;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.TextBox txbDni;
-        private System.Windows.Forms.TextBox txbNhc;
+        private System.Windows.Forms.ComboBox cmbBuscarPor;
     }
 }

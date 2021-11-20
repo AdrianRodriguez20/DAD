@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controlador;
 
@@ -22,7 +15,7 @@ namespace Clinica
         {
             PacienteController pacienteController = new PacienteController();
             
-            pacienteController.AgregarPaciente(
+          bool exito=  pacienteController.AgregarPaciente(
                 txbNombre.Text, 
                 txbApellidos.Text, 
                 txbDireccion.Text, 
@@ -30,6 +23,15 @@ namespace Clinica
                 txbPoblacion.Text,
                 txbDni.Text, 
                 txbNhc.Text );
+          if (exito)
+          {
+              MessageBox.Show("Paciente creado correctamente");
+              Close();
+          }
+          else
+          {
+              MessageBox.Show("Error al crear paciente");
+          }
         }
 
         private void ViewCrear_Load(object sender, EventArgs e)

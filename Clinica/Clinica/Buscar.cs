@@ -1,12 +1,6 @@
 ﻿using Controlador;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Clinica
@@ -25,11 +19,18 @@ namespace Clinica
         {
             listViewPacientes.Items.Clear();
             PacienteController pacienteController = new PacienteController();
-
-
-            List<string[]> pacientes = pacienteController.listarPacienteConcidencia(txbDni.Text, txbNhc.Text);
-
-
+            List<string[]> pacientes = null;
+            if (txbDni.Text!=null && !txbDni.Text.Trim().Equals("")){
+              pacientes = pacienteController.listarPacienteConcidencia("DNI", txbDni.Text);
+            }
+            else if (txbNhc.Text != null && !txbNhc.Text.Trim().Equals(""))
+            {
+              pacientes = pacienteController.listarPacienteConcidencia("NHC", txbNhc.Text);
+            }
+            else
+            {
+                pacientes = pacienteController.listarPacientes();
+            }
 
             foreach (string[] paciente in pacientes)
             {
@@ -58,6 +59,11 @@ namespace Clinica
 
                 }
             }
+
+        }
+
+        private void txbDni_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

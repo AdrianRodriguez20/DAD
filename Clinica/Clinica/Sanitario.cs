@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Clinica
@@ -15,8 +8,10 @@ namespace Clinica
         public ViewSanitario()
         {
             InitializeComponent();
+            IsMdiContainer = true;
         }
-
+      
+      
         private void App_Load(object sender, EventArgs e)
         {
             FormBorderStyle =FormBorderStyle.None;
@@ -30,37 +25,18 @@ namespace Clinica
         private void buscarPacienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+            BuscarPS buscarPS = new BuscarPS();
+            buscarPS.MdiParent = this;      
+            buscarPS.Show();
         }
 
         private void verFichaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FichaPS fichaPS = new FichaPS();
+            fichaPS.MdiParent = this;
+            fichaPS.Show();
         }
 
-        private void sacarEtiquetasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buscarNotaToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void crearToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -69,6 +45,51 @@ namespace Clinica
                 Application.Exit();
             }
         
+        }
+
+        private void minimizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form mdi in MdiChildren)
+            {
+                mdi.WindowState = FormWindowState.Minimized;
+            }
+        }
+
+        private void maximizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form mdi in MdiChildren)
+            {
+                mdi.WindowState = FormWindowState.Maximized;
+            }
+        }
+
+        private void cerrarActivaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ActiveMdiChild.Close();
+        }
+
+        private void cerrarTodasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form mdi in MdiChildren)
+            {
+                mdi.Close();
+            }
+        }
+
+        private void visualizaciónEnCascadaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.Cascade);
+        }
+
+        private void verEnVerticalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.TileVertical);
+        }
+
+        private void eXTRAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormMDI formMDI = new FormMDI();
+            formMDI.Show();
         }
     }
 }

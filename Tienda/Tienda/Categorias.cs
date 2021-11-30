@@ -56,5 +56,11 @@ namespace Tienda
             }
 
         }
+        private void ViewCategorias_FormClosing(Object sender, FormClosingEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+        }
+           
     }
 }

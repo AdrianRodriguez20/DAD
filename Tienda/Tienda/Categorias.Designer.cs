@@ -30,7 +30,14 @@ namespace Tienda
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewCategorias));
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // fileSystemWatcher1
+            // 
+            this.fileSystemWatcher1.EnableRaisingEvents = true;
+            this.fileSystemWatcher1.SynchronizingObject = this;
             // 
             // ViewCategorias
             // 
@@ -41,12 +48,18 @@ namespace Tienda
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ViewCategorias";
+            this.ShowIcon = false;
             this.Text = "Categorias";
             this.Load += new System.EventHandler(this.ViewCategorias_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
-
+            this.FormClosing += ViewCategorias_FormClosing;
         }
 
+
+
         #endregion
+
+        private System.IO.FileSystemWatcher fileSystemWatcher1;
     }
 }

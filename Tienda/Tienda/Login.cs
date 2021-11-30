@@ -35,6 +35,8 @@ namespace Tienda
             else
             {
                 MessageBox.Show("Error");
+                txbPassword.Text = "";
+                txbUsuario.Text = "";
             }
         }
         

@@ -84,6 +84,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ado\Crud.cs" />
     <Compile Include="ado\RecetaADO.cs" />
     <Compile Include="ado\UsuarioADO.cs" />
     <Compile Include="Class1.cs" />

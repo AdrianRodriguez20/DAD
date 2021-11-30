@@ -94,7 +94,7 @@ namespace Tienda
             this.listBoxFilter.Items.AddRange(new object[] {
             "Jeans",
             "Shirts",
-            "T-shirt",
+            "T-shirts",
             "ALL"});
             this.listBoxFilter.Location = new System.Drawing.Point(84, 240);
             this.listBoxFilter.Name = "listBoxFilter";

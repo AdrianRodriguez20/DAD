@@ -24,7 +24,7 @@ namespace Modelo.ado
             Man man = null;
             MySqlConnection connection = null;
             MySqlCommand mysqlCmd = null;
-            string sql = "INSERT INTO man (id, name, category, description , price , quantity) VALUES (@id ,@name , @category @description, @price, @quantity)";
+            string sql = "INSERT INTO catman (id, name, category, description , price , quantity) VALUES (@id ,@name , @category @description, @price, @quantity)";
 
             try
             {
@@ -57,8 +57,7 @@ namespace Modelo.ado
             Man man = null;
             MySqlConnection connection = null;
             MySqlCommand mysqlCmd = null;
-            MySqlDataReader mysqlReader = null;
-            string sql = "SELECT * FROM man WHERE id = @id";
+            string sql = "SELECT * FROM catman WHERE id = @id";
 
             try
             {
@@ -99,7 +98,7 @@ namespace Modelo.ado
             Man man = null;
             MySqlConnection connection = null;
             MySqlCommand mysqlCmd = null;
-            String sql = "UPDATE man SET  name =@name , category =@category , description=@description , price=@price , quantity=@quantity WHERE id =@id";
+            String sql = "UPDATE catman SET  name =@name , category =@category , description=@description , price=@price , quantity=@quantity WHERE id =@id";
             
             try
             {
@@ -149,7 +148,7 @@ namespace Modelo.ado
             MySqlCommand mysqlCmd = null;
             MySqlDataAdapter mysqlDAdapter = null;
             DataTable datos = null;
-            string sql = "SELECT * FROM man;";
+            string sql = "SELECT * FROM catman;";
             try
             {
                 connection = dataSource.getConnection(); //Establecer la cadena de conexión.
@@ -182,7 +181,7 @@ namespace Modelo.ado
             MySqlCommand mysqlCmd = null;
             MySqlDataAdapter mysqlDAdapter = null;
             DataTable datos = null;
-            string sql = "SELECT * FROM man WHERE category = @category;";
+            string sql = "SELECT * FROM catman WHERE category = @category;";
             try
             {
                 connection = dataSource.getConnection(); //Establecer la cadena de conexión.

@@ -46,7 +46,7 @@ namespace Modelo.ado
             MySqlDataReader mysqlReader = null;
             MySqlCommand mysqlCmd = null;
    
-            string sql = "SELECT * FROM categorias";
+            string sql = "SELECT * FROM categories";
 
             try
             {
@@ -58,7 +58,7 @@ namespace Modelo.ado
                 while (mysqlReader.Read())
                     {
                        Categoria categoria = new Categoria();
-                        categoria.Tipo = mysqlReader.GetString(0);
+                        categoria.Tipo = mysqlReader.GetString(1);
                         categorias.Add(categoria);
                     }
                     mysqlReader.Close();

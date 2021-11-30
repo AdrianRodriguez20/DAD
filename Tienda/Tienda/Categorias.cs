@@ -48,7 +48,7 @@ namespace Tienda
         private void btn_Click(object sender, EventArgs e)
         {
             Button btn = (Button) sender;
-            if (btn.Text == "Man")
+            if (btn.Text == "man")
             {
                 ManView manView = new ManView();
                 manView.Show();

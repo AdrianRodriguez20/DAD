@@ -30,7 +30,7 @@ namespace Modelo.ado
             MySqlConnection connection = null;
             MySqlCommand mysqlCmd = null;
             MySqlDataReader mysqlReader = null;
-            string sql = "SELECT * FROM usuarios WHERE numberStaff = @numberStaff";
+            string sql = "SELECT * FROM users WHERE id_staff = @numberStaff";
 
             try
             {

@@ -27,7 +27,7 @@ namespace Controlador
             bool exito = false;
             ManADO manAdo = new ManADO();
             Man man = manAdo.findById(idProducto);
-            if (cantidad < man.Quantity)
+            if (cantidad <= man.Quantity)
             {
                 if (modelBaket.findById(man.Id) != null)
                 {

@@ -42,7 +42,7 @@ namespace Tienda
             this.btnCantidad.BackColor = System.Drawing.Color.Transparent;
             this.btnCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCantidad.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnCantidad.Location = new System.Drawing.Point(143, 104);
+            this.btnCantidad.Location = new System.Drawing.Point(105, 104);
             this.btnCantidad.Name = "btnCantidad";
             this.btnCantidad.Size = new System.Drawing.Size(74, 18);
             this.btnCantidad.TabIndex = 2;
@@ -50,7 +50,7 @@ namespace Tienda
             // 
             // txbCantidad
             // 
-            this.txbCantidad.Location = new System.Drawing.Point(282, 102);
+            this.txbCantidad.Location = new System.Drawing.Point(244, 105);
             this.txbCantidad.Name = "txbCantidad";
             this.txbCantidad.Size = new System.Drawing.Size(147, 20);
             this.txbCantidad.TabIndex = 4;
@@ -58,8 +58,8 @@ namespace Tienda
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAgregar.Font = new System.Drawing.Font("Roboto Bk", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(482, 86);
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(434, 86);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(127, 52);
             this.btnAgregar.TabIndex = 5;
@@ -70,9 +70,9 @@ namespace Tienda
             // dataGridViewBasket
             // 
             this.dataGridViewBasket.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewBasket.Location = new System.Drawing.Point(146, 194);
+            this.dataGridViewBasket.Location = new System.Drawing.Point(108, 203);
             this.dataGridViewBasket.Name = "dataGridViewBasket";
-            this.dataGridViewBasket.Size = new System.Drawing.Size(463, 150);
+            this.dataGridViewBasket.Size = new System.Drawing.Size(428, 109);
             this.dataGridViewBasket.TabIndex = 6;
             // 
             // BasketView
@@ -80,12 +80,13 @@ namespace Tienda
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Tienda.Properties.Resources.background;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(669, 391);
             this.Controls.Add(this.dataGridViewBasket);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txbCantidad);
             this.Controls.Add(this.btnCantidad);
             this.Name = "BasketView";
+            this.ShowIcon = false;
             this.Text = "Basket";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBasket)).EndInit();
             this.ResumeLayout(false);

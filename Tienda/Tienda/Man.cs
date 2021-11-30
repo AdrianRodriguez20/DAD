@@ -75,5 +75,11 @@ namespace Tienda
             dataGridViewMan.Update(); 
             
         }
+
+        private void Man_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+        }
     }
 }

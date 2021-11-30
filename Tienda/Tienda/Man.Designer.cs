@@ -1,4 +1,7 @@
 ﻿
+using System;
+using System.Windows.Forms;
+
 namespace Tienda
 {
     partial class ManView
@@ -50,7 +53,7 @@ namespace Tienda
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.Black;
-            this.btnAdd.Font = new System.Drawing.Font("Roboto Bk", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Location = new System.Drawing.Point(622, 250);
             this.btnAdd.Name = "btnAdd";
@@ -63,7 +66,7 @@ namespace Tienda
             // btnView
             // 
             this.btnView.BackColor = System.Drawing.Color.Black;
-            this.btnView.Font = new System.Drawing.Font("Roboto Bk", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnView.ForeColor = System.Drawing.Color.White;
             this.btnView.Location = new System.Drawing.Point(622, 312);
             this.btnView.Name = "btnView";
@@ -76,7 +79,7 @@ namespace Tienda
             // btnFilter
             // 
             this.btnFilter.BackColor = System.Drawing.Color.Black;
-            this.btnFilter.Font = new System.Drawing.Font("Roboto Bk", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFilter.ForeColor = System.Drawing.Color.White;
             this.btnFilter.Location = new System.Drawing.Point(250, 250);
             this.btnFilter.Name = "btnFilter";
@@ -88,7 +91,7 @@ namespace Tienda
             // 
             // listBoxFilter
             // 
-            this.listBoxFilter.Font = new System.Drawing.Font("Roboto Cn", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxFilter.FormattingEnabled = true;
             this.listBoxFilter.ItemHeight = 18;
             this.listBoxFilter.Items.AddRange(new object[] {
@@ -113,11 +116,14 @@ namespace Tienda
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dataGridViewMan);
             this.Name = "ManView";
-            this.Text = "Man";
+            this.ShowIcon = false;
+            this.Text = "Category: Man";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMan)).EndInit();
             this.ResumeLayout(false);
 
         }
+
+    
 
         #endregion
 

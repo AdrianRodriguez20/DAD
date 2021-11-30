@@ -37,4 +37,5 @@ C:\Users\Maria luisa\Desktop\DAD_Adrian\Tienda\Tienda\obj\Debug\Tienda.exe
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Tienda\Tienda\obj\Debug\Tienda.pdb
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Tienda\Tienda\obj\Debug\Tienda.ManView.resources
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Tienda\Tienda\obj\Debug\Tienda.ViewCategorias.resources
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Tienda\Tienda\obj\Debug\Tienda.BasketView.resources
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Tienda\Tienda\obj\Debug\Tienda.csproj.CopyComplete

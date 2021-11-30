@@ -28,14 +28,12 @@ namespace Tienda
             
         }
 
-        private void dataGridViewMan_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
+            int id = Convert.ToInt32(dataGridViewMan.CurrentRow.Cells[0].Value);
+            BasketView basketView = new BasketView(id);
+            basketView.Show();
         }
 
         private void btnView_Click(object sender, EventArgs e)

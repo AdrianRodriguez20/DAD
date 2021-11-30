@@ -46,7 +46,6 @@ namespace Tienda
             this.dataGridViewMan.ReadOnly = true;
             this.dataGridViewMan.Size = new System.Drawing.Size(645, 150);
             this.dataGridViewMan.TabIndex = 0;
-            this.dataGridViewMan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMan_CellContentClick);
             // 
             // btnAdd
             // 

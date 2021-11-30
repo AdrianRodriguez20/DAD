@@ -30,3 +30,4 @@ C:\Users\Maria luisa\Desktop\DAD_Adrian\Tienda\Controlador\obj\Debug\Controlador
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Tienda\Controlador\obj\Debug\Controlador.csproj.CoreCompileInputs.cache
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Tienda\Controlador\obj\Debug\Controlador.dll
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Tienda\Controlador\obj\Debug\Controlador.pdb
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Tienda\Controlador\obj\Debug\Controlador.csproj.CopyComplete

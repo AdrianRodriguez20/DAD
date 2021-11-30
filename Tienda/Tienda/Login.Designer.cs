@@ -101,16 +101,14 @@ namespace Tienda
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEntrar);
             this.KeyPreview = true;
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(Login_KeyDown);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Login";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-
-
             this.Load += new System.EventHandler(this.Login_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Login_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

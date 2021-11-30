@@ -1,30 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Modelo.db;
 using Modelo.modelo;
 using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Utilities;
 
 namespace Modelo.ado
 {
-    public class ManADO : Crud<Man, int>
+    public class BasketADO : Crud<Basket,int>
     {
+        
         private static DBConnection dataSource;
-
-        public ManADO()
+        
+        public BasketADO()
         {
             dataSource = DBConnection.getInstance();
         }
-
-        public void save(Man dao)
+        
+        public void save(Basket dao)
         {
-            Man man = null;
             MySqlConnection connection = null;
             MySqlCommand mysqlCmd = null;
-            string sql = "INSERT INTO man (id, name, category, description , price , quantity) VALUES (@id ,@name , @category @description, @price, @quantity)";
+            string sql = "INSERT INTO basket (id, name, total) VALUES (@id, @name, @total)";
 
             try
             {
@@ -34,11 +32,7 @@ namespace Modelo.ado
 
                 mysqlCmd.Parameters.AddWithValue("@id", dao.Id);
                 mysqlCmd.Parameters.AddWithValue("@name", dao.Name);
-                mysqlCmd.Parameters.AddWithValue("@category", dao.Category);
-                mysqlCmd.Parameters.AddWithValue("@description", dao.Description);
-                mysqlCmd.Parameters.AddWithValue("@price", dao.Price);
-                mysqlCmd.Parameters.AddWithValue("@quantity", dao.Quantity);
-
+                mysqlCmd.Parameters.AddWithValue("@total", dao.Total);
                 mysqlCmd.ExecuteNonQuery();
             }
             catch (Exception e)
@@ -50,15 +44,17 @@ namespace Modelo.ado
                 if (mysqlCmd != null) mysqlCmd.Dispose();
                 if (connection != null) connection.Close();
             }
+    
         }
 
-        public Man findById(int id)
+        public Basket findById(int id)
         {
-            Man man = null;
+
+            Basket basket = null;
             MySqlConnection connection = null;
             MySqlCommand mysqlCmd = null;
             MySqlDataReader mysqlReader = null;
-            string sql = "SELECT * FROM man WHERE id = @id";
+            string sql = "SELECT * FROM basket WHERE id = @id";
 
             try
             {
@@ -71,13 +67,11 @@ namespace Modelo.ado
                 {
                     if (reader.Read())
                     {
-                        man = new Man();
-                        man.Id = reader.GetInt32(0);
-                        man.Name = reader.GetString(1);
-                        man.Category = reader.GetString(2);
-                        man.Description = reader.GetString(3);
-                        man.Price = reader.GetDouble(4);
-                        man.Quantity = reader.GetInt32(5);
+                        basket = new Basket();
+                        basket.Id = reader.GetInt32(0);
+                        basket.Name = reader.GetString(1);
+                        basket.Total = reader.GetDouble(2);
+                   
                     }
                 }
             }
@@ -90,30 +84,26 @@ namespace Modelo.ado
                 if (mysqlCmd != null) mysqlCmd.Dispose();
                 if (connection != null) connection.Close();
             }
-            return man;
+            return basket;
         }
 
-        public bool update(Man dao)
+        public bool update(Basket dao)
         {
             bool exito = false;
-            Man man = null;
             MySqlConnection connection = null;
             MySqlCommand mysqlCmd = null;
-            String sql = "UPDATE man SET  name =@name , category =@category , description=@description , price=@price , quantity=@quantity WHERE id =@id";
-            
+            string sql = "UPDATE basket SET name = @name, total = @total WHERE  id= @id";
+
             try
             {
                 connection = dataSource.getConnection(); //Establecer la cadena de conexión.
                 connection.Open(); //Open connection.
                 mysqlCmd = new MySqlCommand(sql, connection);
-                
+
                 mysqlCmd.Parameters.AddWithValue("@id", dao.Id);
                 mysqlCmd.Parameters.AddWithValue("@name", dao.Name);
-                mysqlCmd.Parameters.AddWithValue("@category", dao.Category);
-                mysqlCmd.Parameters.AddWithValue("@description", dao.Description);
-                mysqlCmd.Parameters.AddWithValue("@price", dao.Price);
-                mysqlCmd.Parameters.AddWithValue("@quantity", dao.Quantity);
-                
+                mysqlCmd.Parameters.AddWithValue("@total", dao.Total);
+
                 if (mysqlCmd.ExecuteNonQuery() > 0)
                 {
                     exito = true;
@@ -137,11 +127,11 @@ namespace Modelo.ado
             throw new NotImplementedException();
         }
 
-        public List<Man> findAll()
+        public List<Basket> findAll()
         {
             throw new NotImplementedException();
         }
-
+        
         
         public DataTable LoadDataAdapter()
         {
@@ -149,7 +139,7 @@ namespace Modelo.ado
             MySqlCommand mysqlCmd = null;
             MySqlDataAdapter mysqlDAdapter = null;
             DataTable datos = null;
-            string sql = "SELECT * FROM man;";
+            string sql = "SELECT * FROM basket;";
             try
             {
                 connection = dataSource.getConnection(); //Establecer la cadena de conexión.
@@ -174,40 +164,5 @@ namespace Modelo.ado
             }
             return datos;
         }
-        
-        
-        public DataTable LoadDataAdapterByCategory(String category)
-        {
-            MySqlConnection connection = null;
-            MySqlCommand mysqlCmd = null;
-            MySqlDataAdapter mysqlDAdapter = null;
-            DataTable datos = null;
-            string sql = "SELECT * FROM man WHERE category = @category;";
-            try
-            {
-                connection = dataSource.getConnection(); //Establecer la cadena de conexión.
-                connection.Open(); //Open connection.
-
-                mysqlCmd = new MySqlCommand(sql, connection); //It makes the query
-                mysqlCmd.Parameters.AddWithValue("@category", category);
-                datos = new DataTable();
-                mysqlDAdapter = new MySqlDataAdapter(mysqlCmd);
-                mysqlDAdapter.Fill(datos);
-
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("error " + e.ToString());
-            }
-            finally
-            {
-                if (mysqlCmd != null) mysqlCmd.Dispose();
-                if (mysqlDAdapter != null) mysqlDAdapter.Dispose();
-                if (connection != null) connection.Close();
-            }
-            return datos;
-        }
-        
-        
     }
 }

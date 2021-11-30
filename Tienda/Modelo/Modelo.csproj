@@ -84,11 +84,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ado\BasketADO.cs" />
     <Compile Include="ado\CategoriaADO.cs" />
     <Compile Include="ado\Crud.cs" />
     <Compile Include="ado\ManADO.cs" />
     <Compile Include="ado\UsuarioADO.cs" />
     <Compile Include="db\DBConnection.cs" />
+    <Compile Include="modelo\Basket.cs" />
     <Compile Include="modelo\Categoria.cs" />
     <Compile Include="modelo\Man.cs" />
     <Compile Include="modelo\Usuario.cs" />

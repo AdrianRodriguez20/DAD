@@ -48,10 +48,9 @@ namespace Tienda
                 manController = new ManController();
                 String[] properties = manController.findClotheProperties(id);
                 if (properties!=null){
-                    MessageBox.Show("ID: " + properties[0] + 
-                                    "\n" + "Name: " + properties[1] + 
-                                    "\n" + "Category: " + properties[2] + 
-                                    "\n" + "Quantity: " + properties[5] , "Clothes Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    InfoClothes infoClothes = new InfoClothes(properties[0], properties[1], properties[2], properties[5]);
+                    infoClothes.Show();
+                  
                 }
               
             }

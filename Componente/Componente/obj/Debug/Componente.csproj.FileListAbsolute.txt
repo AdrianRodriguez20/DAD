@@ -1,0 +1,7 @@
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Componente\Componente\bin\Debug\Componente.dll
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Componente\Componente\bin\Debug\Componente.pdb
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Componente\Componente\obj\Debug\Componente.csproj.CoreCompileInputs.cache
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Componente\Componente\obj\Debug\Componente.dll
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Componente\Componente\obj\Debug\Componente.pdb
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Componente\Componente\obj\Debug\Componente.UserControl1.resources
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Componente\Componente\obj\Debug\Componente.csproj.GenerateResource.cache

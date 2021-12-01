@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormClotesComponente", "FormClotesComponente\FormClotesComponente.csproj", "{54E468BA-8808-4D42-9EA4-434454A5FD20}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Componente", "Componente\Componente.csproj", "{90994348-CEFC-4E47-82E3-9512A5ECBC8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{54E468BA-8808-4D42-9EA4-434454A5FD20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{54E468BA-8808-4D42-9EA4-434454A5FD20}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{54E468BA-8808-4D42-9EA4-434454A5FD20}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{54E468BA-8808-4D42-9EA4-434454A5FD20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90994348-CEFC-4E47-82E3-9512A5ECBC8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90994348-CEFC-4E47-82E3-9512A5ECBC8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90994348-CEFC-4E47-82E3-9512A5ECBC8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90994348-CEFC-4E47-82E3-9512A5ECBC8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8B58CAB2-E682-4C5C-9973-596D38F80336}
+		SolutionGuid = {F21F57CD-EC4D-4BEA-9E17-61316FBBF3B4}
 	EndGlobalSection
 EndGlobal

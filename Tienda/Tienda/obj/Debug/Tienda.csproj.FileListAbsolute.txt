@@ -78,3 +78,6 @@ C:\Users\Admin\Desktop\DAD_Adrian\Tienda\Tienda\obj\Debug\Tienda.csproj.Generate
 C:\Users\Admin\Desktop\DAD_Adrian\Tienda\Tienda\obj\Debug\Tienda.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\DAD_Adrian\Tienda\Tienda\obj\Debug\Tienda.exe
 C:\Users\Admin\Desktop\DAD_Adrian\Tienda\Tienda\obj\Debug\Tienda.pdb
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Tienda\Tienda\bin\Debug\Componente.dll
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Tienda\Tienda\bin\Debug\Componente.pdb
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Tienda\Tienda\obj\Debug\Tienda.InfoClothes.resources

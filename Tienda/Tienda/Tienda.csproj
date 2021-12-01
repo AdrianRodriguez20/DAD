@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Componente">
+      <HintPath>..\..\Componente\Componente\bin\Debug\Componente.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -58,6 +61,12 @@
     <Compile Include="Categorias.Designer.cs">
       <DependentUpon>Categorias.cs</DependentUpon>
     </Compile>
+    <Compile Include="InfoClothes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoClothes.Designer.cs">
+      <DependentUpon>InfoClothes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Categorias.resx">
       <DependentUpon>Categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoClothes.resx">
+      <DependentUpon>InfoClothes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

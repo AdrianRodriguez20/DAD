@@ -8,13 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FormClotesComponente
+namespace Componente
 {
-    public partial class FormInfo : UserControl
+    public partial class UserControl1 : UserControl
     {
-        public FormInfo()
+        public UserControl1()
         {
             InitializeComponent();
+
+        }
+
+        private void UserControl1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

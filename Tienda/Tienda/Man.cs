@@ -33,7 +33,9 @@ namespace Tienda
         {
             int id = Convert.ToInt32(dataGridViewMan.CurrentRow.Cells[0].Value);
             BasketView basketView = new BasketView(id);
+            basketView.Closed += (s, args) => this.loadData();
             basketView.Show();
+           
         }
 
         private void btnView_Click(object sender, EventArgs e)

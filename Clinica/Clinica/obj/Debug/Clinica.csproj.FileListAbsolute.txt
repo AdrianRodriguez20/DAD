@@ -39,3 +39,7 @@ C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.ViewCr
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.BuscarPS.resources
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.FichaPS.resources
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.FormMDI.resources
+C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.BuscarPS.resources
+C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.ViewEliminar.resources
+C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.FichaPS.resources
+C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.FormMDI.resources

@@ -29,12 +29,14 @@ namespace Tienda
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.btnEntrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txbUsuario = new System.Windows.Forms.TextBox();
             this.txbPassword = new System.Windows.Forms.TextBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // btnEntrar
@@ -121,6 +123,7 @@ namespace Tienda
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txbUsuario;
         private System.Windows.Forms.TextBox txbPassword;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

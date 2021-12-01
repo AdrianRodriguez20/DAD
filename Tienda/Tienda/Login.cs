@@ -19,7 +19,7 @@ namespace Tienda
         {
             InitializeComponent();
 
-
+            toolTip1.SetToolTip(btnEntrar, "Save changes");
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
@@ -52,5 +52,7 @@ namespace Tienda
         {
           
         }
+
+
     }
 }

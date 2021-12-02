@@ -51,5 +51,11 @@
     <Compile Include="RecetaController.cs" />
     <Compile Include="UsuarioController.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{67e68194-c8b1-4a62-9b6c-018d4482b2ab}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
  </Project>

@@ -1,0 +1,12 @@
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\Gamification.exe.config
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\Gamification.exe
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\Gamification.pdb
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\Controlador.dll
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\Controlador.pdb
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.csproj.AssemblyReference.cache
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.ViewLogin.resources
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.Properties.Resources.resources
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.csproj.GenerateResource.cache
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.csproj.CoreCompileInputs.cache
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.exe
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.pdb

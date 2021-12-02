@@ -84,14 +84,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ado\Crud.cs" />
+    <Compile Include="ado\UsuarioADO.cs" />
     <Compile Include="Class2.cs" />
     <Compile Include="db\DBConnection.cs" />
+    <Compile Include="modelo\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ado\" />
-    <Folder Include="modelo\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />

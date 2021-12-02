@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modelo.modelo
 {
-    class Receta
+    public class Receta
     {
         private int id;
         private String name;

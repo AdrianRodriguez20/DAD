@@ -7,7 +7,7 @@ using MySql.Data.MySqlClient;
 
 namespace Modelo.ado
 {
-    class RecetaADO : Crud<Receta, int>
+    public class RecetaADO : Crud<Receta, int>
     {
         private static DBConnection dataSource;
 
@@ -216,6 +216,38 @@ namespace Modelo.ado
 
                 mysqlCmd = new MySqlCommand(sql, connection); //It makes the query
 
+                datos = new DataTable();
+                mysqlDAdapter = new MySqlDataAdapter(mysqlCmd);
+                mysqlDAdapter.Fill(datos);
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("error " + e.ToString());
+            }
+            finally
+            {
+                if (mysqlCmd != null) mysqlCmd.Dispose();
+                if (mysqlDAdapter != null) mysqlDAdapter.Dispose();
+                if (connection != null) connection.Close();
+            }
+            return datos;
+        }
+
+        public DataTable LoadAdapterByCategory(String category)
+        {
+            MySqlConnection connection = null;
+            MySqlCommand mysqlCmd = null;
+            MySqlDataAdapter mysqlDAdapter = null;
+            DataTable datos = null;
+            String sql = "SELECT * FROM recipes WHERE category = @category;";
+            try
+            {
+                connection = dataSource.getConnection(); //Establecer la cadena de conexión.
+                connection.Open(); //Open connection.
+
+                mysqlCmd = new MySqlCommand(sql, connection); //It makes the query
+                mysqlCmd.Parameters.AddWithValue("@category", category);
                 datos = new DataTable();
                 mysqlDAdapter = new MySqlDataAdapter(mysqlCmd);
                 mysqlDAdapter.Fill(datos);

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="561.0" prefWidth="952.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.iespuertodelacruz.adrian.recipes.controller.RecipeController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="530.0" prefWidth="909.0" style="-fx-background-color: #fff;">
+         <children>
+            <HBox layoutX="-1.0" prefHeight="74.0" prefWidth="910.0" style="-fx-background-color: #8585FB;">
+               <children>
+                  <ImageView fx:id="btnReturn" fitHeight="70.0" fitWidth="157.0" onMouseClicked="#Return" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/return.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <ImageView fx:id="imgRecipe" fitHeight="238.0" fitWidth="274.0" layoutX="28.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/defaultImg.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="txtTitle" layoutX="54.0" layoutY="109.0" prefHeight="38.0" prefWidth="383.0" text="Titulo" textFill="#8585fb">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Separator layoutX="58.0" layoutY="146.0" prefHeight="3.0" prefWidth="730.0" />
+            <Label layoutX="329.0" layoutY="240.0" text="CATEGORÍA" textFill="#aeacac">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="508.0" layoutY="240.0" text="COMENSALES" textFill="#aeacac">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="508.0" layoutY="173.0" text="TIEMPO DE PREPARACIÓN" textFill="#aeacac">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtAuthor" layoutX="338.0" layoutY="203.0" text="Sara" textFill="#4d4c4c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtNumberDiners" layoutX="509.0" layoutY="269.0" text="12" textFill="#4d4c4c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtPreparationTime" layoutX="509.0" layoutY="203.0" text="10" textFill="#4d4c4c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtTypeRecipe" layoutX="332.0" layoutY="271.0" text="Postre" textFill="#4d4c4c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="331.0" layoutY="299.0" text="CALORÍAS" textFill="#aeacac">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtCalories" layoutX="331.0" layoutY="330.0" text="10" textFill="#4d4c4c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="329.0" layoutY="358.0" text="INGREDIENTES" textFill="#aeacac">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="509.0" layoutY="299.0" text="PASOS" textFill="#aeacac">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="334.0" layoutY="173.0" prefWidth="63.0" text="AUTOR" textFill="#aeacac">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="txtIngredients" editable="false" focusColor="WHITE" layoutX="327.0" layoutY="378.0" prefHeight="114.0" prefWidth="151.0" unFocusColor="WHITE" />
+            <JFXTextArea fx:id="txtSteps" editable="false" focusColor="WHITE" layoutX="509.0" layoutY="319.0" prefHeight="174.0" prefWidth="178.0" unFocusColor="WHITE" />
+         </children>
+         <effect>
+            <DropShadow color="#d7d2d2" height="50.0" radius="24.5" width="50.0" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

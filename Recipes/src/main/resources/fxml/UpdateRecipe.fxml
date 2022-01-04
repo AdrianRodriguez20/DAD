@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="721.0" prefWidth="675.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.iespuertodelacruz.adrian.recipes.controller.UpdateRecipeController">
+    <stylesheets>
+        <URL value="@/styles/updaterecipe.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="txtTitle" editable="false" layoutX="74.0" layoutY="112.0" prefHeight="35.0" prefWidth="245.0" />
+      <TextField fx:id="txtAuthor" layoutX="356.0" layoutY="112.0" prefHeight="35.0" prefWidth="245.0" />
+      <Label layoutX="356.0" layoutY="72.0" text="AUTOR" textFill="#aeacac">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="165.0" text="CATEGORÍA" textFill="#aeacac">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="270.0" text="CALORÍAS" textFill="#aeacac">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="358.0" text="INGREDIENTES" textFill="#aeacac">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="356.0" layoutY="165.0" text="TIEMPO DE PREPARACIÓN" textFill="#aeacac">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="357.0" layoutY="270.0" text="COMENSALES" textFill="#aeacac">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="357.0" layoutY="358.0" text="PASOS" textFill="#aeacac">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="72.0" text="TÍTULO" textFill="#aeacac">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="spnPreparationTime" editable="true" layoutX="356.0" layoutY="203.0" prefHeight="35.0" prefWidth="245.0" />
+      <Spinner fx:id="spnNumberDiners" editable="true" layoutX="356.0" layoutY="304.0" prefHeight="35.0" prefWidth="245.0" />
+      <TextArea fx:id="txaIngredients" layoutX="74.0" layoutY="395.0" prefHeight="96.0" prefWidth="245.0" />
+      <TextArea fx:id="txaSteps" layoutX="356.0" layoutY="395.0" prefHeight="96.0" prefWidth="245.0" />
+      <Button layoutX="466.0" layoutY="549.0" mnemonicParsing="false" onMouseClicked="#uploadImage" prefHeight="35.0" prefWidth="135.0" text="Subir Imagen">
+         <graphic>
+            <FontAwesomeIconView glyphName="DOWNLOAD" size="20" />
+         </graphic>
+      </Button>
+      <Label layoutX="74.0" layoutY="511.0" text="IMAGEN" textFill="#aeacac">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtImage" layoutX="74.0" layoutY="549.0" prefHeight="35.0" prefWidth="367.0" />
+      <JFXButton graphicTextGap="0.0" layoutY="645.0" onMouseClicked="#save" prefHeight="76.0" prefWidth="675.0" style="-fx-background-color: linear-gradient(to right bottom, #99abff, #8293eb, #6b7cd7, #5466c3, #3c50af);;" text="GUARDAR" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="16.0" />
+         </font>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </JFXButton>
+      <ComboBox fx:id="cmbTypeRecipe" layoutX="74.0" layoutY="203.0" prefHeight="35.0" prefWidth="245.0" />
+      <Slider fx:id="sliderCalories" blockIncrement="1.0" layoutX="74.0" layoutY="311.0" majorTickUnit="200.0" max="1000.0" minorTickCount="2" prefHeight="35.0" prefWidth="245.0" showTickLabels="true" />
+      <Label fx:id="lblcalories" layoutX="258.0" layoutY="272.0" prefHeight="17.0" prefWidth="64.0" text="      0 kcl" />
+   </children>
+</AnchorPane>

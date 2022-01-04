@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-ene-2022, 16:00:02
+    Author     : Adrián Rodríguez Fuentes
+*/
+
+.head-back
+{
+    -fx-background-color: linear-gradient(to right top, #1b6eeb, #4573ef, #5e79f3, #737ff7, #8585fb);
+}
+
+.buttonMenu:hover{
+     -fx-background-color:#dae7f3;
+}

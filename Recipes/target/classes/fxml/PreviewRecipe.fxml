@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="399.0" prefWidth="949.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.iespuertodelacruz.adrian.recipes.controller.PreviewRecipeController">
+   <children>
+      <Pane layoutX="27.0" layoutY="21.0" prefHeight="338.0" prefWidth="896.0" style="-fx-background-color: #fff;" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="21.0">
+         <children>
+            <ImageView fx:id="imgRecipe" fitHeight="199.0" fitWidth="298.0" layoutX="30.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/defaultImg.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="323.0" layoutY="97.0" prefHeight="0.0" prefWidth="481.0" />
+            <Label fx:id="txtTitle" layoutX="339.0" layoutY="55.0" text="Titulo" textFill="#3951c4">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="346.0" layoutY="113.0" text="AUTOR" textFill="#aeacac">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="347.0" layoutY="186.0" text="CATEGORÍA" textFill="#aeacac">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="532.0" layoutY="113.0" text="COMENSALES" textFill="#aeacac">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="537.0" layoutY="186.0" text="TIEMPO DE PREPARACIÓN" textFill="#aeacac">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtAuthor" layoutX="346.0" layoutY="139.0" text="Sara" textFill="#4d4c4c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtNumberDiners" layoutX="537.0" layoutY="139.0" text="12" textFill="#4d4c4c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtPreparationTime" layoutX="537.0" layoutY="211.0" text="10" textFill="#4d4c4c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtTypeRecipe" layoutX="349.0" layoutY="211.0" text="Postre" textFill="#4d4c4c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Pane layoutY="269.0" prefHeight="70.0" prefWidth="896.0" style="-fx-background-color: #F0F0F0;">
+               <children>
+                  <JFXButton fx:id="btnViewMore" layoutY="-2.0" prefHeight="76.0" prefWidth="896.0" style="-fx-background-color: linear-gradient(to right bottom, #99abff, #8293eb, #6b7cd7, #5466c3, #3c50af);;" text="VER MÁS" textFill="WHITE">
+                     <font>
+                        <Font name="Franklin Gothic Demi Cond" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <ImageView fitHeight="42.0" fitWidth="41.0" layoutX="655.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="btnDelete" layoutX="823.0" layoutY="21.0" mnemonicParsing="false" style="-fx-background-color: #EE535A;">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="TRASH" size="30" />
+               </graphic>
+            </Button>
+            <Button fx:id="btnEdit" layoutX="772.0" layoutY="21.0" mnemonicParsing="false" style="-fx-background-color: #99ABFF;">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="PENCIL" size="30" />
+               </graphic>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow color="#d7d2d2" height="50.0" radius="24.5" width="50.0" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

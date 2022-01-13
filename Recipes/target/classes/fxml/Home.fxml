@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="759.0" prefWidth="1214.0" stylesheets="@../styles/home.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.iespuertodelacruz.adrian.recipes.controller.HomeController">
+   <children>
+      <BorderPane prefHeight="759.0" prefWidth="1214.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="430.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton alignment="BASELINE_LEFT" onMouseClicked="#goInit" prefHeight="50.0" prefWidth="200.0" styleClass="buttonMenu" text="Inicio">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="HOME" size="20 " />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin></JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="200.0" styleClass="buttonMenu" text="Información Nutricional">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="INFO" size="20" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin></JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="200.0" styleClass="buttonMenu" text="Buscador Recetas">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="SEARCH" size="20" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin></JFXButton>
+                  <JFXButton alignment="BASELINE_LEFT" onMouseClicked="#showGraphics" prefHeight="50.0" prefWidth="200.0" styleClass="buttonMenu" text="Estadisticas">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CALCULATOR" size="20" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin></JFXButton>
+                  <JFXButton fx:id="btnUserManagement" alignment="BASELINE_LEFT" onMouseClicked="#UserManagement" prefHeight="50.0" prefWidth="200.0" styleClass="buttonMenu" text="Gestión Usuarios">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="USER" size="20" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin></JFXButton>
+                  <JFXButton fx:id="btnPutNotes" alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="200.0" styleClass="buttonMenu" text="Poner Notas">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="BOOK" size="20" />
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin></JFXButton>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="2000.0" styleClass="head-back">
+               <children>
+                  <ImageView fitHeight="136.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/LogoV2.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="70.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label text="Recetario Saludable" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="76.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="100.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="69.0" prefWidth="1014.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <TextField fx:id="txtSearch" alignment="TOP_LEFT" prefHeight="40.0" prefWidth="338.0">
+                           <HBox.margin>
+                              <Insets left="500.0" right="10.0" top="15.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Button fx:id="btnSearch" mnemonicParsing="false" onMouseClicked="#search" prefHeight="41.0" prefWidth="62.0" style="-fx-background-color: #7F9ABE;" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="20" wrappingWidth="16.571428298950195" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets right="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onMouseClicked="#add" prefHeight="41.0" prefWidth="64.0" style="-fx-background-color: #56B76B;">
+                           <graphic>
+                              <FontAwesomeIconView fx:id="btnAdd" fill="WHITE" glyphName="PLUS" size="20" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets right="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                       <ScrollPane prefHeight="551.0" prefWidth="1014.0" style="-fx-background-color: #fff;">
+                     <content>
+                        <VBox fx:id="panelScroll" spacing="20.0" style="-fx-background-color: #fff;" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+      <Circle fx:id="btnMinimize" fill="#f2ad2e" layoutX="50.0" layoutY="28.0" onMouseClicked="#minimize" radius="7.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fx:id="btnClose" fill="#ee1e17" layoutX="30.0" layoutY="28.0" onMouseClicked="#close" radius="7.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fx:id="btnMaximize" fill="#3abf05" layoutX="72.0" layoutY="28.0" onMouseClicked="#maximize" radius="7.0" stroke="WHITE" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

@@ -10,3 +10,44 @@ C:\Users\Maria luisa\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gami
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.csproj.CoreCompileInputs.cache
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.exe
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.pdb
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\Gamification.exe.config
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\Gamification.exe
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\Gamification.pdb
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\Controlador.dll
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\Modelo.dll
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\MySql.Data.dll
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\Google.Protobuf.dll
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\ZstdNet.dll
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\System.Memory.dll
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\System.Buffers.dll
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\Controlador.pdb
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\Modelo.pdb
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\Modelo.dll.config
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\MySql.Data.xml
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\Google.Protobuf.pdb
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\Google.Protobuf.xml
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\System.Memory.xml
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\System.Buffers.xml
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.exe.config
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.ViewLogin.resources
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.Properties.Resources.resources
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.exe
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.pdb
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.GamificationApp.resources
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.ListView.resources
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.AddView.resources
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.DeleteView.resources
+C:\Users\Admin\Desktop\DAD_Adrian\Gamification\Gamification\obj\Debug\Gamification.ModifyView.resources

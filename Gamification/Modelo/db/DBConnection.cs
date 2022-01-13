@@ -11,7 +11,7 @@ namespace Modelo.db
     {
         
         private static readonly String HOST = "localhost";
-        private static readonly String BD = "shop";
+        private static readonly String BD = "gamification";
         private static readonly String USER = "root";
         private static readonly String PASSWORD = "";
         private static MySqlConnection sqlCon;

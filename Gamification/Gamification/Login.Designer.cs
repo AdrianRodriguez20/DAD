@@ -94,7 +94,11 @@ namespace Gamification
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsuario);
             this.KeyPreview = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ViewLogin";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ViewLogin_KeyDown);
             this.ResumeLayout(false);

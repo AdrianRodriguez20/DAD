@@ -10,21 +10,25 @@ namespace Modelo.modelo
     {
         private String username;
         private String password;
-        private String rol;
+        private String role;
+        private int active;
 
         public Usuario()
         {
         }
 
-        public Usuario(string username, string password, string rol)
+        public Usuario(string username, string password, string role , int active)
         {
             this.Username = username;
             this.Password = password;
-            this.Rol = rol;
+            this.Role = role;
+            this.Active = active;
         }
 
         public string Username { get => username; set => username = value; }
         public string Password { get => password; set => password = value; }
-        public string Rol { get => rol; set => rol = value; }
+  
+        public int Active { get => active; set => active = value; }
+        public string Role { get => role; set => role = value; }
     }
 }

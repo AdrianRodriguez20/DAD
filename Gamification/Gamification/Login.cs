@@ -13,6 +13,7 @@ namespace Gamification
 {
     public partial class ViewLogin : Form
     {
+        UsuarioController usuarioController = new UsuarioController();
         public ViewLogin()
         {
             InitializeComponent();
@@ -23,7 +24,36 @@ namespace Gamification
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("Hola");
+            String usuarioRol = usuarioController.Login(txtUsuario.Text, txtPassword.Text);
+
+            if (usuarioRol != null && !usuarioRol.Trim().Equals(""))
+            {
+                switch (usuarioRol)
+                {
+                    case "admin":
+                        GamificationApp gamificationAppAdmin = new GamificationApp("admin");
+                        gamificationAppAdmin.Show();
+                        this.Hide();
+                        break;
+                    case "teacher":
+                        GamificationApp gamificationAppTeacher = new GamificationApp("teacher");
+                        gamificationAppTeacher.Show();
+                        this.Hide();
+                        break;
+
+                    case "student":
+                        GamificationApp gamificationAppStudent = new GamificationApp("student");
+                        gamificationAppStudent.Show();
+                        this.Hide();
+
+                        break;
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
         }
 
          private void ViewLogin_KeyDown(object sender, KeyEventArgs e)

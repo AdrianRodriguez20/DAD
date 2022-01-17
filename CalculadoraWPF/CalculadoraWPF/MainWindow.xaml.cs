@@ -28,6 +28,13 @@ namespace CalculadoraWPF
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
+            FrameworkElement frameworkElement = e.Source as FrameworkElement;
+            Console.WriteLine("Carácter "+frameworkElement.DataContext);
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

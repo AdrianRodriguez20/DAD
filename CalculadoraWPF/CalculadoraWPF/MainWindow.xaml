@@ -50,7 +50,8 @@
             <MenuItem x:Name="menu" Header="≡" Height="46" Width="59" FontSize="26" Click="menu_Click" ></MenuItem>
         </Menu>
         <StackPanel x:Name="menuLateral" HorizontalAlignment="Left" Height="458" Margin="0,46,0,0" Grid.RowSpan="7" VerticalAlignment="Top" Width="190">
-            <Button x:Name="conversor" Content="Conversor" Height="66" Click="conversor_Click"/>
+            <TextBox Text="Calculadora" Height="42" FontSize="16" FontWeight="Bold" Background="#FF111111" Foreground="White"  />
+            <Button Content="Conversor" Height="66" Click="conversor_Click" FontSize="16" Background="#FF111111" Foreground="White" />
             <StackPanel Height="100"/>
         </StackPanel>
 

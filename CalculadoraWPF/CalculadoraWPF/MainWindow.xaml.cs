@@ -28,7 +28,6 @@ namespace CalculadoraWPF
         public MainWindow()
         {
             InitializeComponent();
-            menuLateral.Visibility = Visibility.Hidden;
             cambioContenedor.Navigate(new Calculadora());
             menuLateral.Width = 0;
         }
@@ -40,13 +39,15 @@ namespace CalculadoraWPF
 
             if (menuLateral.Width == 0)
             {
+                
+                DoubleAnimation animacion = new DoubleAnimation(250, TimeSpan.FromSeconds(0.5));
+                menuLateral.BeginAnimation(WidthProperty,animacion);
 
-                menuLateral.BeginAnimation(WidthProperty, new DoubleAnimation(200, TimeSpan.FromSeconds(0.5)));
-
-                }
+            }
             else
             {
-                menuLateral.BeginAnimation(WidthProperty, new DoubleAnimation(0, TimeSpan.FromSeconds(0.5)));
+                DoubleAnimation animacion = new DoubleAnimation(0, TimeSpan.FromSeconds(0.5));
+                menuLateral.BeginAnimation(WidthProperty, animacion);
 
 
             }

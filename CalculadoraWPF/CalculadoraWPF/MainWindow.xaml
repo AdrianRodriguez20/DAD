@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:CalculadoraWPF"
 
         mc:Ignorable="d"
-        Title="MainWindow" Height="Auto" Width="Auto">
+        Title="MainWindow" Height="825.644" Width="Auto">
     <Grid  Background="#FF272626">
         <Grid.ColumnDefinitions >
             <ColumnDefinition Width="*" />
@@ -24,21 +24,113 @@
             <RowDefinition  Height="*" />
             <RowDefinition Height="*"  />
         </Grid.RowDefinitions>
-  
-        <Menu Grid.ColumnSpan="4" Margin="0,0,0,26" >
-            <MenuItem x:Name="menu" Header="≡" Height="46" Width="59" FontSize="26" Click="menu_Click" ></MenuItem>
+
+        <Menu Grid.ColumnSpan="4" Margin="0,0,0,26" Foreground="#FF111111" Background="#FF111111" >
+            <MenuItem x:Name="menu" Header="≡" Height="46" Width="59" FontSize="26" Click="menu_Click" Foreground="White" ></MenuItem>
         </Menu>
-        <StackPanel Grid.Column="0" Grid.Row="0" x:Name="menuLateral" HorizontalAlignment="Left" Height="458" Margin="0,46,0,0" Grid.RowSpan="7" VerticalAlignment="Top" Width="190" Panel.ZIndex="1">
+        <StackPanel Grid.Column="0" Grid.Row="0" x:Name="menuLateral" HorizontalAlignment="Left" Height="749" Margin="0,46,0,0" Grid.RowSpan="7" VerticalAlignment="Top" Width="190" Panel.ZIndex="1">
             <Border Background="#FF111111" BorderBrush="#FF111111" BorderThickness="1" Height="54">
-                <TextBox Text="Calculadora" FontSize="16" FontWeight="Bold" Background="#FF111111" Foreground="White" BorderThickness="1" SelectionBrush="#00000000" Margin="9,19,35,-1" BorderBrush="#FF111111"  />
-                
+                <Label Content=" Calculadora" FontSize="16" FontWeight="Bold" Background="#00000000" Foreground="White" BorderThickness="1"  Margin="-1,19,35,-1" BorderBrush="#00000000"  />
             </Border>
-            <Button Content="Conversor" Height="48" Click="conversor_Click" FontSize="16" Background="#FF111111" Foreground="White" />
-            <Button Content="Calculadora" Height="48" Click="calculadora_Click" FontSize="16" Background="#FF111111" Foreground="White" />
+            <Button  Height="48" HorizontalContentAlignment="Left" Click="calculadora_Click" FontSize="16" Background="#FF111111" BorderBrush="#FF111111" >
+                <StackPanel  Orientation="Horizontal">
+                    <Label Content=" "></Label>
+                    <Label Height="30" fa:Awesome.Content="Calculator" Foreground="White" FontFamily="{StaticResource FontAwesome}" />
+                    <Label Content="Estándar" HorizontalAlignment="Center" Background="#00000000" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <Button  Height="48" HorizontalContentAlignment="Left" FontSize="16" Background="#FF111111" BorderBrush="#FF111111" >
+                <StackPanel Orientation="Horizontal">
+                    <Label Content=" "></Label>
+                    <Label Height="30" fa:Awesome.Content="flask" Foreground="White" FontFamily="{StaticResource FontAwesome}" />
+                    <Label Content="Científico" HorizontalAlignment="Center" Background="#00000000" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <Button  Height="48" HorizontalContentAlignment="Left" FontSize="16" Background="#FF111111" BorderBrush="#FF111111" >
+                <StackPanel Orientation="Horizontal">
+                    <Label Content=" "></Label>
+                    <Label Height="30" fa:Awesome.Content="AreaChart" Foreground="White" FontFamily="{StaticResource FontAwesome}" />
+                    <Label Content="Gráfica" HorizontalAlignment="Center" Background="#00000000" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <Button  Height="48" HorizontalContentAlignment="Left" FontSize="16" Background="#FF111111" BorderBrush="#FF111111" >
+                <StackPanel Orientation="Horizontal">
+                    <Label Content=" "></Label>
+                    <Label Height="30" fa:Awesome.Content="Server" Foreground="White" FontFamily="{StaticResource FontAwesome}" />
+                    <Label Content="Programador" HorizontalAlignment="Center" Background="#00000000" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <Button  Height="48" HorizontalContentAlignment="Left" FontSize="16" Background="#FF111111" BorderBrush="#FF111111" >
+                <StackPanel Orientation="Horizontal">
+                    <Label Content=" "></Label>
+                    <Label Height="30" fa:Awesome.Content="Calendar" Foreground="White" FontFamily="{StaticResource FontAwesome}" />
+                    <Label Content="Cálculo de la fecha" HorizontalAlignment="Center" Background="#00000000" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <Border Background="#FF111111" BorderBrush="#FF111111" BorderThickness="1" Height="54">
+                <Label Content=" Convertidor" FontSize="16" FontWeight="Bold" Background="#00000000" Foreground="White" BorderThickness="1"  Margin="-1,19,35,-1" BorderBrush="#00000000"  />
+            </Border>
+            <Button  Height="48" HorizontalContentAlignment="Left" Click="conversor_Click" FontSize="16" Background="#FF111111" BorderBrush="#FF111111" >
+                <StackPanel Orientation="Horizontal">
+                    <Label Content=" "></Label>
+                    <Label Height="30" fa:Awesome.Content="Money" Foreground="White" FontFamily="{StaticResource FontAwesome}" />
+                    <Label Content="Moneda" HorizontalAlignment="Center" Background="#00000000" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <Button  Height="48" HorizontalContentAlignment="Left" FontSize="16" Background="#FF111111" BorderBrush="#FF111111" >
+                <StackPanel Orientation="Horizontal">
+                    <Label Content=" "></Label>
+                    <Label Height="30" fa:Awesome.Content="Cube" Foreground="White" FontFamily="{StaticResource FontAwesome}" />
+                    <Label Content="Volumen" HorizontalAlignment="Center" Background="#00000000" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <Button  Height="48" HorizontalContentAlignment="Left" FontSize="16" Background="#FF111111" BorderBrush="#FF111111" >
+                <StackPanel Orientation="Horizontal">
+                    <Label Content=" "></Label>
+                    <Label Height="30" fa:Awesome.Content="Underline" Foreground="White" FontFamily="{StaticResource FontAwesome}" />
+                    <Label Content="Longitud" HorizontalAlignment="Center" Background="#00000000" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <Button  Height="48" HorizontalContentAlignment="Left" FontSize="16" Background="#FF111111" BorderBrush="#FF111111" >
+                <StackPanel Orientation="Horizontal">
+                    <Label Content=" "></Label>
+                    <Label Height="30" fa:Awesome.Content="BalanceScale" Foreground="White" FontFamily="{StaticResource FontAwesome}" />
+                    <Label Content="Peso y masa" HorizontalAlignment="Center" Background="#00000000" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <Button  Height="48" HorizontalContentAlignment="Left" FontSize="16" Background="#FF111111" BorderBrush="#FF111111" >
+                <StackPanel Orientation="Horizontal">
+                    <Label Content=" "></Label>
+                    <Label Height="30" fa:Awesome.Content="Cloud" Foreground="White" FontFamily="{StaticResource FontAwesome}" />
+                    <Label Content="Temperatura" HorizontalAlignment="Center" Background="#00000000" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <Button  Height="48" HorizontalContentAlignment="Left" FontSize="16" Background="#FF111111" BorderBrush="#FF111111" >
+                <StackPanel Orientation="Horizontal">
+                    <Label Content=" "></Label>
+                    <Label Height="30" fa:Awesome.Content="LightbulbOutline" Foreground="White" FontFamily="{StaticResource FontAwesome}" />
+                    <Label Content="Energía" HorizontalAlignment="Center" Background="#00000000" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <Button  Height="48" HorizontalContentAlignment="Left" FontSize="16" Background="#FF111111" BorderBrush="#FF111111" >
+                <StackPanel Orientation="Horizontal">
+                    <Label Content=" "></Label>
+                    <Label Height="30" fa:Awesome.Content="AreaChart" Foreground="White" FontFamily="{StaticResource FontAwesome}" />
+                    <Label Content="Área" HorizontalAlignment="Center" Background="#00000000" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <Button  Height="48" HorizontalContentAlignment="Left" FontSize="16" Background="#FF111111" BorderBrush="#FF111111" >
+                <StackPanel Orientation="Horizontal">
+                    <Label Content=" "></Label>
+                    <Label Height="30" fa:Awesome.Content="ArrowCircleDown" Foreground="White" FontFamily="{StaticResource FontAwesome}" />
+                    <Label Content="Velocidad" HorizontalAlignment="Center" Background="#00000000" Foreground="White"/>
+                </StackPanel>
+            </Button>
+
         </StackPanel>
 
         <Frame x:Name="cambioContenedor"  NavigationUIVisibility="Hidden" Grid.Row="1" Grid.RowSpan="6" Grid.ColumnSpan="4" >
-            
+
         </Frame>
 
     </Grid>

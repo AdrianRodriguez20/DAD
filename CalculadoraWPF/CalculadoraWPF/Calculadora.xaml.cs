@@ -60,6 +60,12 @@ namespace CalculadoraWPF
                     }
                     break;
                 default:
+                    if (txtResultado.Text.Length == 1 && txtResultado.Text == "0" && btnContent != ".")
+                    {
+                        txtResultado.Text = "";
+
+                    }
+
                     txtResultado.Text += btnContent;
                     break;
             }
@@ -67,14 +73,11 @@ namespace CalculadoraWPF
 
         }
 
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        private void txtResultado_KeyDown(object sender, KeyEventArgs e)
         {
-
+            txtResultado.Text += e.Key.ToString();
+            Console.WriteLine("A");
         }
-
-
-
-
     }
 
 }

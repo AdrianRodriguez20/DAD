@@ -43,7 +43,7 @@
         <Button Content="C"  Grid.Row="2"  Background="#FF111111" Foreground="White" FontSize="24"  FontWeight="Bold"  BorderBrush="Black" Grid.ColumnSpan="2"/>
         <Button Content="⌫" Grid.Row="2"  Background="#FF111111" Foreground="White" FontSize="24" FontWeight="Bold"  BorderBrush="Black" Grid.Column="2"/>
         <Button Content="/"  Grid.Row="2" Background="#FF111111" Foreground="White" FontSize="24"  FontWeight="Bold" BorderBrush="Black" Grid.Column="3"/>
-        <TextBlock x:Name="txtResultado"   Grid.Row="1" TextWrapping="Wrap"  Text=""  Grid.ColumnSpan="4"   FontSize="36" Foreground="White" TextAlignment="Right" Margin="0,25,0,0"/>
+        <TextBlock x:Name="txtResultado"  Grid.Row="1" TextWrapping="Wrap"  Text="0"  Grid.ColumnSpan="4"   FontSize="36" Foreground="White" TextAlignment="Right" Margin="0,25,0,0" KeyDown="txtResultado_KeyDown" />
         <TextBlock x:Name="txtUltimaOperacion"  Grid.Row="1" TextWrapping="Wrap" Text=""  Grid.ColumnSpan="4"  Foreground="White" TextAlignment="Right"/>
 
 

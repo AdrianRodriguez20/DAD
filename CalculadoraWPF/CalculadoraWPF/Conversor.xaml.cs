@@ -52,6 +52,12 @@ namespace CalculadoraWPF
                     txtDestino.Text = "";
                     break;       
                 default:
+                    if (txtOrigen.Text.Length==1 && txtOrigen.Text == "0" && btnContent!=",")
+                    {
+                        txtOrigen.Text = "";
+
+                    }
+
                     txtOrigen.Text += btnContent;
                     break;
             }
@@ -60,19 +66,22 @@ namespace CalculadoraWPF
 
         private void cmbOrigen_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            double resultado = 0;
             if (cmbOrigen.SelectedItem != null && cmbDestino.SelectedItem != null)
             {
-               
-                txtDestino.Text = convertTo(cmbOrigen.SelectedItem.ToString(), cmbDestino.SelectedItem.ToString(), Convert.ToDouble(txtOrigen.Text)).ToString();
+                resultado =convertTo(cmbOrigen.SelectedItem.ToString(), cmbDestino.SelectedItem.ToString(), Convert.ToDouble(txtOrigen.Text));
+                txtDestino.Text = resultado.ToString("N2");
+                
             }
         }
         private void cmbDestino_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            double resultado = 0;
             if (cmbOrigen.SelectedItem != null && cmbDestino.SelectedItem != null)
             {
-               
-                txtDestino.Text = convertTo(cmbOrigen.SelectedItem.ToString(), cmbDestino.SelectedItem.ToString(), Convert.ToDouble(txtOrigen.Text)).ToString();
+               resultado =convertTo(cmbOrigen.SelectedItem.ToString(), cmbDestino.SelectedItem.ToString(), Convert.ToDouble(txtOrigen.Text));
+               txtDestino.Text = resultado.ToString("N2");
+                
             }
         }
 

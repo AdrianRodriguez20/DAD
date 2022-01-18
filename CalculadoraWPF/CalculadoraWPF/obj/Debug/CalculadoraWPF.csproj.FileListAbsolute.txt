@@ -51,3 +51,5 @@ C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\
 C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\CalculadoraWPF.pdb
 C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\Conversor.g.cs
 C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\Conversor.baml
+C:\Users\Admin\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\Conversor.g.cs
+C:\Users\Admin\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\Conversor.baml

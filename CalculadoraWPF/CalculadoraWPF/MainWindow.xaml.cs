@@ -87,22 +87,25 @@ namespace CalculadoraWPF
 
         private void menu_Click(object sender, RoutedEventArgs e)
         {
-            Timer timer = new Timer(1000);
-          
+            Timer timer = new Timer(2000);
+
             if (menuLateral.Visibility == Visibility.Hidden)
             {
                 menuLateral.Visibility = Visibility.Visible;
                 menuLateral.BeginAnimation(WidthProperty, new DoubleAnimation(200, TimeSpan.FromSeconds(0.5)));
-            }
+
+                }
             else
             {
-                menuLateral.BeginAnimation(WidthProperty, new DoubleAnimation(0, TimeSpan.FromSeconds(0.5)));
+                menuLateral.BeginAnimation(WidthProperty, new DoubleAnimation(00, TimeSpan.FromSeconds(0.5)));
                 timer.Elapsed += (s, args) =>
                 {
-                    menuLateral.Visibility = Visibility.Hidden;
+
                     timer.Stop();
+
                 };
-                timer.Start();
+                menuLateral.Visibility = Visibility.Hidden;
+
             }
 
    

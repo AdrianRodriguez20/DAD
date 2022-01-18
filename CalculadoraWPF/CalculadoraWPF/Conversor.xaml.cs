@@ -19,7 +19,7 @@ namespace CalculadoraWPF
     /// <summary>
     /// Lógica de interacción para Conversor.xaml
     /// </summary>
-    public partial class Conversor : Window
+    public partial class Conversor : Page
     {
         public Conversor()
         {

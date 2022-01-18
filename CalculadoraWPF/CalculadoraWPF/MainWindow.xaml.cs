@@ -29,86 +29,41 @@ namespace CalculadoraWPF
         {
             InitializeComponent();
             menuLateral.Visibility = Visibility.Hidden;
-
+            cambioContenedor.Navigate(new Calculadora());
+            menuLateral.Width = 0;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-            FrameworkElement btn = e.Source as FrameworkElement;
-            Button btnClicked = btn as Button;
-            string btnContent = btnClicked.Content.ToString();
-            switch(btnContent)
-            {
-                case "⌫":
-                    if (txtResultado.Text.Length > 0)
-                    {
-                        txtResultado.Text = txtResultado.Text.Remove(txtResultado.Text.Length - 1);
-                    }
-                    break;
-                case "+/-":
-                    txtResultado.Text = (-1 * int.Parse(txtResultado.Text)).ToString();
-                    break;
-                case "C":
-                    txtResultado.Text = "";
-                    break;
-                case "=":
-                    try
-                    {
-                        String operacion = txtResultado.Text;
-                        txtResultado.Text = new DataTable().Compute(txtResultado.Text, null).ToString();
-                        txtUltimaOperacion.Text = operacion + " = " + txtResultado.Text;
-                    }
-                    catch (Exception ex)
-                    {
-                        txtResultado.Text = "Syntax Error";
-                    }
-                    break;
-                default:
-                    txtResultado.Text += btnContent;
-                    break;
-            }
-
-            
-        }
-
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void conversor_Click(object sender, RoutedEventArgs e)
-        {
- 
-            Conversor conversor = new Conversor();
-            conversor.Show();
-
-        }
+    
 
         private void menu_Click(object sender, RoutedEventArgs e)
         {
-            Timer timer = new Timer(2000);
 
-            if (menuLateral.Visibility == Visibility.Hidden)
+            if (menuLateral.Width == 0)
             {
-                menuLateral.Visibility = Visibility.Visible;
+
                 menuLateral.BeginAnimation(WidthProperty, new DoubleAnimation(200, TimeSpan.FromSeconds(0.5)));
 
                 }
             else
             {
-                menuLateral.BeginAnimation(WidthProperty, new DoubleAnimation(00, TimeSpan.FromSeconds(0.5)));
-                timer.Elapsed += (s, args) =>
-                {
+                menuLateral.BeginAnimation(WidthProperty, new DoubleAnimation(0, TimeSpan.FromSeconds(0.5)));
 
-                    timer.Stop();
-
-                };
-                menuLateral.Visibility = Visibility.Hidden;
 
             }
 
    
+        }
+
+        private void conversor_Click(object sender, RoutedEventArgs e)
+        {
+
+           
+            cambioContenedor.Navigate(new Conversor());
+        }
+
+        private void calculadora_Click(object sender, RoutedEventArgs e)
+        {
+            cambioContenedor.Navigate(new Calculadora());
         }
     }
 }

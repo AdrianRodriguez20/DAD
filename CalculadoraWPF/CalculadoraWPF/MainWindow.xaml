@@ -24,31 +24,35 @@
             <RowDefinition  Height="*" />
             <RowDefinition Height="*"  />
         </Grid.RowDefinitions>
-        <Button Content="+/-"  Grid.Row="6"   Background="#FF111111" Foreground="White" FontSize="24" Click="Button_Click" FontWeight="Bold" BorderBrush="Black"/>
-        <Button x:Name="_0" Content="0"  Grid.Row="6"  Background="#FF111111" Foreground="White" FontSize="24" Click="Button_Click" FontWeight="Bold" Grid.Column="1" BorderBrush="Black"/>
-        <Button Content=","  Grid.Row="6"  Background="#FF111111" Foreground="White" FontSize="24" Click="Button_Click" FontWeight="Bold"  Grid.RowSpan="2" Grid.Column="2" BorderBrush="Black"/>
-        <Button Content="="  Grid.Row="6" Background="#FF111111" Foreground="White" FontSize="24" Click="Button_Click" FontWeight="Bold"  Grid.RowSpan="2" Grid.Column="3" BorderBrush="Black"/>
-        <Button Content="1"  Grid.Row="5"  Background="#FF111111" Foreground="White" FontSize="24" Click="Button_Click" FontWeight="Bold" BorderBrush="Black"/>
-        <Button Content="2" Grid.Row="5"   Background="#FF111111" Foreground="White" FontSize="24" Click="Button_Click" FontWeight="Bold"  BorderBrush="Black" Grid.Column="1"/>
-        <Button Content="3"  Grid.Row="5" Background="#FF111111" Foreground="White" FontSize="24" Click="Button_Click" FontWeight="Bold"  BorderBrush="Black" Grid.Column="2"/>
-        <Button Content="+"  Grid.Row="5" Background="#FF111111" Foreground="White" FontSize="24" Click="Button_Click" FontWeight="Bold"  BorderBrush="Black" Grid.Column="3"/>
-        <Button Content="4"  Grid.Row="4" Background="#FF111111" Foreground="White" FontSize="24" Click="Button_Click" FontWeight="Bold"  BorderBrush="Black"/>
-        <Button Content="5"  Grid.Row="4" Background="#FF111111" Foreground="White" FontSize="24" Click="Button_Click" FontWeight="Bold"  BorderBrush="Black" Grid.Column="1"/>
-        <Button Content="6"  Grid.Row="4" Background="#FF111111" Foreground="White" FontSize="24" Click="Button_Click" FontWeight="Bold"  BorderBrush="Black" Grid.Column="2"/>
-        <Button Content="-" Grid.Row="4"  Background="#FF111111" Foreground="White" FontSize="24" Click="Button_Click" FontWeight="Bold"  BorderBrush="Black" Grid.Column="3"/>
-        <Button Content="7"  Grid.Row="3"  Background="#FF111111" Foreground="White" FontSize="24" Click="Button_Click" FontWeight="Bold" BorderBrush="Black"/>
-        <Button Content="8"  Grid.Row="3"  Background="#FF111111" Foreground="White" FontSize="24" Click="Button_Click" FontWeight="Bold"  BorderBrush="Black" Grid.Column="1"/>
-        <Button Content="9"  Grid.Row="3" Background="#FF111111" Foreground="White" FontSize="24" Click="Button_Click" FontWeight="Bold"  BorderBrush="Black" Grid.Column="2"/>
-        <Button Content="x"  Grid.Row="3"  Background="#FF111111" Foreground="White" FontSize="24" Click="Button_Click" FontWeight="Bold" BorderBrush="Black" Grid.Column="3"/>
-        <Button Content="CE"  Grid.Row="2"  Background="#FF111111" Foreground="White" FontSize="24" Click="Button_Click" FontWeight="Bold"  BorderBrush="Black" Grid.ColumnSpan="2"/>
-        <Button Content="⌫" Grid.Row="2"  Background="#FF111111" Foreground="White" FontSize="24" Click="Button_Click" FontWeight="Bold"  BorderBrush="Black" Grid.Column="2"/>
-        <Button Content="÷"  Grid.Row="2" Background="#FF111111" Foreground="White" FontSize="24" Click="Button_Click" FontWeight="Bold" BorderBrush="Black" Grid.Column="3"/>
-        <TextBlock   Grid.Row="1" TextWrapping="Wrap"  Text="0"  Grid.ColumnSpan="4"   FontSize="36" Foreground="White" TextAlignment="Right" Margin="0,25,0,0"/>
-        <TextBlock   Grid.Row="1" TextWrapping="Wrap" Text=""  Grid.ColumnSpan="4"  Foreground="White" TextAlignment="Right"/>
-   
+        <Button Content="+/-"  Grid.Row="6"   Background="#FF111111" Foreground="White" FontSize="24" FontWeight="Bold" BorderBrush="Black"/>
+        <Button Content="0"  Grid.Row="6"  Background="#FF111111" Foreground="White" FontSize="24" FontWeight="Bold" Grid.Column="1" BorderBrush="Black"/>
+        <Button Content="."  Grid.Row="6"  Background="#FF111111" Foreground="White" FontSize="24"  FontWeight="Bold"  Grid.RowSpan="2" Grid.Column="2" BorderBrush="Black"/>
+        <Button Content="="  Grid.Row="6" Background="#FF111111" Foreground="White" FontSize="24"  FontWeight="Bold"  Grid.RowSpan="2" Grid.Column="3" BorderBrush="Black"/>
+        <Button Content="1"  Grid.Row="5"  Background="#FF111111" Foreground="White" FontSize="24"  FontWeight="Bold" BorderBrush="Black"/>
+        <Button Content="2" Grid.Row="5"   Background="#FF111111" Foreground="White" FontSize="24"  FontWeight="Bold"  BorderBrush="Black" Grid.Column="1"/>
+        <Button Content="3"  Grid.Row="5" Background="#FF111111" Foreground="White" FontSize="24"  FontWeight="Bold"  BorderBrush="Black" Grid.Column="2"/>
+        <Button Content="+"  Grid.Row="5" Background="#FF111111" Foreground="White" FontSize="24"  FontWeight="Bold"  BorderBrush="Black" Grid.Column="3"/>
+        <Button Content="4"  Grid.Row="4" Background="#FF111111" Foreground="White" FontSize="24"  FontWeight="Bold"  BorderBrush="Black"/>
+        <Button Content="5"  Grid.Row="4" Background="#FF111111" Foreground="White" FontSize="24"  FontWeight="Bold"  BorderBrush="Black" Grid.Column="1"/>
+        <Button Content="6"  Grid.Row="4" Background="#FF111111" Foreground="White" FontSize="24"  FontWeight="Bold"  BorderBrush="Black" Grid.Column="2"/>
+        <Button Content="-" Grid.Row="4"  Background="#FF111111" Foreground="White" FontSize="24" FontWeight="Bold"  BorderBrush="Black" Grid.Column="3"/>
+        <Button Content="7"  Grid.Row="3"  Background="#FF111111" Foreground="White" FontSize="24"  FontWeight="Bold" BorderBrush="Black"/>
+        <Button Content="8"  Grid.Row="3"  Background="#FF111111" Foreground="White" FontSize="24" FontWeight="Bold"  BorderBrush="Black" Grid.Column="1"/>
+        <Button Content="9"  Grid.Row="3" Background="#FF111111" Foreground="White" FontSize="24"  FontWeight="Bold"  BorderBrush="Black" Grid.Column="2"/>
+        <Button Content="x"  Grid.Row="3"  Background="#FF111111" Foreground="White" FontSize="24"  FontWeight="Bold" BorderBrush="Black" Grid.Column="3"/>
+        <Button Content="C"  Grid.Row="2"  Background="#FF111111" Foreground="White" FontSize="24"  FontWeight="Bold"  BorderBrush="Black" Grid.ColumnSpan="2"/>
+        <Button Content="⌫" Grid.Row="2"  Background="#FF111111" Foreground="White" FontSize="24" FontWeight="Bold"  BorderBrush="Black" Grid.Column="2"/>
+        <Button Content="÷"  Grid.Row="2" Background="#FF111111" Foreground="White" FontSize="24"  FontWeight="Bold" BorderBrush="Black" Grid.Column="3"/>
+        <TextBlock x:Name="txtResultado"   Grid.Row="1" TextWrapping="Wrap"  Text=""  Grid.ColumnSpan="4"   FontSize="36" Foreground="White" TextAlignment="Right" Margin="0,25,0,0"/>
+        <TextBlock x:Name="txtUltimaOperacion"  Grid.Row="1" TextWrapping="Wrap" Text=""  Grid.ColumnSpan="4"  Foreground="White" TextAlignment="Right"/>
+
         <Menu Grid.ColumnSpan="4" Margin="0,0,0,26" >
-            <MenuItem Header="=" Height="46" Width="59" FontSize="18" ></MenuItem>
+            <MenuItem x:Name="menu" Header="≡" Height="46" Width="59" FontSize="26" Click="menu_Click" ></MenuItem>
         </Menu>
+        <StackPanel x:Name="menuLateral" HorizontalAlignment="Left" Height="458" Margin="0,46,0,0" Grid.RowSpan="7" VerticalAlignment="Top" Width="190">
+            <Button x:Name="conversor" Content="Conversor" Height="66" Click="conversor_Click"/>
+            <StackPanel Height="100"/>
+        </StackPanel>
 
 
     </Grid>

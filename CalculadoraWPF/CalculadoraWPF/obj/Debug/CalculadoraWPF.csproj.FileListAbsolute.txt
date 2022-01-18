@@ -31,3 +31,23 @@ C:\Users\Admin\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\Calcul
 C:\Users\Admin\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\CalculadoraWPF.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\CalculadoraWPF.exe
 C:\Users\Admin\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\CalculadoraWPF.pdb
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\bin\Debug\CalculadoraWPF.exe.config
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\bin\Debug\CalculadoraWPF.exe
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\bin\Debug\CalculadoraWPF.pdb
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\bin\Debug\FontAwesome.WPF.dll
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\bin\Debug\FontAwesome.WPF.xml
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\CalculadoraWPF.csproj.AssemblyReference.cache
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\MainWindow.g.cs
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\App.g.cs
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\CalculadoraWPF_MarkupCompile.cache
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\CalculadoraWPF_MarkupCompile.lref
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\App.baml
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\MainWindow.baml
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\CalculadoraWPF.g.resources
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\CalculadoraWPF.Properties.Resources.resources
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\CalculadoraWPF.csproj.GenerateResource.cache
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\CalculadoraWPF.csproj.CoreCompileInputs.cache
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\CalculadoraWPF.exe
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\CalculadoraWPF.pdb
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\Conversor.g.cs
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\Conversor.baml

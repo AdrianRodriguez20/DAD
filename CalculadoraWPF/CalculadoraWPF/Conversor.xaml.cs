@@ -59,6 +59,7 @@ namespace CalculadoraWPF
                     }
 
                     txtOrigen.Text += btnContent;
+                    convertir();
                     break;
             }
 
@@ -66,23 +67,11 @@ namespace CalculadoraWPF
 
         private void cmbOrigen_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            double resultado = 0;
-            if (cmbOrigen.SelectedItem != null && cmbDestino.SelectedItem != null)
-            {
-                resultado =convertTo(cmbOrigen.SelectedItem.ToString(), cmbDestino.SelectedItem.ToString(), Convert.ToDouble(txtOrigen.Text));
-                txtDestino.Text = resultado.ToString("N2");
-                
-            }
+            convertir();
         }
         private void cmbDestino_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            double resultado = 0;
-            if (cmbOrigen.SelectedItem != null && cmbDestino.SelectedItem != null)
-            {
-               resultado =convertTo(cmbOrigen.SelectedItem.ToString(), cmbDestino.SelectedItem.ToString(), Convert.ToDouble(txtOrigen.Text));
-               txtDestino.Text = resultado.ToString("N2");
-                
-            }
+            convertir();
         }
 
 
@@ -100,9 +89,11 @@ namespace CalculadoraWPF
                     Moneda moneda = new Moneda();
                     moneda.Nombre = reader.GetAttribute("currency");
                     moneda.Valor = Convert.ToDouble(reader.GetAttribute("rate"), CultureInfo.InvariantCulture);
-                    
-                    monedas.Add(moneda);
 
+                    if (moneda.Nombre!=null && !moneda.Nombre.Equals(""))
+                    {
+                        monedas.Add(moneda);
+                    }
                 }
               
             }
@@ -140,6 +131,16 @@ namespace CalculadoraWPF
         }
 
 
+        public void convertir()
+        {
+            double resultado = 0;
+            if (cmbOrigen.SelectedItem != null && cmbDestino.SelectedItem != null)
+            {
+                resultado = convertTo(cmbOrigen.SelectedItem.ToString(), cmbDestino.SelectedItem.ToString(), Convert.ToDouble(txtOrigen.Text));
+                txtDestino.Text = resultado.ToString("N2");
+
+            }
+        }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {

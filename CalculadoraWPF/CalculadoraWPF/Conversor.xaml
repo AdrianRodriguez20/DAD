@@ -36,10 +36,28 @@
         <Button Content="," Click="Button_Click" Background="#FF111111" Foreground="White" FontSize="24"  FontWeight="Bold" BorderBrush="Black" Grid.Column="5" Grid.Row="5" />
         <Button Content="CE" Click="Button_Click" Background="#FF111111" Foreground="White" FontSize="24"  FontWeight="Bold" BorderBrush="Black" Grid.Column="4"  Grid.Row="1" Margin="0,0,1,0" />
         <Button Content="⌫" Click="Button_Click" Background="#FF111111" Foreground="White" FontSize="24"  FontWeight="Bold" BorderBrush="Black" Grid.Column="5"  Grid.Row="1" Margin="0,0,-1,0" />
-        <ComboBox x:Name="cmbOrigen"  Grid.Row="2"  Grid.Column="1" Margin="0,53,0,0" SelectionChanged="cmbOrigen_SelectionChanged" FontSize="20" SelectedIndex="0" />
-        <ComboBox x:Name="cmbDestino"  Grid.Row="4"  Grid.Column="1" Margin="0,53,0,0" SelectionChanged="cmbDestino_SelectionChanged" FontSize="24" />
+        <ComboBox x:Name="cmbOrigen"  Grid.Row="2"  Grid.Column="1" Margin="0,53,0,0" SelectionChanged="cmbOrigen_SelectionChanged" FontSize="36" SelectedIndex="2" >
+            <ComboBox.ItemContainerStyle>
+                <Style TargetType="ComboBoxItem">
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Background" Value="#303030"/>
+                    <Setter Property="BorderBrush" Value="#000000"/>
+                </Style>
+            </ComboBox.ItemContainerStyle>
+        </ComboBox>
+        <ComboBox x:Name="cmbDestino"  Grid.Row="4"  Grid.Column="1" Margin="0,53,0,0" SelectionChanged="cmbDestino_SelectionChanged" FontSize="36" SelectedIndex="12" BorderBrush="#FF474747" >
+            <ComboBox.ItemContainerStyle>
+                <Style TargetType="ComboBoxItem">
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Background" Value="#303030"/>
+                    <Setter Property="BorderBrush" Value="#000000"/>
+                   
+                </Style>
+            </ComboBox.ItemContainerStyle>
+        </ComboBox>
         <TextBlock x:Name="txtOrigen" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Text="0" FontSize="36" TextAlignment="Right" FontWeight="Bold" Foreground="White" Margin="0,0,0,36" />
         <TextBlock x:Name="txtDestino" Grid.Column="1" Grid.Row="4" TextWrapping="Wrap" Text="0" FontSize="36" TextAlignment="Right" FontWeight="Bold" Foreground="White" Margin="0,0,0,36" />
+
     </Grid>
 
 </Page>

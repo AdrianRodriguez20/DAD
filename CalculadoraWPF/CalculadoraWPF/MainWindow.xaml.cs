@@ -30,6 +30,7 @@ namespace CalculadoraWPF
             InitializeComponent();
             cambioContenedor.Navigate(new Calculadora());
             menuLateral.Width = 0;
+            menuHistorial.Width = 0;
         }
 
     
@@ -65,6 +66,27 @@ namespace CalculadoraWPF
         private void calculadora_Click(object sender, RoutedEventArgs e)
         {
             cambioContenedor.Navigate(new Calculadora());
+        }
+
+        private void verHistorial(object sender, RoutedEventArgs e)
+        {
+
+            if (menuHistorial.Width == 0)
+            {
+
+                DoubleAnimation animacion = new DoubleAnimation(250, TimeSpan.FromSeconds(0.5));
+                menuHistorial.BeginAnimation(WidthProperty, animacion);
+
+            }
+            else
+            {
+                DoubleAnimation animacion = new DoubleAnimation(0, TimeSpan.FromSeconds(0.5));
+                menuHistorial.BeginAnimation(WidthProperty, animacion);
+
+                
+            }
+            txtHistorial.Text = Environment.GetEnvironmentVariable("historial");
+           
         }
     }
 }

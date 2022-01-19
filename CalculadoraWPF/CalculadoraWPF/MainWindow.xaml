@@ -27,7 +27,9 @@
 
         <Menu Grid.ColumnSpan="4" Margin="0,0,0,26" Foreground="#FF111111" Background="#FF111111" >
             <MenuItem x:Name="menu" Header="≡" Height="46" Width="59" FontSize="26" Click="menu_Click" Foreground="White" ></MenuItem>
+            <Button  Width="123" fa:Awesome.Content="History" Foreground="White" BorderBrush="#FF111111" Background="#FF111111" FontFamily="{StaticResource FontAwesome}" Height="56" FontSize="25" Click="verHistorial"/>
         </Menu>
+        <StackPanel />
         <StackPanel Grid.Column="0" Grid.Row="0" x:Name="menuLateral" HorizontalAlignment="Left" Height="749" Margin="0,46,0,0" Grid.RowSpan="7" VerticalAlignment="Top" Width="190" Panel.ZIndex="1">
             <Border Background="#FF111111" BorderBrush="#FF111111" BorderThickness="1" Height="54">
                 <Label Content=" Calculadora" FontSize="16" FontWeight="Bold" Background="#00000000" Foreground="White" BorderThickness="1"  Margin="-1,19,35,-1" BorderBrush="#00000000"  />
@@ -132,6 +134,10 @@
         <Frame x:Name="cambioContenedor"  NavigationUIVisibility="Hidden" Grid.Row="1" Grid.RowSpan="6" Grid.ColumnSpan="4" >
 
         </Frame>
+        <StackPanel x:Name="menuHistorial" Grid.Column="3"   Grid.RowSpan="8" Background="#FF111111"  Panel.ZIndex="1">
+            <Label Content="Historial" FontSize="20" Foreground="White" ></Label>
+            <TextBlock x:Name="txtHistorial" Grid.Column="3"   Grid.RowSpan="6"  FontSize="15" Foreground="White"></TextBlock>
+        </StackPanel>
 
     </Grid>
 </Window>

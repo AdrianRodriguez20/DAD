@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -21,10 +23,21 @@ namespace CalculadoraWPF
     /// </summary>
     public partial class Conversor : Page
     {
-        public Conversor()
+        private String formato;
+        public Conversor(String formato)
         {
+            this.formato = formato;
             InitializeComponent();
-            List<Moneda> monedas = readXML();
+            List<Moneda> monedas = new List<Moneda>();
+            if (formato.Equals("XML"))
+            {
+                monedas = readXML();
+            }
+            else if (formato.Equals("JSON"))
+            {
+                monedas = readJSON();
+            }
+          
             foreach (Moneda moneda in monedas)
             {
                 cmbOrigen.Items.Add(moneda.Nombre);
@@ -101,12 +114,38 @@ namespace CalculadoraWPF
             return monedas;
         }
 
+        public List<Moneda> readJSON()
+        {
+            List<Moneda> monedas = new List<Moneda>();
+            monedas.Add(new Moneda { Nombre = "USD", Valor = 1.0 });
+            WebClient client = new WebClient();
+
+            var json = client.DownloadString("http://www.floatrates.com/daily/usd.json");
+
+            var data = JsonConvert.DeserializeObject<dynamic>(json);
+            foreach (var item in data)
+            {
+                monedas.Add(item.Value.ToObject<Moneda>());
+
+            }
+            return monedas;
+        }
+
         public double convertTo(String monedaOrigen, String monDestino, double cantidad)
         {
-          
-            List<Moneda> monedas = readXML();
-            
-            if(monedaOrigen == monDestino)
+
+            List<Moneda> monedas = new List<Moneda>();
+            if (this.formato.Equals("XML"))
+            {
+                monedas = readXML();
+            }
+            else if (this.formato.Equals("JSON"))
+            {
+                monedas = readJSON();
+            }
+
+
+            if (monedaOrigen == monDestino)
             {
                 return cantidad;
             }
@@ -142,10 +181,7 @@ namespace CalculadoraWPF
             }
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
         
 
     }

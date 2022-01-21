@@ -57,3 +57,5 @@ C:\Users\Admin\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\Calcul
 C:\Users\Admin\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\Calculadora.baml
 C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\Calculadora.g.cs
 C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\obj\Debug\Calculadora.baml
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Maria luisa\Desktop\DAD_Adrian\CalculadoraWPF\CalculadoraWPF\bin\Debug\Newtonsoft.Json.xml

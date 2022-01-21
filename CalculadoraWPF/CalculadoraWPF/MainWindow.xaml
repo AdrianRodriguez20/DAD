@@ -27,7 +27,7 @@
 
         <Menu Grid.ColumnSpan="4" Margin="0,0,0,26" Foreground="#FF111111" Background="#FF111111" >
             <MenuItem x:Name="menu" Header="≡" Height="46" Width="59" FontSize="26" Click="menu_Click" Foreground="White" ></MenuItem>
-            <Button  Width="123" fa:Awesome.Content="History" Foreground="White" BorderBrush="#FF111111" Background="#FF111111" FontFamily="{StaticResource FontAwesome}" Height="56" FontSize="25" Click="verHistorial"/>
+            <Button  Width="123" fa:Awesome.Content="History" Foreground="White" BorderBrush="#FF111111" Background="#FF111111" FontFamily="{StaticResource FontAwesome}" Height="61" FontSize="25" Click="verHistorial"/>
         </Menu>
         <StackPanel />
         <StackPanel Grid.Column="0" Grid.Row="0" x:Name="menuLateral" HorizontalAlignment="Left" Height="749" Margin="0,46,0,0" Grid.RowSpan="7" VerticalAlignment="Top" Width="190" Panel.ZIndex="1">
@@ -76,14 +76,14 @@
                 <StackPanel Orientation="Horizontal">
                     <Label Content=" "></Label>
                     <Label Height="30" fa:Awesome.Content="Money" Foreground="White" FontFamily="{StaticResource FontAwesome}" />
-                    <Label Content="Moneda" HorizontalAlignment="Center" Background="#00000000" Foreground="White"/>
+                    <Label Content="Moneda XML" HorizontalAlignment="Center" Background="#00000000" Foreground="White"/>
                 </StackPanel>
             </Button>
-            <Button  Height="48" HorizontalContentAlignment="Left" FontSize="16" Background="#FF111111" BorderBrush="#FF111111" >
+            <Button  Height="48" HorizontalContentAlignment="Left" Click="conversorJson_Click" FontSize="16" Background="#FF111111" BorderBrush="#FF111111" >
                 <StackPanel Orientation="Horizontal">
                     <Label Content=" "></Label>
-                    <Label Height="30" fa:Awesome.Content="Cube" Foreground="White" FontFamily="{StaticResource FontAwesome}" />
-                    <Label Content="Volumen" HorizontalAlignment="Center" Background="#00000000" Foreground="White"/>
+                    <Label Height="30" fa:Awesome.Content="Money" Foreground="White" FontFamily="{StaticResource FontAwesome}" />
+                    <Label Content="Moneda JSON" HorizontalAlignment="Center" Background="#00000000" Foreground="White"/>
                 </StackPanel>
             </Button>
             <Button  Height="48" HorizontalContentAlignment="Left" FontSize="16" Background="#FF111111" BorderBrush="#FF111111" >

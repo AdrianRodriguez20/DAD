@@ -60,7 +60,7 @@ namespace CalculadoraWPF
         {
 
            
-            cambioContenedor.Navigate(new Conversor());
+            cambioContenedor.Navigate(new Conversor("XML"));
         }
 
         private void calculadora_Click(object sender, RoutedEventArgs e)
@@ -87,6 +87,11 @@ namespace CalculadoraWPF
             }
             txtHistorial.Text = Environment.GetEnvironmentVariable("historial");
            
+        }
+
+        private void conversorJson_Click(object sender, RoutedEventArgs e)
+        {
+            cambioContenedor.Navigate(new Conversor("JSON"));
         }
     }
 }

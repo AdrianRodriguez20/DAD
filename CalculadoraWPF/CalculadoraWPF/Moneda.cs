@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,10 @@ namespace CalculadoraWPF
 {
     public class Moneda
     {
+        [JsonProperty("code")]
         private String nombre;
+
+        [JsonProperty("rate")]
         private double valor;
         
         public Moneda(){}

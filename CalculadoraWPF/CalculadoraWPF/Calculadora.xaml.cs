@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -60,7 +61,7 @@ namespace CalculadoraWPF
                     try
                     {
                         String operacion = txtResultado.Text;
-                        txtResultado.Text = new DataTable().Compute(txtResultado.Text, null).ToString();
+                        txtResultado.Text = new DataTable().Compute(txtResultado.Text, null).ToString().Replace(',', '.'); ;
                         txtUltimaOperacion.Text = operacion + " = " + txtResultado.Text;
                         Environment.SetEnvironmentVariable("historial", Environment.GetEnvironmentVariable("historial") + "\n"+txtUltimaOperacion.Text.ToString());
                     }
@@ -303,7 +304,10 @@ namespace CalculadoraWPF
             try
             {
                 String operacion = txtResultado.Text;
-                txtResultado.Text = new DataTable().Compute(txtResultado.Text, null).ToString();
+              
+               txtResultado.Text = new DataTable().Compute(txtResultado.Text, null).ToString().Replace(',', '.');
+
+                
                 txtUltimaOperacion.Text = operacion + " = " + txtResultado.Text;
                 Environment.SetEnvironmentVariable("historial", Environment.GetEnvironmentVariable("historial") + "\n" + txtUltimaOperacion.Text.ToString());
             }

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book version="5.1" xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xila="http://www.w3.org/2001/XInclude/local-attributes"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:trans="http://docbook.org/ns/transclusion"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:m="http://www.w3.org/1998/Math/MathML"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:db="http://docbook.org/ns/docbook">
+  <info>
+    <title>DocBook : Clínica Windows Form</title>
+
+    <author>
+      <personname><firstname>Adrián</firstname><surname>Rodríguez
+      Fuentes</surname></personname>
+
+      <affiliation>
+        <orgname>IES PUERTO DE LA CRUZ</orgname>
+      </affiliation>
+    </author>
+
+    <pubdate/>
+  </info>
+
+  <chapter>
+    <title>Introducción</title>
+
+    <section>
+      <title>Finalidad</title>
+
+      <para>Esta aplicación se ha desarrollado con la finalidad de
+      informatizar la gestión de una institución sanitaria. </para>
+
+      <para/>
+    </section>
+
+    <section>
+      <title>Requisitos</title>
+
+      <para>Los requisitos para poder utilizar estar aplicación de escritorio
+      </para>
+
+      <para/>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Manual de usuario</title>
+
+    <section>
+      <title>Personal Sanitario</title>
+
+      <para>El personal sanitario tiene s</para>
+
+      <para/>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="???"/>
+        </imageobject>
+      </mediaobject>
+
+      <para/>
+    </section>
+
+    <section>
+      <title>Personal Administrativo</title>
+
+      <para/>
+
+      <para/>
+    </section>
+
+    <section>
+      <title>Personal Sanitario</title>
+
+      <para/>
+
+      <para/>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Introducción</title>
+
+    <section>
+      <title>Manual de usuario</title>
+
+      <para/>
+
+      <para/>
+    </section>
+  </chapter>
+</book>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book version="5.1" xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xila="http://www.w3.org/2001/XInclude/local-attributes"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:trans="http://docbook.org/ns/transclusion"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:m="http://www.w3.org/1998/Math/MathML"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:db="http://docbook.org/ns/docbook">
+  <info>
+    <title>DocBook : Clínica Windows Form</title>
+
+    <author>
+      <personname><firstname>Adrián</firstname><surname>Rodríguez
+      Fuentes</surname></personname>
+
+      <affiliation>
+        <orgname>IES PUERTO DE LA CRUZ</orgname>
+      </affiliation>
+    </author>
+
+    <pubdate>1.0</pubdate>
+  </info>
+
+  <chapter>
+    <title>Introducción</title>
+
+    <section>
+      <title>Finalidad</title>
+
+      <para>Esta aplicación se ha desarrollado con la finalidad de
+      informatizar la gestión de una institución sanitaria.</para>
+    </section>
+
+    <section>
+      <title>Requisitos</title>
+
+      <para>Esta aplicación es compatible únicamente con dispositivos con
+      sistema operativo Windows.</para>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Acceso a la App</title>
+
+    <section>
+      <title>Login</title>
+
+      <para>Para poder acceder a la aplicación es necesario tener las
+      credenciales de alguno de los roles.</para>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="img/img_16.png"/>
+        </imageobject>
+      </mediaobject>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Manual de usuario</title>
+
+    <section>
+      <title>Personal Sanitario</title>
+
+      <para>Una vez iniciado sesión como personal sanitario , será redirigido
+      a la siguiente pantalla , desde esta realizará todas las funciones
+      dentro de su rol.</para>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="img/img_01.png"/>
+        </imageobject>
+      </mediaobject>
+
+      <para>En en parte superior de la aplicación se encuentra el menú con el
+      acceso , al hacer click sobre las opciones se desplegará una lista con
+      cada una de las acciones posibles . Además a su derecha, se encuentran
+      los atajos de teclado para acceder de una manera más rápida a las
+      mismas.</para>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="img/img_02.png"/>
+        </imageobject>
+      </mediaobject>
+
+      <para>Si accedemos a Buscar ( Alt+B) , se nos abre la ventana que vemos
+      en la imagen siguiente . Desde aquí podremos ver el listado de todos los
+      pacientes ,así como su información desplegando [+] que aparece a su
+      izquierda. También podemos realizar búsquedas por DNI y NHC, estas
+      búsquedas se tratan además por coincidencia es decir , por ejemplo , si
+      queremos buscar un grupo de pacientes en el que coincida parte del NHC ,
+      podemos hacer la búsqueda sin completarlo .</para>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="img/img_04.png"/>
+        </imageobject>
+      </mediaobject>
+
+      <para>Por otra parte en Ver ficha (Alt+F) , podemos ver las fichas de
+      los pacientes , también incorpora búsqueda por NHC.</para>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="img/img_06.png"/>
+        </imageobject>
+      </mediaobject>
+
+      <para>Para salir de la aplicación , pulsamos sobre el último elemento a
+      la derecha del menú "Salir" . Aquí nos pide una confirmación por si ha
+      sido una equivocación. Una vez presionado el sí la aplicación se cerrará
+      , así como su sesión.</para>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="img/img_08.png"/>
+        </imageobject>
+      </mediaobject>
+    </section>
+
+    <section>
+      <title>Personal Administrativo</title>
+
+      <para>Una vez iniciado sesión como personal administrativo , será
+      redirigido a la siguiente pantalla , desde esta realizará todas las
+      funciones dentro de su rol. En la parte superior como podemos observar
+      se encuentran dos menús el de arriba , es un menú desplegable mientras
+      el que se encuentra debajo formado por iconos son son las mismas
+      opciones que las que se encuentran dentro de pacientes.</para>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="img/img_09.png"/>
+        </imageobject>
+      </mediaobject>
+
+      <para>Como podemos observar desde la opción de pacientes nos permite
+      tanto buscar pacientes , crear , eliminar entre otros.</para>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="img/img_10.png"/>
+        </imageobject>
+      </mediaobject>
+
+      <para>Al igual que en el rol de personal sanitario al entrar en buscar
+      nos abre una ventana con el listado de pacientes , también permite
+      busquedas por DNI y por NHC.</para>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="img/img_12.png"/>
+        </imageobject>
+      </mediaobject>
+
+      <para>Por otra parte en la opción de crear podremos registrar nuevos
+      pacientes , recordar que todos los datos son obligatorios. Una vez
+      creado el paciente la ventana se cerrará , de lo contrario saldrá una
+      notificación informándole del error.</para>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="img/img_13.png"/>
+        </imageobject>
+      </mediaobject>
+    </section>
+
+    <section>
+      <title>Administrador</title>
+
+      <para>En este momento la sección del Administrador está en construcción
+      , próximamente será habilitado.</para>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="img/img_14.png"/>
+        </imageobject>
+      </mediaobject>
+    </section>
+
+    <section>
+      <title>Personal de Dirección</title>
+
+      <para>En este momento la sección de Dirección está en construcción ,
+      próximamente será habilitado.</para>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="img/img_15.png"/>
+        </imageobject>
+      </mediaobject>
+    </section>
+  </chapter>
+</book>

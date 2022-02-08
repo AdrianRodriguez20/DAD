@@ -15,7 +15,9 @@ namespace Modelo
             this.gf = gf;
         }
         
-        
+        /**
+         * Función para insertar un usuario
+         */
         public void save(Usuario usuario)
         {
             try
@@ -29,7 +31,10 @@ namespace Modelo
                 Console.WriteLine("Error: " + e.Message);
             }
         }
-        
+        /**
+ * Función que devuelve una lista de usuarios
+ */
+
         public List<Usuario> findAll()
         {
             List<Usuario> usuarios = new List<Usuario>();
@@ -54,7 +59,9 @@ namespace Modelo
             }
             return usuarios;
         }
-        
+        /**
+ * Función para actualizar un usuario
+ */
         public bool update(Usuario usuario)
         {
             List<Usuario> usuarios = findAll();
@@ -83,7 +90,9 @@ namespace Modelo
 
             return exito;
         }
-        
+        /**
+* Función para eliminar un usuario a través del user
+*/
         public bool delete(String user)
         {
             List<Usuario> usuarios = findAll();
@@ -108,7 +117,10 @@ namespace Modelo
 
             return exito;
         }
-        
+
+        /**
+* Función que devuelve un usuario a través del nombre de usuario
+*/
         public Usuario findById(String user)
         {
             List<Usuario> usuarios = findAll();

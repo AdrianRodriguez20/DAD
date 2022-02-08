@@ -12,7 +12,11 @@ namespace Modelo
         {
             this.gf = gf;
         }
-        
+
+        /**
+ * Función que devuelve una lista con todos los pacientes de la tabla
+ * 
+ */
         public List<Paciente> findAll()
         {
             List<Paciente> pacientes = new List<Paciente>();
@@ -40,6 +44,10 @@ namespace Modelo
             return pacientes;
         }
 
+        /**
+ * Función para insertar un paciente 
+ * 
+ */
         public void save(Paciente paciente)
         {
 
@@ -54,8 +62,12 @@ namespace Modelo
                 Console.WriteLine("Error: " + e.Message);
             }
 
-        }
-        
+        }      
+        /**
+         * Función para actualizar un paciente
+         * 
+         */
+
         public bool update(Paciente paciente)
         {
             List<Paciente> pacientes = findAll();
@@ -83,7 +95,11 @@ namespace Modelo
             }
             return exito;
         }
-        
+        /**
+        * Función para eliminar un un paciente a través del dni
+        * 
+        */
+
         public bool delete(String id)
         {
             List<Paciente> pacientes = findAll();
@@ -107,6 +123,11 @@ namespace Modelo
             }
             return exito;
         }
+
+        /**
+         * Función que devuelve un paciente a través del dni
+         * 
+         */
         
         public Paciente findById(String dni)
         {
@@ -121,7 +142,11 @@ namespace Modelo
             }
             return paciente;
         }
-        
+        /**
+ * Función que devuelve un paciente a través del nhc
+ * 
+ */
+
         public Paciente findByNhc(int nhc)
         {
             List<Paciente> pacientes = findAll();
@@ -134,8 +159,11 @@ namespace Modelo
             }
             return null;
         }
-        
-       
+
+        /**
+  * Función que devuelve una lista de  pacientes con coincidencia de dni a través del dni
+  * 
+  */
         public List<Paciente> findBydIdParcial(String dni)
         {
             List<Paciente> pacientes = findAll();
@@ -154,6 +182,10 @@ namespace Modelo
             return concidencia;
         }
 
+        /**
+* Función que devuelve una lista de  pacientes con coincidencia de nhc a través del nhc
+* 
+*/
         public List<Paciente> findByNhcParcial(String nhc)
         {
             List<Paciente> pacientes = findAll();

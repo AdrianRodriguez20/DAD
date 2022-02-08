@@ -12,7 +12,10 @@ namespace Modelo
         {
             this.gf = gf;
         }
-        
+        /**
+         * Medodo encargado de realizar la insercion
+         * 
+         */
         public void save(Ficha dao)
         {
             try
@@ -42,6 +45,10 @@ namespace Modelo
             throw new NotImplementedException();
         }
 
+        /**
+         * Función que devuelve una lista con todos las Fichas de la tabla
+         * 
+         */
         public List<Ficha> findAll()
         {
             List<Ficha> fichas = new List<Ficha>();
@@ -67,7 +74,11 @@ namespace Modelo
             }
             return fichas;
         }
-        
+        /**
+         * Funcion que realiza la busqueda de una ficha traves de su nhc
+         * 
+         */
+
         public List<Ficha> findByNhc(int id)
         {
             List<Ficha> fichas = findAll();

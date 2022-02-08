@@ -8,7 +8,9 @@ namespace Controlador
     {
         UsuarioDAO usuarioDAO = new UsuarioDAO(new GestorFichero("users.txt"));
         
-        
+        /**
+         * Función para iniciar sesión , a través del usuario y deni que devuelve un rol si consta en el fichero y un null si no existe.
+         */
         public string Login(string user, string password)
         {
             Usuario usuario = null;

@@ -2,6 +2,9 @@
 
 namespace Modelo
 {
+    /**
+     * Interfaz con las acciones básicas de un crud
+     */
     public interface Crud <T, E> 
     {
         void save(T dao);

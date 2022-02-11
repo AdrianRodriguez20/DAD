@@ -14,6 +14,11 @@ namespace Clinica
             inicializarLista();
         }
 
+        /// <summary>
+        ///  Método para buscar pacientes al hacer click en el botón buscar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             listViewPacientes.Items.Clear();
@@ -29,7 +34,9 @@ namespace Clinica
             }
         }
 
-
+    /// <summary>
+    /// Método para inicializar la lista de pacientes
+    /// </summary>
         public void inicializarLista()
         {
    
@@ -44,10 +51,13 @@ namespace Clinica
             }
 
         }
+    /// <summary>
+    /// Método para eliminar pacientes al seleccciar uno de la lista
+    /// </summary>
 
         private void listViewPacientes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //take the selected row
+           
             ListView.SelectedListViewItemCollection items = listViewPacientes.SelectedItems;
 
             

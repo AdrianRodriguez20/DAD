@@ -16,3 +16,5 @@ C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Controlador\obj\Debug\Controlador.dll
 C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Controlador\obj\Debug\Controlador.pdb
 C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Controlador\obj\Debug\Controlador.csproj.CopyComplete
 C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Controlador\obj\Debug\Controlador.csproj.CopyComplete
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Controlador\bin\Debug\Controlador.xml
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Controlador\bin\Debug\Modelo.xml

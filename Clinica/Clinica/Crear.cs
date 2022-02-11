@@ -11,6 +11,9 @@ namespace Clinica
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Método para crear un nuevo paciente , tras hacer click en el botón
+        /// </summary>
         private void btnCrear_Click(object sender, EventArgs e)
         {
             PacienteController pacienteController = new PacienteController();

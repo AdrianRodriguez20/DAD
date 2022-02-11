@@ -13,10 +13,10 @@ namespace Modelo
             this.gf = gf;
         }
 
-        /**
- * Función que devuelve una lista con todos los pacientes de la tabla
- * 
- */
+        /// <summary>
+        /// Función que devuelve una lista con todos los pacientes de la tabla
+        /// </summary>
+        /// <returns>lista de todos los pacientes</returns>
         public List<Paciente> findAll()
         {
             List<Paciente> pacientes = new List<Paciente>();
@@ -44,10 +44,9 @@ namespace Modelo
             return pacientes;
         }
 
-        /**
- * Función para insertar un paciente 
- * 
- */
+        /// <summary>
+        /// Función para insertar un paciente
+        /// </summary>
         public void save(Paciente paciente)
         {
 
@@ -63,11 +62,11 @@ namespace Modelo
             }
 
         }      
-        /**
-         * Función para actualizar un paciente
-         * 
-         */
-
+        /// <summary>
+        /// Función para actualizar un paciente
+        /// </summary>
+        /// <param name="paciente">Paciente que queremos actualizar</param>
+        /// <returns></returns>
         public bool update(Paciente paciente)
         {
             List<Paciente> pacientes = findAll();
@@ -95,10 +94,12 @@ namespace Modelo
             }
             return exito;
         }
-        /**
-        * Función para eliminar un un paciente a través del dni
-        * 
-        */
+       
+        /// <summary>
+        /// Función para eliminar un un paciente a través del dni
+        /// </summary>
+        /// <param name="id">DNI del paciente</param>
+        /// <returns>True o False , según el éxito de la operación</returns>
 
         public bool delete(String id)
         {
@@ -124,10 +125,11 @@ namespace Modelo
             return exito;
         }
 
-        /**
-         * Función que devuelve un paciente a través del dni
-         * 
-         */
+        /// <summary>
+        /// Función que devuelve un paciente a través del dni
+        /// </summary>
+        /// <param name="dni">DNI del paciente</param>
+        /// <returns>Paciente coincidente</returns>
         
         public Paciente findById(String dni)
         {
@@ -142,10 +144,11 @@ namespace Modelo
             }
             return paciente;
         }
-        /**
- * Función que devuelve un paciente a través del nhc
- * 
- */
+        /// <summary>
+        /// Función que devuelve un paciente a través del nhc
+        /// </summary>
+        /// <param name="nhc"> NHC del paciente</param>
+        /// <returns> Paciente coincidente</returns>
 
         public Paciente findByNhc(int nhc)
         {
@@ -160,10 +163,11 @@ namespace Modelo
             return null;
         }
 
-        /**
-  * Función que devuelve una lista de  pacientes con coincidencia de dni a través del dni
-  * 
-  */
+            /// <summary>
+            /// Función que devuelve una lista de  pacientes con coincidencia de dni a través del dni
+            /// </summary>
+            /// <param name="dni">DNI del paciente</param>
+            /// <returns>Lista de pacientes coincidentes</returns>
         public List<Paciente> findBydIdParcial(String dni)
         {
             List<Paciente> pacientes = findAll();
@@ -182,10 +186,11 @@ namespace Modelo
             return concidencia;
         }
 
-        /**
-* Función que devuelve una lista de  pacientes con coincidencia de nhc a través del nhc
-* 
-*/
+        /// <summary>
+        /// Función que devuelve una lista de  pacientes con coincidencia de nhc a través del nhc
+        /// </summary>
+        /// <param name="nhc">NCH del paciente</param>
+        /// <returns>Lista de pacientes coincidentes</returns>
         public List<Paciente> findByNhcParcial(String nhc)
         {
             List<Paciente> pacientes = findAll();

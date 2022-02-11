@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Modelo</name>
+    </assembly>
+    <members>
+        <member name="T:Modelo.Crud`2">
+            <summary>
+            Interfaz con las acciones básicas de un crud
+            </summary>
+        </member>
+        <member name="M:Modelo.FichaDAO.save(Modelo.Ficha)">
+            <summary>
+            Medodo encargado de realizar la insercion
+            </summary>
+            <param name="dao">ficha</param>
+        </member>
+        <member name="M:Modelo.FichaDAO.findAll">
+            <summary>
+            Función que devuelve una lista con todos las Fichas de la tabla
+            </summary>
+            <returns>Lista de fichas</returns>
+        </member>
+        <member name="M:Modelo.FichaDAO.findByNhc(System.Int32)">
+            <summary>
+            Funcion que realiza la busqueda de una ficha traves de su nhc
+            </summary>
+            <param name="id">NHC del paciente</param>
+            <returns>Lista de fichas</returns>
+        </member>
+        <member name="T:Modelo.GestorFichero">
+            <summary>
+            Clase para la gestión de ficheros
+            </summary>
+        </member>
+        <member name="M:Modelo.PacienteDAO.findAll">
+            <summary>
+            Función que devuelve una lista con todos los pacientes de la tabla
+            </summary>
+            <returns>lista de todos los pacientes</returns>
+        </member>
+        <member name="M:Modelo.PacienteDAO.save(Modelo.Paciente)">
+            <summary>
+            Función para insertar un paciente
+            </summary>
+        </member>
+        <member name="M:Modelo.PacienteDAO.update(Modelo.Paciente)">
+            <summary>
+            Función para actualizar un paciente
+            </summary>
+            <param name="paciente">Paciente que queremos actualizar</param>
+            <returns></returns>
+        </member>
+        <member name="M:Modelo.PacienteDAO.delete(System.String)">
+            <summary>
+            Función para eliminar un un paciente a través del dni
+            </summary>
+            <param name="id">DNI del paciente</param>
+            <returns>True o False , según el éxito de la operación</returns>
+        </member>
+        <member name="M:Modelo.PacienteDAO.findById(System.String)">
+            <summary>
+            Función que devuelve un paciente a través del dni
+            </summary>
+            <param name="dni">DNI del paciente</param>
+            <returns>Paciente coincidente</returns>
+        </member>
+        <member name="M:Modelo.PacienteDAO.findByNhc(System.Int32)">
+            <summary>
+            Función que devuelve un paciente a través del nhc
+            </summary>
+            <param name="nhc"> NHC del paciente</param>
+            <returns> Paciente coincidente</returns>
+        </member>
+        <member name="M:Modelo.PacienteDAO.findBydIdParcial(System.String)">
+            <summary>
+            Función que devuelve una lista de  pacientes con coincidencia de dni a través del dni
+            </summary>
+            <param name="dni">DNI del paciente</param>
+            <returns>Lista de pacientes coincidentes</returns>
+        </member>
+        <member name="M:Modelo.PacienteDAO.findByNhcParcial(System.String)">
+            <summary>
+            Función que devuelve una lista de  pacientes con coincidencia de nhc a través del nhc
+            </summary>
+            <param name="nhc">NCH del paciente</param>
+            <returns>Lista de pacientes coincidentes</returns>
+        </member>
+        <member name="M:Modelo.UsuarioDAO.save(Modelo.Usuario)">
+            <summary>
+            Función para insertar un usuario en el fichero
+            <param name="usuario"> Usuario a insertar</param>
+            </summary>
+        </member>
+        <member name="M:Modelo.UsuarioDAO.findAll">
+            <summary>
+            Función que devuelve una lista de usuarios
+            </summary>
+            <returns>lista de usuarios</returns>
+        </member>
+        <member name="M:Modelo.UsuarioDAO.update(Modelo.Usuario)">
+            <summary>
+            Función para actualizar un usuario en el fichero
+            </summary>
+            <param name="usuario"></param>
+            <returns> true o false , según el éxito de la operación</returns>
+        </member>
+        <member name="M:Modelo.UsuarioDAO.delete(System.String)">
+            <summary>
+            Función para eliminar un usuario a través del user
+            </summary>
+            <param name="user">nombre de usuario a eliminar"</param>
+        </member>
+        <member name="M:Modelo.UsuarioDAO.findById(System.String)">
+            <summary>
+            Función que devuelve un usuario a través del nombre de usuario
+            </summary>
+            <param name="user">nombre de usuario</param>
+        </member>
+        <member name="M:Modelo.Ficha.#ctor(System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="nhc">nhc del paciente</param>
+            <param name="fechaVisita">fecha de visita </param>
+            <param name="especialista"> especialista </param>
+            <param name="motivo"> motivo de la visita</param>
+            <param name="preinscripción">preinscripcion medica</param>
+        </member>
+        <member name="M:Modelo.Paciente.#ctor">
+            <summary>
+            Constructor vacio
+            </summary>
+        </member>
+        <member name="M:Modelo.Paciente.#ctor(System.String,System.String,System.String,System.Int32,System.String,System.String,System.Int32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="nombre"> nombre del paciente</param>
+            <param name="apellidos">apellidos del paciente</param>
+            <param name="direccion">direccion del paciente</param>
+            <param name="codigoPostal">codigo postal del paciente</param>
+            <param name="poblacion">poblacion del paciente</param>
+            <param name="dni">dni del paciente</param>
+            <param name="nhc">nhc del paciente</param>
+        </member>
+        <member name="M:Modelo.Usuario.#ctor">
+            <summary>
+            Constructor vacio
+            </summary>
+        </member>
+        <member name="M:Modelo.Usuario.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="user"> nombre de usuario</param>
+            <param name="password">contraseña del usuario</param>
+            <param name="rol"> rol del usuario</param>
+        </member>
+    </members>
+</doc>

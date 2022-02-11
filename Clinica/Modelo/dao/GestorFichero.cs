@@ -2,6 +2,9 @@
 
 namespace Modelo
 {
+    /// <summary>
+    /// Clase para la gestión de ficheros
+    /// </summary>
     public class GestorFichero
     {
         private String ruta;

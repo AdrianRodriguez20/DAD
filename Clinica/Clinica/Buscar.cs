@@ -13,7 +13,9 @@ namespace Clinica
             inicializarLista();
         }
 
-
+        /// <summary>
+        ///  Método para buscar pacientes , tras clicar en el botón buscar
+        /// </summary>
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
@@ -45,6 +47,10 @@ namespace Clinica
         {
 
         }
+        
+        /// <summary>
+        /// Método para inicializar la lista
+        /// </summary>
         public void inicializarLista()
         {
 

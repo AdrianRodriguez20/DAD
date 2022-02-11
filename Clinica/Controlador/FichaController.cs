@@ -8,6 +8,11 @@ namespace Controlador
     {
         FichaDAO fichaDAO = new FichaDAO(new GestorFichero("fichaspacientes.txt"));
 
+        /// <summary>
+        /// Función que devuelve una lista de fichas por NHC
+        /// </summary>
+        /// <param name="contenido">NHC del paciente</param>
+        /// <returns>Lista de fichas</returns>
         public List<string[]> listarFichasNhc(String contenido)
         {
             List<Ficha> fichas = null;

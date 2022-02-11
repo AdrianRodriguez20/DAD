@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Controlador</name>
+    </assembly>
+    <members>
+        <member name="M:Controlador.FichaController.listarFichasNhc(System.String)">
+            <summary>
+            Función que devuelve una lista de fichas por NHC
+            </summary>
+            <param name="contenido">NHC del paciente</param>
+            <returns>Lista de fichas</returns>
+        </member>
+        <member name="M:Controlador.LoginController.Login(System.String,System.String)">
+            <summary>
+            Función para iniciar sesión , a través del usuario y de la contraseña
+            </summary>
+            <param name="user"> nombre del usuario</param>
+            <param name="password"> contraseña del usuario</param>
+            <returns> devuelve un rol si consta en el fichero y un null si no existe.</returns>
+        </member>
+        <member name="M:Controlador.PacienteController.AgregarPaciente(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Función para añadir un paciente a la lista de pacientes
+            </summary>
+            <param name="nombre"> nombre del paciente</param>
+            <param name="apellidos">apellidos del paciente</param>
+            <param name="direccion">dirección del paciente</param>
+            <param name="codigoPostal">código postal del paciente</param>
+            <param name="poblacion"> población del paciente</param>
+            <param name="dni"> dni del paciente</param>
+            <param name="nhc">nhc del paciente</param>
+            <returns> Devuelve True si la insercion se ha realizado correctamente, False en caso contrario</returns>
+        </member>
+        <member name="M:Controlador.PacienteController.listarPacientes">
+            <summary>
+             Función que devuelve una lista de pacientes
+            </summary>
+            <returns> lista de pacientes</returns>
+        </member>
+        <member name="M:Controlador.PacienteController.listarPacienteConcidencia(System.String,System.String)">
+            <summary>
+            Función que devuelve una lista de pacientes según coincidencia
+            </summary>
+            <param name="opcion">opción de filtrado , dni o nhc</param>
+            <param name="contenido">valor de la busqueda</param>
+            <returns>Lista de pacientes con coincidencia</returns>
+        </member>
+        <member name="M:Controlador.PacienteController.eliminarPaciente(System.String)">
+            <summary>
+            Función para eliminar un paciente
+            </summary>
+            <param name="dni">dni del paciente</param>
+            <returns>Devuelve True si la eliminación se ha realizado correctamente, False en caso contrario</returns>
+        </member>
+        <member name="M:Controlador.PacienteController.validarDni(System.String)">
+            <summary>
+            Función para validar el dni
+            </summary>
+            <param name="dni"> dni del paciente </param>
+            <returns>Devuelve True si el dni es correcto, False en caso contrario</returns>
+        </member>
+        <member name="M:Controlador.PacienteController.validarNhc(System.String)">
+            <summary>
+            Función para validar el nhc
+            </summary>
+            <param name="nhc">nhc del paciente</param>
+            <returns> Devuelve true si el nhc es correcto, false en caso contrario</returns>
+        </member>
+    </members>
+</doc>

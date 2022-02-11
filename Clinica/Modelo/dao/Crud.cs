@@ -2,10 +2,11 @@
 
 namespace Modelo
 {
-    /**
-     * Interfaz con las acciones básicas de un crud
-     */
-    public interface Crud <T, E> 
+  /// <summary>
+  /// Interfaz con las acciones básicas de un crud
+  /// </summary>
+
+  public interface Crud <T, E> 
     {
         void save(T dao);
 
@@ -17,4 +18,4 @@ namespace Modelo
 
         List<T> findAll();
     }
-}
+}  

@@ -11,8 +11,10 @@ namespace Clinica
             IsMdiContainer = true;
         }
       
-      
-        private void App_Load(object sender, EventArgs e)
+      /// <summary>
+      /// Método para quitar el border de los controles
+      /// </summary>
+      private void App_Load(object sender, EventArgs e)
         {
             FormBorderStyle =FormBorderStyle.None;
         }
@@ -21,6 +23,9 @@ namespace Clinica
         {
 
         }
+/// <summary>
+/// Método para abrir la ventana de buscar pacientes
+/// </summary>
 
         private void buscarPacienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -29,6 +34,9 @@ namespace Clinica
             buscarPS.MdiParent = this;      
             buscarPS.Show();
         }
+/// <summary>
+/// Método para abrir la ventana de ver fichas
+/// </summary>
 
         private void verFichaToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -37,6 +45,9 @@ namespace Clinica
             fichaPS.Show();
         }
 
+/// <summary>
+/// Método para salir del programa
+/// </summary>
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -46,6 +57,10 @@ namespace Clinica
             }
         
         }
+/// <summary>
+/// Método para minimizar la ventana
+/// </summary>
+
 
         private void minimizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -54,7 +69,9 @@ namespace Clinica
                 mdi.WindowState = FormWindowState.Minimized;
             }
         }
-
+/// <summary>
+/// Método para maximizar la ventana
+/// </summary>
         private void maximizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             foreach (Form mdi in MdiChildren)
@@ -62,12 +79,16 @@ namespace Clinica
                 mdi.WindowState = FormWindowState.Maximized;
             }
         }
-
+/// <summary>
+/// Método para cerrar la ventana activa
+/// </summary>
         private void cerrarActivaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ActiveMdiChild.Close();
         }
-
+/// <summary>
+/// Método para cerrar todas las ventanas
+/// </summary>
         private void cerrarTodasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             foreach (Form mdi in MdiChildren)
@@ -75,17 +96,23 @@ namespace Clinica
                 mdi.Close();
             }
         }
-
+/// <summary>
+/// Método para visualizar las ventanas en cascada
+/// </summary>
         private void visualizaciónEnCascadaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.LayoutMdi(MdiLayout.Cascade);
         }
-
+/// <summary>
+/// Método para visualizar las ventanas en vertical
+/// </summary>
         private void verEnVerticalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.LayoutMdi(MdiLayout.TileVertical);
         }
-
+/// <summary>
+/// Método para abrir la ventana de extra
+/// </summary>
         private void eXTRAToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormMDI formMDI = new FormMDI();

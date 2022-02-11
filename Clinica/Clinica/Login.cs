@@ -11,6 +11,11 @@ namespace Clinica
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Método para iniciar sesión en la aplicación tras hacer click en el botón de login
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {

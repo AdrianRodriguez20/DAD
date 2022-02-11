@@ -14,10 +14,11 @@ namespace Modelo
         {
             this.gf = gf;
         }
-        
-        /**
-         * Función para insertar un usuario
-         */
+        /// <summary>
+        /// Función para insertar un usuario en el fichero
+        /// <param name="usuario"> Usuario a insertar</param>
+        /// </summary>
+
         public void save(Usuario usuario)
         {
             try
@@ -31,10 +32,10 @@ namespace Modelo
                 Console.WriteLine("Error: " + e.Message);
             }
         }
-        /**
- * Función que devuelve una lista de usuarios
- */
-
+  /// <summary>
+  /// Función que devuelve una lista de usuarios
+  /// </summary>
+  /// <returns>lista de usuarios</returns>
         public List<Usuario> findAll()
         {
             List<Usuario> usuarios = new List<Usuario>();
@@ -59,9 +60,11 @@ namespace Modelo
             }
             return usuarios;
         }
-        /**
- * Función para actualizar un usuario
- */
+        /// <summary>
+        /// Función para actualizar un usuario en el fichero
+        /// </summary>
+        /// <param name="usuario"></param>
+        /// <returns> true o false , según el éxito de la operación</returns>
         public bool update(Usuario usuario)
         {
             List<Usuario> usuarios = findAll();
@@ -90,9 +93,10 @@ namespace Modelo
 
             return exito;
         }
-        /**
-* Función para eliminar un usuario a través del user
-*/
+        /// <summary>
+        /// Función para eliminar un usuario a través del user
+        /// </summary>
+        /// <param name="user">nombre de usuario a eliminar"</param>
         public bool delete(String user)
         {
             List<Usuario> usuarios = findAll();
@@ -118,9 +122,10 @@ namespace Modelo
             return exito;
         }
 
-        /**
-* Función que devuelve un usuario a través del nombre de usuario
-*/
+        /// <summary>
+        /// Función que devuelve un usuario a través del nombre de usuario
+        /// </summary>
+        /// <param name="user">nombre de usuario</param>
         public Usuario findById(String user)
         {
             List<Usuario> usuarios = findAll();

@@ -14,7 +14,14 @@ namespace Modelo
         {
      
         }
-        
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="nhc">nhc del paciente</param>
+        /// <param name="fechaVisita">fecha de visita </param>
+        /// <param name="especialista"> especialista </param>
+        /// <param name="motivo"> motivo de la visita</param>
+        /// <param name="preinscripción">preinscripcion medica</param>
         public Ficha(int nhc, String fechaVisita, String especialista, String motivo, String preinscripción)
         {
             this.nhc = nhc;

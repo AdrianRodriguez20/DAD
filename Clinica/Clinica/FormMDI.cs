@@ -18,6 +18,10 @@ namespace Clinica
             IsMdiContainer = true;
         }
 
+        /// <summary>
+        /// Método para crear un hijo de tipo Form
+        /// </summary>
+
         private void crearHijoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int num = 0;
@@ -42,6 +46,10 @@ namespace Clinica
             hijoItem.CheckOnClick = true;
 
         }
+        
+        /// <summary>
+        /// Método para cerar un hijo de tipo Form
+        /// </summary>
 
         private void cerrarHijoToolStripMenuItem_Click(object sender, EventArgs e)
         {

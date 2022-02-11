@@ -19,6 +19,10 @@ namespace Clinica
             InitializeComponent();
             InitializeTreeView();
         }
+        
+        /// <summary>
+        /// Método para inicializar el TreeView
+        /// </summary>
         private void InitializeTreeView()
         {
           
@@ -41,11 +45,9 @@ namespace Clinica
 
         }
 
-            private void buscarPacienteTreeView_AfterSelect(object sender, TreeViewEventArgs e)
-        {
-
-
-        }
+    /// <summary>
+    /// Método para buscar , tras hacer click el botón buscar
+    /// </summary>
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
@@ -72,5 +74,12 @@ namespace Clinica
 
             buscarPacienteTreeView.EndUpdate();
         }
+        
+        private void buscarPacienteTreeView_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+
+
+        }
+
     }
 }

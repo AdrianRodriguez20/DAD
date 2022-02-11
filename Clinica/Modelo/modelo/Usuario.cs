@@ -10,11 +10,19 @@ namespace Modelo
         private String password;
         private String rol;
 
+        /// <summary>
+        /// Constructor vacio
+        /// </summary>
         public Usuario()
         {
             
         }
-        
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="user"> nombre de usuario</param>
+        /// <param name="password">contraseña del usuario</param>
+        /// <param name="rol"> rol del usuario</param>
         public Usuario(String user, String password, String rol)
         {
             this.user = user;

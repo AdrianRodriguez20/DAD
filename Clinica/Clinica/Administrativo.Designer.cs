@@ -47,6 +47,7 @@ namespace Clinica
             this.aToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.aToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.aToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuAdministrativo.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -58,8 +59,9 @@ namespace Clinica
             this.menuAdministrativo.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pacientesToolStripMenuItem,
             this.centroDeDíaToolStripMenuItem,
-            this.citaToolStripMenuItem,
             this.guardarActividadToolStripMenuItem,
+            this.citaToolStripMenuItem,
+            this.helpToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.menuAdministrativo.Location = new System.Drawing.Point(0, 0);
             this.menuAdministrativo.Name = "menuAdministrativo";
@@ -82,34 +84,34 @@ namespace Clinica
             // buscarToolStripMenuItem
             // 
             this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
-            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
             this.buscarToolStripMenuItem.Text = "Buscar";
             this.buscarToolStripMenuItem.Click += new System.EventHandler(this.buscarToolStripMenuItem_Click);
             // 
             // crearPacienteToolStripMenuItem
             // 
             this.crearPacienteToolStripMenuItem.Name = "crearPacienteToolStripMenuItem";
-            this.crearPacienteToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.crearPacienteToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
             this.crearPacienteToolStripMenuItem.Text = "Crear";
             this.crearPacienteToolStripMenuItem.Click += new System.EventHandler(this.crearPacienteToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
             // fichaToolStripMenuItem
             // 
             this.fichaToolStripMenuItem.Name = "fichaToolStripMenuItem";
-            this.fichaToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.fichaToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
             this.fichaToolStripMenuItem.Text = "Ficha";
             // 
             // sacarEtiquetasToolStripMenuItem
             // 
             this.sacarEtiquetasToolStripMenuItem.Name = "sacarEtiquetasToolStripMenuItem";
-            this.sacarEtiquetasToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.sacarEtiquetasToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
             this.sacarEtiquetasToolStripMenuItem.Text = "Sacar Etiquetas";
             // 
             // centroDeDíaToolStripMenuItem
@@ -185,6 +187,13 @@ namespace Clinica
             this.aToolStripMenuItem4.Name = "aToolStripMenuItem4";
             this.aToolStripMenuItem4.Size = new System.Drawing.Size(42, 34);
             // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(49, 34);
+            this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
+            // 
             // ViewAdministrativo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,5 +231,6 @@ namespace Clinica
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fichaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sacarEtiquetasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
     }
 }

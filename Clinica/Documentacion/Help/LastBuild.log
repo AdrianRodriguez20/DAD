@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2022.2.6.0" projectFile="C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Documentacion.shfbproj" started="11/02/2022 1:37:48">
+<buildStep step="Initializing">
+Finding tools...
+The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder&#39;
+Searching for HTML Help 1 compiler...
+Found HTML Help 1 compiler in &#39;C:\Program Files (x86)\HTML Help Workshop\&#39;
+Locating components in the following folder(s):
+    C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion
+    C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins
+    C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components
+Using framework reflection data for &#39;.NET Framework 4.7.2&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework&#39;
+Using presentation style &#39;VS2013&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013&#39;
+Loading and initializing plug-ins...
+Lightweight Website Style Version 2022.2.6.0
+Copyright &#169; 2006-2022, Eric Woodruff, All Rights Reserved
+Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\bin\Debug\Clinica.xml
+Source: C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\bin\Debug\Clinica.exe
+    Found assembly &#39;C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\bin\Debug\Clinica.exe&#39;
+Source: C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Controlador\bin\Debug\Modelo.xml
+Source: C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Controlador\bin\Debug\Modelo.dll
+    Found assembly &#39;C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Controlador\bin\Debug\Modelo.dll&#39;
+Source: C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Controlador\bin\Debug\Controlador.xml
+Source: C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Controlador\bin\Debug\Controlador.dll
+    Found assembly &#39;C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Controlador\bin\Debug\Controlador.dll&#39;
+
+Copying XML comments files
+    C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\bin\Debug\Clinica.xml -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Clinica.xml
+    C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Controlador\bin\Debug\Modelo.xml -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Modelo.xml
+    C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Controlador\bin\Debug\Controlador.xml -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Controlador.xml
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (es-ES, Espa&#241;ol (Espa&#241;a))...
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+</plugIn>    Last step completed in 00:00:00,0050
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00,0010
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+[C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe - GenerateRefInfo-193bfa4c-dbbd-4316-8de7-0dd63026d114.proj]
+Compilaci&#162;n iniciada a las 11/02/2022 1:37:50.
+Proyecto &quot;C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\GenerateRefInfo-193bfa4c-dbbd-4316-8de7-0dd63026d114.proj&quot; en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio &quot;obj\Debug\&quot;.
+GenerateBindingRedirects:
+  No hay redirecciones de enlace sugeridas procedentes de ResolveAssemblyReferences.
+GenerateRefInfo:
+  Microsoft.Build (v16.11.1+3e40a09f830fce5bb34916a4d20255c0876c9b5d)
+  &#184; Microsoft Corporation. All rights reserved.
+  No source code context base path specified.  Source context information is unavailable.
+  Loaded 3 assemblies for reflection and 1 dependency assemblies.
+  Wrote information on 3 namespaces, 20 types, and 107 members
+  Merging duplicate type and member information
+  Merged 0 duplicate type(s) and 0 duplicate member(s)
+Compilaci&#162;n del proyecto terminada &quot;C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\GenerateRefInfo-193bfa4c-dbbd-4316-8de7-0dd63026d114.proj&quot; (destinos predeterminados).
+    Last step completed in 00:00:01,1473
+</buildStep>
+<buildStep step="ApplyDocumentModel">
+Applying document model to reflection output...
+    Last step completed in 00:00:00,3648
+</buildStep>
+<buildStep step="AddApiTopicFilenames">
+Adding topic filenames to API members...
+    Last step completed in 00:00:00,1449
+</buildStep>
+<buildStep step="GenerateApiTopicManifest">
+Generating API topic manifest...
+    Last step completed in 00:00:00,1319
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:00,1129
+</buildStep>
+<buildStep step="CopyConceptualContent">
+Copying conceptual content...
+Copying standard token shared content file...
+Checking for other token files...
+Checking for code snippets files...
+Copying images and creating the media map file...
+Generating conceptual topic files
+    Parsing topic file &#39;C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Content\Welcome.aml&#39;
+    C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Content\Welcome.aml -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\ddueXml\2532d197-c059-449e-886a-c894478ee724.xml
+    Parsing topic file &#39;C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Content\VersionHistory\VersionHistory.aml&#39;
+    C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Content\VersionHistory\VersionHistory.aml -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\ddueXml\d5d6ff3b-277c-4e27-8b92-381a8d5b2a11.xml
+    Parsing topic file &#39;C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Content\VersionHistory\v1.0.0.0.aml&#39;
+    C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Content\VersionHistory\v1.0.0.0.aml -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\ddueXml\6d172582-dbb5-46f1-9a07-8e62c4a2c8be.xml
+    Last step completed in 00:00:00,0240
+</buildStep>
+<buildStep step="CreateConceptualTopicConfigs">
+Creating conceptual topic configuration files...
+    Companion files
+    _ContentMetadata_.xml
+    Merging topic IDs into manifest.xml
+    Last step completed in 00:00:00,0090
+</buildStep>
+<buildStep step="CopyAdditionalContent">
+Copying additional content files...
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\icons\Help.png -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\Help.png
+    Last step completed in 00:00:00,0040
+</buildStep>
+<buildStep step="MergeTablesOfContents">
+Merging conceptual and additional tables of contents...
+    Last step completed in 00:00:00,0000
+</buildStep>
+<buildStep step="GenerateIntermediateTableOfContents">
+Generating intermediate table of contents file for API content...
+Generating conceptual content intermediate TOC file...
+    Last step completed in 00:00:00,1509
+</buildStep>
+<buildStep step="CreateBuildAssemblerConfigs">
+Creating Sandcastle configuration files...
+    sandcastle.config
+    Last step completed in 00:00:00,3618
+</buildStep>
+<buildStep step="MergeCustomConfigs">
+Merging custom build component configurations
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\sandcastle.config
+  Updating reference topic configurations.
+  Updating conceptual topic configurations.
+    Removing unused ExampleComponent.
+    Last step completed in 00:00:00,0040
+</buildStep>
+<buildStep step="BuildTopics">
+Building help topics...
+[C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe - BuildTopics.proj]
+Compilaci&#162;n iniciada a las 11/02/2022 1:37:52.
+Proyecto &quot;C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj&quot; en nodo 1 (destinos predeterminados).
+BuildTopics:
+  Microsoft.Build (v16.11.1+3e40a09f830fce5bb34916a4d20255c0876c9b5d)
+  &#184; Microsoft Corporation. All rights reserved.
+  Loading configuration...
+  Processing topics...
+BuildAssembler : warning : ShowMissingComponent: [N:Clinica] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Clinica.BuscarPS] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Clinica.BuscarPS.#ctor] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Clinica.FichaPS] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Clinica.FichaPS.#ctor] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Clinica.FormMDI] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Clinica.FormMDI.#ctor] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Clinica.ViewAdministrativo] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Clinica.ViewAdministrativo.#ctor] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewAdministrativo.crearPacienteToolStripMenuItem] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Clinica.ViewBuscar] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Clinica.ViewBuscar.#ctor] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Clinica.ViewCrear] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Clinica.ViewCrear.#ctor] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewCrear.btnCrear] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewCrear.lblCodigoPostal] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewCrear.txbApellidos] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewCrear.txbCodigoPostal] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewCrear.txbDireccion] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewCrear.txbDni] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewCrear.txbNhc] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewCrear.txbNombre] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewCrear.txbPoblacion] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Clinica.ViewEliminar] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Clinica.ViewEliminar.#ctor] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Clinica.ViewLogin] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Clinica.ViewLogin.#ctor] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewLogin.btnEntrar] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewLogin.txbPassword] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewLogin.txbUsuario] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Clinica.ViewSanitario] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Clinica.ViewSanitario.#ctor] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewSanitario.actasClinicasToolStripMenuItem] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewSanitario.buscarNotaToolStripMenuItem1] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewSanitario.buscarPacienteToolStripMenuItem] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewSanitario.crearToolStripMenuItem] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewSanitario.eliminarToolStripMenuItem] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewSanitario.menuStrip1] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewSanitario.modificarToolStripMenuItem] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewSanitario.pacientesToolStripMenuItem] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewSanitario.sacarEtiquetasToolStripMenuItem] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewSanitario.salirToolStripMenuItem] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Clinica.ViewSanitario.verFichaToolStripMenuItem] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Controlador] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Controlador.FichaController] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Controlador.FichaController.#ctor] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Controlador.LoginController] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Controlador.LoginController.#ctor] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Controlador.PacienteController] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Controlador.PacienteController.#ctor] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Modelo] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Modelo.Crud`2] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Modelo.Crud`2] Missing &lt;typeparam name=&quot;E&quot;/&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Crud`2.delete(`1)] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Crud`2.delete(`1)] Missing &lt;returns&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Crud`2.delete(`1)] Missing &lt;param name=&quot;id&quot;/&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Crud`2.findAll] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Crud`2.findAll] Missing &lt;returns&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Crud`2.findById(`1)] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Crud`2.findById(`1)] Missing &lt;returns&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Crud`2.findById(`1)] Missing &lt;param name=&quot;id&quot;/&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Crud`2.save(`0)] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Crud`2.save(`0)] Missing &lt;param name=&quot;dao&quot;/&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Crud`2.update(`0)] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Crud`2.update(`0)] Missing &lt;returns&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Crud`2.update(`0)] Missing &lt;param name=&quot;dao&quot;/&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Modelo.Ficha] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Ficha.#ctor] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Modelo.Ficha.Especialista] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Modelo.Ficha.FechaVisita] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Modelo.Ficha.Motivo] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Modelo.Ficha.Nhc] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Modelo.Ficha.Preinscripci&#162;n] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Ficha.ToString] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Ficha.ToString] Missing &lt;returns&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Modelo.FichaDAO] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.FichaDAO.#ctor(Modelo.GestorFichero)] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.FichaDAO.#ctor(Modelo.GestorFichero)] Missing &lt;param name=&quot;gf&quot;/&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.FichaDAO.delete(System.Int32)] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.FichaDAO.delete(System.Int32)] Missing &lt;returns&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.FichaDAO.delete(System.Int32)] Missing &lt;param name=&quot;id&quot;/&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.FichaDAO.findById(System.Int32)] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.FichaDAO.findById(System.Int32)] Missing &lt;returns&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.FichaDAO.findById(System.Int32)] Missing &lt;param name=&quot;id&quot;/&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.FichaDAO.update(Modelo.Ficha)] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.FichaDAO.update(Modelo.Ficha)] Missing &lt;returns&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.FichaDAO.update(Modelo.Ficha)] Missing &lt;param name=&quot;dao&quot;/&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.GestorFichero.#ctor(System.String)] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.GestorFichero.#ctor(System.String)] Missing &lt;param name=&quot;ruta&quot;/&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Modelo.GestorFichero.Ruta] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Modelo.Paciente] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Modelo.Paciente.Apellidos] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Modelo.Paciente.CodigoPostal] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Modelo.Paciente.Direccion] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Modelo.Paciente.Dni] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Modelo.Paciente.Nhc] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Modelo.Paciente.Nombre] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Modelo.Paciente.Poblacion] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Paciente.ToString] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Paciente.ToString] Missing &lt;returns&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Modelo.PacienteDAO] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.PacienteDAO.#ctor(Modelo.GestorFichero)] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.PacienteDAO.#ctor(Modelo.GestorFichero)] Missing &lt;param name=&quot;gf&quot;/&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.PacienteDAO.save(Modelo.Paciente)] Missing &lt;param name=&quot;paciente&quot;/&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.PacienteDAO.update(Modelo.Paciente)] Missing &lt;returns&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Modelo.Usuario] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Usuario.#ctor(System.String,System.String)] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Usuario.#ctor(System.String,System.String)] Missing &lt;param name=&quot;user&quot;/&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Usuario.#ctor(System.String,System.String)] Missing &lt;param name=&quot;password&quot;/&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Modelo.Usuario.Password] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Modelo.Usuario.Rol] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Usuario.ToString] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.Usuario.ToString] Missing &lt;returns&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Modelo.Usuario.User] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Modelo.UsuarioDAO] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.UsuarioDAO.#ctor(Modelo.GestorFichero)] Missing &lt;summary&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.UsuarioDAO.#ctor(Modelo.GestorFichero)] Missing &lt;param name=&quot;gf&quot;/&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.UsuarioDAO.delete(System.String)] Missing &lt;returns&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.UsuarioDAO.findById(System.String)] Missing &lt;returns&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.UsuarioDAO.save(Modelo.Usuario)] Missing &lt;param name=&quot;usuario&quot;/&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Modelo.UsuarioDAO.update(Modelo.Usuario)] Missing &lt;param name=&quot;usuario&quot;/&gt; documentation [C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj]
+  Processed 192 topic(s)
+  121 warning(s)
+  CopyFromIndexComponent: &quot;metadata&quot; in-memory cache entries used: 1 of 15.
+  ResolveArtLinksComponent: Copying media files...
+  CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 4 of 15.
+  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 6 of 30.
+Compilaci&#162;n del proyecto terminada &quot;C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\BuildTopics.proj&quot; (destinos predeterminados).
+    Last step completed in 00:00:14,4822
+</buildStep>
+<buildStep step="CombiningIntermediateTocFiles">
+Combining conceptual and API intermediate TOC files...
+    Last step completed in 00:00:00,0040
+</buildStep>
+<buildStep step="ExtractingHtmlInfo">
+Extracting HTML info for HTML Help 1 and/or website...
+[C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe - ExtractHtmlInfo.proj]
+    Last step completed in 00:00:00,6511
+</buildStep>
+<buildStep step="CopyStandardHelpContent">
+Copying standard help content...
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\AlertCaution.png -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\AlertCaution.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\AlertNote.png -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\AlertNote.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\AlertSecurity.png -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\AlertSecurity.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\CFW.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\CFW.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\CodeExample.png -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\CodeExample.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\favicon.ico -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\privclass.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\privclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\privdelegate.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\privdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\privenumeration.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\privenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\privevent.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\privevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\privextension.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\privextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\privfield.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\privfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\privinterface.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\privinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\privmethod.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\privmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\privproperty.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\privproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\privstructure.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\privstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\protclass.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\protclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\protdelegate.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\protdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\protenumeration.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\protenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\protevent.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\protevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\protextension.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\protextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\protfield.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\protfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\protinterface.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\protinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\protmethod.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\protmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\protoperator.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\protoperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\protproperty.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\protproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\protstructure.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\protstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\pubclass.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\pubclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\pubdelegate.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\pubdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\pubenumeration.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\pubenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\pubevent.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\pubevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\pubextension.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\pubextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\pubfield.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\pubfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\pubinterface.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\pubinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\pubmethod.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\pubmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\puboperator.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\puboperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\pubproperty.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\pubproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\pubstructure.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\pubstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\SectionCollapsed.png -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\SectionCollapsed.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\SectionExpanded.png -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\SectionExpanded.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\slMobile.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\slMobile.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\static.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\static.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\icons\xna.gif -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\icons\xna.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\scripts\branding.js -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\scripts\branding.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\styles\branding-cs-CZ.css -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\styles\branding-cs-CZ.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\styles\branding-de-DE.css -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\styles\branding-de-DE.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\styles\branding-en-US.css -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\styles\branding-en-US.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\styles\branding-es-ES.css -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\styles\branding-es-ES.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\styles\branding-fr-FR.css -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\styles\branding-fr-FR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\styles\branding-Help1.css -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\styles\branding-Help1.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\styles\branding-HelpViewer.css -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\styles\branding-HelpViewer.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\styles\branding-it-IT.css -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\styles\branding-it-IT.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\styles\branding-ja-JP.css -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\styles\branding-ja-JP.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\styles\branding-ko-KR.css -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\styles\branding-ko-KR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\styles\branding-pl-PL.css -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\styles\branding-pl-PL.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\styles\branding-pt-BR.css -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\styles\branding-pt-BR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\styles\branding-ru-RU.css -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\styles\branding-ru-RU.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\styles\branding-tr-TR.css -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\styles\branding-tr-TR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\styles\branding-Website.css -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\styles\branding-Website.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\styles\branding-zh-CN.css -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\styles\branding-zh-CN.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\styles\branding-zh-TW.css -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\styles\branding-zh-TW.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Components\VS2013\styles\branding.css -&gt; C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\styles\branding.css
+    Last step completed in 00:00:00,3188
+</buildStep>
+<buildStep step="GenerateHelpProject">
+Generating HTML Help 1 project file...
+    Last step completed in 00:00:00,0100
+</buildStep>
+<buildStep step="CompilingHelpFile">
+Compiling HTML Help 1 file...
+[C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe - Build1xHelpFile.proj]
+  Microsoft HTML Help Compiler 4.74.8702
+  
+  
+  
+  Compiling c:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\Clinica Windows Form.chm
+  
+  
+  
+  
+  
+  Compile time: 0 minutes, 4 seconds
+  
+  194	Topics
+  
+  1,809	Local links
+  
+  0	Internet links
+  
+  0	Graphics
+  
+  
+  
+  
+  
+  Created c:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Documentacion\Help\Working\Output\HtmlHelp1\Clinica Windows Form.chm, 824,376 bytes
+  
+  Compression decreased file by 6,610,295 bytes.
+  
+    Last step completed in 00:00:06,2950
+</buildStep>
+<buildStep step="CleanIntermediates">
+Removing intermediate files...
+    Last step completed in 00:00:00,1339
+</buildStep>
+<buildStep step="Completed">
+
+Build completed successfully at 11/02/2022 1:38:14.  Total time: 00:00:25,1522
+
+</buildStep>
+</shfbBuild>

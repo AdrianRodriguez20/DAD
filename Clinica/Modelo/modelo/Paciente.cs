@@ -13,9 +13,21 @@ namespace Modelo
         private String dni;
         private int nhc;
         
-      
+      /// <summary>
+      /// Constructor vacio
+      /// </summary>
         public Paciente(){ }
-        
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="nombre"> nombre del paciente</param>
+        /// <param name="apellidos">apellidos del paciente</param>
+        /// <param name="direccion">direccion del paciente</param>
+        /// <param name="codigoPostal">codigo postal del paciente</param>
+        /// <param name="poblacion">poblacion del paciente</param>
+        /// <param name="dni">dni del paciente</param>
+        /// <param name="nhc">nhc del paciente</param>
         public Paciente(String nombre, String apellidos, String direccion, int codigoPostal, String poblacion, String dni, int nhc)
         {
             this.nombre = nombre;

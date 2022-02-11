@@ -17,6 +17,10 @@ namespace Clinica
         {
             InitializeComponent();
         }
+        /// <summary>
+        ///  Método para buscar fichas de pacientes al hacer click en el botón buscar
+        /// </summary>
+
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {

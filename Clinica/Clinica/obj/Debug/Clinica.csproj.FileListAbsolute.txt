@@ -43,3 +43,6 @@ C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.BuscarPS.res
 C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.ViewEliminar.resources
 C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.FichaPS.resources
 C:\Users\Admin\Desktop\DAD_Adrian\Clinica\Clinica\obj\Debug\Clinica.FormMDI.resources
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\bin\Debug\Clinica.xml
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\bin\Debug\Controlador.xml
+C:\Users\Maria luisa\Desktop\DAD_Adrian\Clinica\Clinica\bin\Debug\Modelo.xml
